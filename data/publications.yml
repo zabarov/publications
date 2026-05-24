@@ -1,0 +1,18 @@
+author:
+  name: "Rim Zabarov"
+  affiliation: "Independent Researcher"
+  orcid: "0009-0004-8605-5594"
+  orcid_url: "https://orcid.org/0009-0004-8605-5594"
+
+publications:
+  - id: "state-tone-index-v0-1"
+    status: "internal-draft"
+    type: "working-paper"
+    language: "en"
+    title: "The State Tone Index: A Multidimensional Framework for Measuring Macro-Social Affective Climate and Institutional-Emotional Conditions"
+    year: 2026
+    project: "state-tone-index"
+    public_url: null
+    pdf: null
+    data_code_release: null
+    notes: "Exploratory, non-validated and proxy-based working paper draft."
