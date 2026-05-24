@@ -27,6 +27,7 @@ Local build commands:
 
 ```bash
 /Applications/ServBay/bin/php vendor/bin/docara init --update
+/Applications/ServBay/bin/php scripts/apply-docara-overrides.php
 PATH=/usr/local/bin:$PATH npm run prod
 /Applications/ServBay/bin/php vendor/bin/docara build production
 ```

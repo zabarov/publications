@@ -46,6 +46,10 @@ jobs:
           DOCARA_SKIP_FRONTEND_INSTALL: "true"
         run: php vendor/bin/docara init --update
 
+      - name: Apply publication overrides
+        working-directory: .
+        run: php scripts/apply-docara-overrides.php
+
       - name: Install frontend dependencies
         working-directory: .
         run: npm install
