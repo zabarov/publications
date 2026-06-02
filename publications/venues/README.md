@@ -8,6 +8,7 @@ academic or editorial venue becomes the canonical version of record.
 
 | Venue | Language | Role |
 | --- | --- | --- |
+| Habr | Russian | Technical community venue for engineering articles; this repository stores English metadata only. |
 | Medium | English | International longform essays and cross-posted English editions. |
 | Hashnode | English | Developer-focused technical blog with markdown/GitHub-oriented workflow. |
 | DEV Community | English | Shorter practical developer articles and implementation notes. |
@@ -19,6 +20,8 @@ academic or editorial venue becomes the canonical version of record.
 
 - Keep the repository as the public metadata archive.
 - Use canonical links where the target platform supports them.
+- Store metadata in English even when the original article is published in
+  another language.
 - Publish English editions only after public-safety review and terminology
   cleanup.
 - Do not publish private SIMAI data, raw logs, credentials, internal prompts,

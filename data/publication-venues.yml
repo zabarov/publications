@@ -7,6 +7,20 @@ canonical_policy:
   privacy: "Do not publish private SIMAI logs, customer data, credentials, raw prompts, private graph evidence or unpublished scientific claims."
 
 venues:
+  - id: "habr"
+    name: "Habr"
+    language: "Russian"
+    track: "technical-community"
+    role: "Technical community venue for Russian-language engineering articles."
+    canonical_use: "Mirror public metadata here in English; keep article text and original-language content on Habr."
+    suitable_for:
+      - "AI-assisted engineering practice"
+      - "developer workflow articles"
+      - "technical retrospectives"
+    public_url: "https://habr.com/"
+    author_guidelines_url: "https://habr.com/ru/docs/authors/"
+    notes: "This repository stores English metadata only."
+
   - id: "medium"
     name: "Medium"
     language: "en"
