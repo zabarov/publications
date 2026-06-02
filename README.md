@@ -16,19 +16,12 @@ This repository is the public publication layer. It should contain only material
 Raw research work, private notes, source chats, exploratory handoff files and unpublished sensitive materials should remain in the private/local research workspace.
 
 The commit boundary is documented in [PUBLICATION_BOUNDARY.md](PUBLICATION_BOUNDARY.md).
-In this repository, `source/` is a raw/local workspace and is ignored. Public
-publication materials should live under `publications/`, `data/`,
+Public publication materials live under `publications/`, `data/`,
 `assets/publications/`, `releases/` and sanitized `workflow/` files.
-Drafts currently in progress or on moderation may live under `source/drafts/`;
-only sanitized status cards and metadata should be committed publicly.
 
-## Docara Site
+## Site
 
-The repository is configured as a Docara-powered English publication site. Source pages live under:
-
-```text
-source/docs/en/
-```
+The repository is configured as a Docara-powered English publication site.
 
 Local build commands:
 
@@ -45,19 +38,12 @@ Notes:
 - PHP is expected to run through ServBay on this machine.
 - Frontend assets currently build with `/usr/local/bin/node` 14.17.1; Homebrew Node 25 is too new for this Laravel Mix stack.
 - `webpack` is pinned to `5.74.0` for Laravel Mix 6 compatibility.
-- Public markdown is stored in `publications/` and synced into ignored
-  `source/docs/en/publications/` before Docara builds.
+- Public markdown is stored in `publications/`.
 - Production output is generated into `build_production/` and is not committed.
 
 ## Structure
 
 ```text
-source/
-  ignored raw/local workspace
-  drafts/in-progress/
-  drafts/on-moderation/
-  submissions/<venue>/
-
 assets/
   publications/
 
@@ -102,7 +88,3 @@ data/
 Drafts and publication pages must stay public-safe: no private logs, customer
 data, credentials, raw prompts, private graph evidence or unpublished scientific
 claims.
-
-For articles currently on moderation, keep the submitted text in
-`source/drafts/on-moderation/<article-id>/` and expose only status metadata in
-`data/article-roadmap.yml` plus a public-safe card under `publications/`.

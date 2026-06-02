@@ -56,32 +56,24 @@ releases/
 
 workflow/
   *.md                      # sanitized workflow records only
-
-source/
-  drafts/
-    in-progress/            # local active drafts
-    on-moderation/          # submitted drafts waiting for moderation
-    returned/               # drafts returned by platform editors
-    archive/                # local old draft snapshots
-  submissions/<venue>/      # local platform-specific submission copies
-  reviews/                  # local reviewer/editor notes
-  workflow/                 # local unsanitized workflow notes
 ```
 
 ## Suggested Private Local Structure
 
-The following paths are ignored by `.gitignore` and may be used for local-only
-work:
+The following ignored paths may be used locally. They are not part of the public
+repository structure:
 
 ```text
 private/
 drafts/private/
 notes/private/
 research/private/
-source/
-  drafts/on-moderation/
-  drafts/in-progress/
-  submissions/<venue>/
+source/drafts/in-progress/
+source/drafts/on-moderation/
+source/drafts/returned/
+source/drafts/archive/
+source/submissions/<venue>/
+source/reviews/
 exports/
 rendered/
 qa-output/
