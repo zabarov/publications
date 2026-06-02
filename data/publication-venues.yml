@@ -7,21 +7,6 @@ canonical_policy:
   privacy: "Do not publish private SIMAI logs, customer data, credentials, raw prompts, private graph evidence or unpublished scientific claims."
 
 venues:
-  - id: "habr"
-    name: "Habr"
-    language: "ru"
-    track: "russian"
-    role: "Primary Russian technical audience for practical articles and case-style retrospectives."
-    canonical_use: "Usually publish a Russian-native edition on Habr and mirror metadata here."
-    suitable_for:
-      - "expert skill consiliums"
-      - "skill federation"
-      - "practical GrowGraph in skills after public-safety review"
-      - "retrospectives with concrete engineering lessons"
-    public_url: "https://habr.com/"
-    author_guidelines_url: "https://habr.com/ru/docs/authors/"
-    notes: "Keep articles complete, original, technically useful and not promotional."
-
   - id: "medium"
     name: "Medium"
     language: "en"

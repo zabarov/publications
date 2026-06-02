@@ -10,7 +10,7 @@ This repository is the public publication layer. It should contain only material
 - working-paper pages;
 - final or public PDFs;
 - data/code release packages;
-- English summaries of Russian-language publications;
+- English publication metadata;
 - bibliography and media references.
 
 Raw research work, private notes, source chats, exploratory handoff files and unpublished sensitive materials should remain in the private/local research workspace.
