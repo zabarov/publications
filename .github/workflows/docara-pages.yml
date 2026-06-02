@@ -50,6 +50,10 @@ jobs:
         working-directory: .
         run: php scripts/apply-docara-overrides.php
 
+      - name: Sync public publications into Docara source
+        working-directory: .
+        run: php scripts/sync-publications-to-docara.php
+
       - name: Install frontend dependencies
         working-directory: .
         run: npm install

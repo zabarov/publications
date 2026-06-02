@@ -2,14 +2,69 @@
 .env.*
 !.env.example
 .DS_Store
+
+# Raw/local workspace. Public publication materials must live outside source/.
+source/
+
+# Dependency and build outputs
 .cache/
 node_modules/
 vendor/
-source/assets/build/
 build_local/
 build_production/
 .docara-state/
 output/
+
+# Local runtime, QA and temporary artifacts
+tmp/
+temp/
+.tmp/
+logs/
+*.log
+coverage/
+.phpunit.result.cache
+.eslintcache
+.parcel-cache/
+
+# Private publication workspaces.
+private/
+_private/
+drafts/private/
+notes/private/
+research/private/
+
+# Local-only notes and variants
+*.local
+*.local.*
+*.private
+*.private.*
+*.draft.local.md
+*.notes.local.md
+
+# Exported/intermediate publication artifacts
+exports/
+rendered/
+screenshots/
+qa-output/
+*.tmp.pdf
+*.tmp.docx
+*.tmp.png
+*.tmp.jpg
+*.tmp.jpeg
+
+# Secrets and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.csr
+*.mobileprovision
+*.auth.json
+credentials.json
+secrets.json
+
+# Backups
 *.bak
 *.bak_*
 *.bak-*
