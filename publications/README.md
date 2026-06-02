@@ -7,6 +7,7 @@ Public materials that should be visible on GitHub belong here, in `data/`, in
 
 ## Sections
 
+- [Articles](articles/)
 - [Skills as Expert Systems](series/skills-as-expert-systems/)
 - [Publication venues](venues/)
 
