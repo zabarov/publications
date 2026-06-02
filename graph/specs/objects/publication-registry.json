@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "publication-registry",
+  "kind": "publication_registry",
+  "lifecycle": "active",
+  "readiness": "usable",
+  "title": "Publication Registry",
+  "canonical_data": [
+    {
+      "id": "data-publications",
+      "kind": "metadata_source",
+      "lifecycle": "active",
+      "readiness": "usable",
+      "path": "data/publications.yml",
+      "owns": [
+        "publication records",
+        "author metadata",
+        "publication status",
+        "canonical URLs",
+        "language metadata"
+      ],
+      "source_refs": [
+        "data/publications.yml"
+      ]
+    },
+    {
+      "id": "data-publication-venues",
+      "kind": "metadata_source",
+      "lifecycle": "active",
+      "readiness": "usable",
+      "path": "data/publication-venues.yml",
+      "owns": [
+        "venue registry",
+        "language tracks",
+        "cross-posting policy"
+      ],
+      "source_refs": [
+        "data/publication-venues.yml"
+      ]
+    },
+    {
+      "id": "data-article-roadmap",
+      "kind": "metadata_source",
+      "lifecycle": "active",
+      "readiness": "usable",
+      "path": "data/article-roadmap.yml",
+      "owns": [
+        "planned article cycles",
+        "future publication topics",
+        "public-safety gates"
+      ],
+      "source_refs": [
+        "data/article-roadmap.yml"
+      ]
+    }
+  ],
+  "local_working_data": [
+    {
+      "id": "source-habr-markdown-archive",
+      "kind": "local_archive",
+      "lifecycle": "active",
+      "readiness": "usable",
+      "path": "source/articles/habr/",
+      "visibility": "ignored_local",
+      "purpose": "Local Markdown copies of public Habr articles for editorial reuse and Docara assembly experiments.",
+      "source_refs": [
+        "source/articles/habr/README.md"
+      ]
+    }
+  ],
+  "source_refs": [
+    "data/publications.yml",
+    "data/publication-venues.yml",
+    "data/article-roadmap.yml"
+  ]
+}

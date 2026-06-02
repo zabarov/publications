@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "id": "repository-zones",
+  "kind": "object_set",
+  "lifecycle": "active",
+  "readiness": "usable",
+  "title": "Repository Zones",
+  "objects": [
+    {
+      "id": "zone-public-registry",
+      "kind": "repository_zone",
+      "lifecycle": "active",
+      "readiness": "usable",
+      "path_patterns": [
+        "README.md",
+        "PUBLICATION_BOUNDARY.md",
+        "data/",
+        "publications/",
+        "assets/publications/",
+        "releases/",
+        "graph/"
+      ],
+      "visibility": "public",
+      "allowed_content": [
+        "public-safe metadata",
+        "publication cards",
+        "series pages",
+        "venue pages",
+        "public assets",
+        "release packages",
+        "machine-readable operating graph"
+      ],
+      "blocked_content": [
+        "secrets",
+        "private raw logs",
+        "customer data",
+        "unapproved full-text mirrors",
+        "moderation drafts",
+        "reviewer correspondence"
+      ],
+      "source_refs": [
+        "README.md",
+        "PUBLICATION_BOUNDARY.md"
+      ]
+    },
+    {
+      "id": "zone-local-source",
+      "kind": "repository_zone",
+      "lifecycle": "active",
+      "readiness": "usable",
+      "path_patterns": [
+        "source/"
+      ],
+      "visibility": "ignored_local",
+      "allowed_content": [
+        "raw article copies",
+        "drafts",
+        "moderation packages",
+        "editorial notes",
+        "workflow evidence",
+        "temporary Docara source",
+        "generated action-gate reports"
+      ],
+      "blocked_content": [
+        "tracked public deliverables",
+        "secrets intended for commits",
+        "canonical public registry data"
+      ],
+      "source_refs": [
+        ".gitignore",
+        "PUBLICATION_BOUNDARY.md"
+      ]
+    },
+    {
+      "id": "zone-generated-output",
+      "kind": "repository_zone",
+      "lifecycle": "active",
+      "readiness": "usable",
+      "path_patterns": [
+        "build_production/",
+        ".cache/",
+        "vendor/",
+        "node_modules/"
+      ],
+      "visibility": "ignored_local",
+      "allowed_content": [
+        "local build output",
+        "dependencies",
+        "cache files"
+      ],
+      "blocked_content": [
+        "source of truth records",
+        "manual publication metadata"
+      ],
+      "source_refs": [
+        ".gitignore",
+        "README.md"
+      ]
+    }
+  ],
+  "source_refs": [
+    "README.md",
+    "PUBLICATION_BOUNDARY.md",
+    ".gitignore"
+  ]
+}

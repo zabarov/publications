@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "id": "operating-mode-relations",
+  "kind": "relation_set",
+  "lifecycle": "active",
+  "readiness": "usable",
+  "title": "Operating Mode Relations",
+  "relations": [
+    {
+      "id": "rel-source-feeds-publications",
+      "kind": "feeds",
+      "from": "zone-local-source",
+      "to": "zone-public-registry",
+      "rule": "Only curated, public-safe outputs may be promoted from ignored source to public paths."
+    },
+    {
+      "id": "rel-publications-drive-docara",
+      "kind": "generates",
+      "from": "publication-registry",
+      "to": "docara_page",
+      "rule": "Docara pages should be generated from metadata plus approved public text policy."
+    },
+    {
+      "id": "rel-boundary-governs-commit",
+      "kind": "governs",
+      "from": "public-boundary-policy",
+      "to": "zone-public-registry",
+      "rule": "Every committed publication file must pass public-safety questions."
+    },
+    {
+      "id": "rel-full-text-policy-governs-habr-archive",
+      "kind": "governs",
+      "from": "full-text-mirroring-policy",
+      "to": "source-habr-markdown-archive",
+      "rule": "Local article copies remain ignored until per-publication mirroring approval exists."
+    },
+    {
+      "id": "rel-series-organize-publications",
+      "kind": "organizes",
+      "from": "publication-series",
+      "to": "publication-registry",
+      "rule": "Series pages should group publications by public narrative and future article cycles."
+    }
+  ],
+  "source_refs": [
+    "graph/specs/objects/repository-zones.json",
+    "graph/specs/objects/publication-registry.json",
+    "graph/specs/policies/full-text-mirroring-policy.json"
+  ]
+}

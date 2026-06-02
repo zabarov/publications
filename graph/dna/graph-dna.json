@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "id": "publication-portfolio-dna",
+  "kind": "graph_dna",
+  "lifecycle": "active",
+  "readiness": "usable",
+  "title": "Publication Portfolio DNA",
+  "purpose": "Keep a public-safe portfolio of publications while preserving local editorial workspace and future Docara assembly paths.",
+  "principles": [
+    "The public repository is a portfolio and registry, not a raw workspace.",
+    "Full-text mirrors require an explicit per-publication policy decision.",
+    "Canonical links remain visible even when local Markdown copies exist.",
+    "Ignored `source/` stores drafts, raw copies, moderation packages and workflow evidence.",
+    "Docara output should be generated from public-safe sources, not from accidental raw workspace exposure.",
+    "Graph files describe operating contracts; raw editorial judgement remains human-owned."
+  ],
+  "primary_objects": [
+    "repository_zone",
+    "publication_record",
+    "publication_series",
+    "publication_venue",
+    "publication_policy",
+    "publication_lifecycle",
+    "evidence_ref"
+  ],
+  "source_refs": [
+    "README.md",
+    "PUBLICATION_BOUNDARY.md",
+    "data/publications.yml",
+    "data/publication-venues.yml",
+    "data/article-roadmap.yml"
+  ]
+}

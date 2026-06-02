@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "publication-lifecycle",
+  "kind": "publication_lifecycle",
+  "lifecycle": "active",
+  "readiness": "usable",
+  "title": "Publication Lifecycle",
+  "states": [
+    {
+      "id": "idea",
+      "visibility": "local_or_public_safe",
+      "default_path": "data/article-roadmap.yml"
+    },
+    {
+      "id": "draft_in_progress",
+      "visibility": "ignored_local",
+      "default_path": "source/drafts/in-progress/"
+    },
+    {
+      "id": "on_moderation",
+      "visibility": "ignored_local",
+      "default_path": "source/drafts/on-moderation/"
+    },
+    {
+      "id": "published_external",
+      "visibility": "public_metadata",
+      "default_path": "data/publications.yml"
+    },
+    {
+      "id": "portfolio_card",
+      "visibility": "public",
+      "default_path": "publications/articles/"
+    },
+    {
+      "id": "docara_page",
+      "visibility": "public_or_local_preview",
+      "default_path": "source/docs/"
+    },
+    {
+      "id": "release_package",
+      "visibility": "public_when_reviewed",
+      "default_path": "releases/"
+    }
+  ],
+  "transitions": [
+    {
+      "from": "idea",
+      "to": "draft_in_progress",
+      "gate": "create local draft package"
+    },
+    {
+      "from": "draft_in_progress",
+      "to": "on_moderation",
+      "gate": "store exact submitted copy under ignored source"
+    },
+    {
+      "from": "on_moderation",
+      "to": "published_external",
+      "gate": "record public URL and publication date"
+    },
+    {
+      "from": "published_external",
+      "to": "portfolio_card",
+      "gate": "public-safe summary and canonical link"
+    },
+    {
+      "from": "portfolio_card",
+      "to": "docara_page",
+      "gate": "apply public text policy"
+    },
+    {
+      "from": "docara_page",
+      "to": "release_package",
+      "gate": "final public review"
+    }
+  ],
+  "source_refs": [
+    "PUBLICATION_BOUNDARY.md",
+    "data/article-roadmap.yml",
+    "data/publications.yml"
+  ]
+}

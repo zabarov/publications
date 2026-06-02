@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "publication-graph-spec-index",
+  "kind": "spec_index",
+  "lifecycle": "active",
+  "readiness": "usable",
+  "title": "Publication Graph Spec Index",
+  "objects": [
+    "graph/specs/objects/repository-zones.json",
+    "graph/specs/objects/publication-registry.json",
+    "graph/specs/objects/publication-series.json"
+  ],
+  "policies": [
+    "graph/specs/policies/public-boundary-policy.json",
+    "graph/specs/policies/local-source-policy.json",
+    "graph/specs/policies/full-text-mirroring-policy.json"
+  ],
+  "scenarios": [
+    "graph/specs/scenarios/publication-lifecycle.json"
+  ],
+  "relations": [
+    "graph/specs/relations/operating-mode-relations.json"
+  ],
+  "evidence": [
+    "graph/specs/evidence/repository-evidence.json"
+  ],
+  "source_refs": [
+    "graph/graph.json"
+  ]
+}

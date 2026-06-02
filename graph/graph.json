@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "graph_id": "rim-zabarov.publications",
+  "title": "Rim Zabarov Publications Graph",
+  "graph_type": "project",
+  "owner": "graph",
+  "source_of_truth": "graph/specs",
+  "description": "Machine-readable operating graph for the public publications repository.",
+  "federation": {
+    "can_export": true,
+    "can_import": false,
+    "parent_graph": null,
+    "child_graphs": []
+  },
+  "evolution": {
+    "current_iteration": 1,
+    "migration_status": "current"
+  },
+  "public_safety": {
+    "public_repo": true,
+    "ignored_raw_workspace": "source/",
+    "secrets_allowed": false,
+    "full_text_mirror_default": "canonical_only"
+  },
+  "entrypoints": {
+    "spec_index": "graph/specs/index.json",
+    "dna": "graph/dna/graph-dna.json",
+    "operating_guide": "graph/docs/guides/operating-mode.md",
+    "validator": "scripts/validate-publication-graph.js"
+  }
+}

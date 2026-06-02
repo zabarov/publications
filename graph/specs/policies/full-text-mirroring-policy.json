@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "id": "full-text-mirroring-policy",
+  "kind": "publication_policy",
+  "lifecycle": "active",
+  "readiness": "draft",
+  "title": "Full-Text Mirroring Policy",
+  "default_policy": "canonical_only",
+  "policy_values": [
+    {
+      "id": "canonical_only",
+      "meaning": "Public repository shows metadata, summary and canonical link only."
+    },
+    {
+      "id": "excerpt_only",
+      "meaning": "Public repository may show short excerpts and canonical link."
+    },
+    {
+      "id": "adapted_version",
+      "meaning": "Public repository may show an edited or expanded version, not a direct mirror."
+    },
+    {
+      "id": "full_mirror",
+      "meaning": "Public repository or Docara site may publish the full text after explicit approval."
+    },
+    {
+      "id": "draft_only",
+      "meaning": "Material stays in ignored local workspace only."
+    }
+  ],
+  "approval_required_for": [
+    "full_mirror",
+    "adapted_version"
+  ],
+  "recommended_next_step": "Add per-publication `public_text_policy` to `data/publications.yml` before generating full public article pages.",
+  "source_refs": [
+    "data/publications.yml",
+    "source/articles/habr/README.md"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "id": "repository-evidence",
+  "kind": "evidence_set",
+  "lifecycle": "active",
+  "readiness": "usable",
+  "title": "Repository Evidence",
+  "evidence": [
+    {
+      "id": "evidence-source-ignored",
+      "kind": "command_evidence",
+      "claim": "`source/` is ignored by Git.",
+      "command": "git check-ignore -v source source/articles/habr/978746/README.md",
+      "expected": ".gitignore contains a `source/` rule."
+    },
+    {
+      "id": "evidence-habr-local-archive",
+      "kind": "file_evidence",
+      "claim": "Local Habr Markdown copies exist under ignored source.",
+      "path": "source/articles/habr/README.md"
+    },
+    {
+      "id": "evidence-public-boundary",
+      "kind": "file_evidence",
+      "claim": "Public boundary is documented for human readers.",
+      "path": "PUBLICATION_BOUNDARY.md"
+    },
+    {
+      "id": "evidence-public-registry",
+      "kind": "file_evidence",
+      "claim": "Public publication metadata is tracked in data files.",
+      "path": "data/publications.yml"
+    }
+  ],
+  "source_refs": [
+    "PUBLICATION_BOUNDARY.md",
+    "data/publications.yml",
+    ".gitignore"
+  ]
+}

@@ -6,6 +6,7 @@
         "dev": "mix",
         "watch": "mix watch",
         "prod": "mix --production",
+        "validate:graph": "node scripts/validate-publication-graph.js",
         "translate": "php vendor/bin/docara translate",
         "transpatetest": "php vendor/bin/docara translate --test",
         "init": "php vendor/bin/docara init",

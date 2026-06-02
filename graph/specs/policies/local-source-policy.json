@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "id": "local-source-policy",
+  "kind": "publication_policy",
+  "lifecycle": "active",
+  "readiness": "usable",
+  "title": "Local Source Workspace Policy",
+  "path": "source/",
+  "git_policy": "ignored",
+  "purpose": "Local raw workspace for materials that are useful for production but not ready or safe for public Git.",
+  "allowed_materials": [
+    "raw article copies",
+    "drafts in progress",
+    "drafts on moderation",
+    "submission copies",
+    "reviewer comments",
+    "editor correspondence",
+    "workflow records",
+    "action-gate evidence",
+    "temporary generated Docara sources"
+  ],
+  "commit_rule": "Do not commit `source/` content unless an explicit policy change is made and individual paths are reviewed.",
+  "promotion_rule": "Promote only public-safe curated outputs from `source/` into `publications/`, `data/`, `assets/publications/` or `releases/`.",
+  "source_refs": [
+    ".gitignore",
+    "PUBLICATION_BOUNDARY.md",
+    "source/workflow/2026-06-02-habr-local-markdown-archive.md"
+  ]
+}

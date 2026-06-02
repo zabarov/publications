@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "id": "public-boundary-policy",
+  "kind": "publication_policy",
+  "lifecycle": "active",
+  "readiness": "usable",
+  "title": "Public Publication Boundary Policy",
+  "default_visibility": "public_safe_only",
+  "allowed_public_paths": [
+    "README.md",
+    "PUBLICATION_BOUNDARY.md",
+    "data/",
+    "publications/",
+    "assets/publications/",
+    "releases/",
+    "graph/",
+    ".github/workflows/",
+    "scripts/"
+  ],
+  "must_not_commit": [
+    ".env",
+    "source/",
+    "private/",
+    "exports/",
+    "rendered/",
+    "qa-output/",
+    "build_production/",
+    ".cache/",
+    "node_modules/",
+    "vendor/"
+  ],
+  "safety_questions": [
+    "Would this file be acceptable if opened directly on GitHub?",
+    "Does it reveal private SIMAI implementation, customer context or raw operating traces?",
+    "Does it make research claims not yet public through an approved artifact?",
+    "Does it have the right canonical/source-link plan?"
+  ],
+  "source_refs": [
+    "PUBLICATION_BOUNDARY.md",
+    ".gitignore"
+  ]
+}

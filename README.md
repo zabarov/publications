@@ -19,6 +19,10 @@ The commit boundary is documented in [PUBLICATION_BOUNDARY.md](PUBLICATION_BOUND
 Public publication materials live under `publications/`, `data/`,
 `assets/publications/` and `releases/`.
 
+The machine-readable operating contract lives in [graph/graph.json](graph/graph.json).
+It records the public/local boundary, publication lifecycle, full-text
+mirroring policy and Docara assembly rules.
+
 ## Site
 
 The repository is configured as a Docara-powered English publication site.
@@ -31,6 +35,12 @@ Local build commands:
 /Applications/ServBay/bin/php scripts/sync-publications-to-docara.php
 PATH=/usr/local/bin:$PATH npm run prod
 /Applications/ServBay/bin/php vendor/bin/docara build production
+```
+
+Repository operating-mode check:
+
+```bash
+npm run validate:graph
 ```
 
 Notes:
@@ -60,6 +70,12 @@ data/
   publication-venues.yml
   article-roadmap.yml
 
+graph/
+  graph.json
+  dna/
+  specs/
+  docs/
+
 .github/workflows/
   docara-pages.yml
 ```
@@ -79,6 +95,8 @@ data/
   and cross-posting policy.
 - `data/article-roadmap.yml` stores planned article cycles, target venues,
   language tracks and public-safety gates.
+- `graph/` stores the machine-readable publication operating mode:
+  repository zones, lifecycle, relations, evidence and publication policies.
 
 Drafts and publication pages must stay public-safe: no private logs, customer
 data, credentials, raw prompts, private graph evidence or unpublished scientific

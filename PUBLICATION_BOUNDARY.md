@@ -3,6 +3,10 @@
 This repository is intended to be public. Treat every committed file as visible
 to readers, indexers, platform editors and future collaborators.
 
+The machine-readable version of this boundary is stored in `graph/`. Start with
+`graph/graph.json` and `graph/docs/guides/operating-mode.md` when a workflow
+needs a structured contract instead of prose only.
+
 ## Public by Default
 
 These materials may be committed when they are public-safe:
@@ -38,6 +42,11 @@ data/
   publications.yml          # published records and research-output metadata
   publication-venues.yml    # venue registry and language/cross-posting policy
   article-roadmap.yml       # public-safe article roadmap and gates
+
+graph/
+  graph.json                # graph manifest and operating contract entrypoint
+  specs/                    # repository zones, policies, lifecycle, relations
+  docs/guides/              # human-readable graph guides
 
 publications/
   README.md                 # public publication index
@@ -92,3 +101,12 @@ Before committing a new article, ask:
 
 If the answer is uncertain, keep the material in a private ignored path and
 publish only a sanitized page or metadata entry.
+
+## Graph Validation
+
+Run this check before committing changes that affect publication structure,
+metadata, full-text mirrors or public/local boundaries:
+
+```bash
+npm run validate:graph
+```

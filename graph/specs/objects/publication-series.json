@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "id": "publication-series",
+  "kind": "object_set",
+  "lifecycle": "active",
+  "readiness": "draft",
+  "title": "Publication Series",
+  "series": [
+    {
+      "id": "series-skills-as-expert-systems",
+      "kind": "publication_series",
+      "lifecycle": "active",
+      "readiness": "draft",
+      "title": "Skills as Expert Systems",
+      "scope": "Expert skills, councils of specialists, role design, review, quality gates and operational benefits.",
+      "public_path": "publications/series/skills-as-expert-systems/README.md",
+      "source_refs": [
+        "publications/series/skills-as-expert-systems/README.md",
+        "data/article-roadmap.yml"
+      ]
+    },
+    {
+      "id": "series-skill-federation-growgraph",
+      "kind": "publication_series",
+      "lifecycle": "planned",
+      "readiness": "draft",
+      "title": "Skill Federation and GrowGraph",
+      "scope": "Federation routing, Hybrid SOT, owner skills, graph/runtime split, action gates and process control.",
+      "public_path": "publications/series/",
+      "source_refs": [
+        "data/article-roadmap.yml"
+      ]
+    },
+    {
+      "id": "series-ai-assisted-engineering",
+      "kind": "publication_series",
+      "lifecycle": "active",
+      "readiness": "draft",
+      "title": "AI-Assisted Engineering Workflows",
+      "scope": "Codex, snapshots, local memory, project workflow, repo hygiene and publication automation.",
+      "public_path": "publications/series/",
+      "source_refs": [
+        "data/publications.yml",
+        "data/article-roadmap.yml"
+      ]
+    },
+    {
+      "id": "series-research-evolutionary-graphs",
+      "kind": "publication_series",
+      "lifecycle": "planned",
+      "readiness": "blocked_until_research_public",
+      "title": "Research and Evolutionary Graphs",
+      "scope": "Evolutionary graph ideas, scientific framing and graph-based skills after approved research publication.",
+      "public_path": "publications/series/",
+      "source_refs": [
+        "data/article-roadmap.yml"
+      ]
+    }
+  ],
+  "source_refs": [
+    "data/article-roadmap.yml",
+    "publications/series/README.md"
+  ]
+}
