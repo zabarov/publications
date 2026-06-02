@@ -12,8 +12,6 @@ These materials may be committed when they are public-safe:
 - publication metadata under `data/`;
 - public assets under `assets/publications/`;
 - final public PDFs, release packages and reproducibility materials;
-- sanitized workflow files under `workflow/` that describe repository work
-  without private operational detail;
 - build configuration, dependency manifests and GitHub Actions workflows.
 
 ## Keep Out of Git
@@ -45,35 +43,23 @@ publications/
   README.md                 # public publication index
   series/                   # public article cycles
   venues/                   # public venue registry
-  russian/<venue>/<slug>/   # Russian publication track
-  international/<venue>/    # English/international tracks
 
 assets/publications/
   <publication-id>/         # public images and downloadable assets
 
 releases/
   <project-id>/             # final public release packages
-
-workflow/
-  *.md                      # sanitized workflow records only
 ```
 
-## Suggested Private Local Structure
+## Local Work
 
-The following ignored paths may be used locally. They are not part of the public
-repository structure:
+Ignored local workspaces may be used for drafts, submissions, reviewer notes,
+rendered previews and temporary exports. They are not part of the public
+repository structure and should not be documented in the public README.
 
 ```text
 private/
-drafts/private/
-notes/private/
-research/private/
-source/drafts/in-progress/
-source/drafts/on-moderation/
-source/drafts/returned/
-source/drafts/archive/
-source/submissions/<venue>/
-source/reviews/
+source/
 exports/
 rendered/
 qa-output/
@@ -81,27 +67,17 @@ qa-output/
 
 ## Draft Moderation Workflow
 
-Use `source/drafts/on-moderation/<article-id>/` for the exact draft that is
-currently waiting for platform moderation. A typical local-only package may
-contain:
-
-```text
-source/drafts/on-moderation/<article-id>/
-  draft.md                  # exact submitted text
-  metadata.yml              # venue, submitted_at, language, status
-  submission-notes.md       # local notes and reviewer/editor context
-```
+Use ignored local workspace files for exact drafts that are currently waiting
+for platform moderation.
 
 The public repository should contain only a safe status card, for example:
 
-```text
-publications/russian/habr/<article-id>/README.md
-data/article-roadmap.yml
-```
+`data/article-roadmap.yml`, and only create an article folder under
+`publications/` when the status is public-safe enough to show.
 
-Public metadata may say `status: submitted` or `status: on-moderation`, but the
-full submitted text should stay in `source/` until it is accepted or explicitly
-cleared for public release.
+Public metadata may say `status: submitted` or `status: on-moderation`, but full
+submitted text should stay in ignored local files until it is accepted or
+explicitly cleared for public release.
 
 ## Publication Rule
 

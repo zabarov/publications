@@ -17,7 +17,7 @@ Raw research work, private notes, source chats, exploratory handoff files and un
 
 The commit boundary is documented in [PUBLICATION_BOUNDARY.md](PUBLICATION_BOUNDARY.md).
 Public publication materials live under `publications/`, `data/`,
-`assets/publications/`, `releases/` and sanitized `workflow/` files.
+`assets/publications/` and `releases/`.
 
 ## Site
 
@@ -51,14 +51,9 @@ publications/
   README.md
   series/
   venues/
-  russian/
-  international/
 
 releases/
   state-tone-index/
-
-workflow/
-  sanitized workflow records only
 
 data/
   publications.yml

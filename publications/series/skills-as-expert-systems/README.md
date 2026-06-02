@@ -48,3 +48,9 @@ public enough to support them:
 ## Machine-Readable Roadmap
 
 The current article plan is maintained in `data/article-roadmap.yml`.
+
+## Publication Pages
+
+Separate venue or article folders should be created only after there is a real
+public artifact: a published URL, an accepted article, or a public-safe status
+card worth showing on GitHub.

@@ -2,16 +2,13 @@
 
 This directory is the public publication layer of the repository.
 
-`source/` is intentionally treated as an ignored raw/local workspace. Public
-materials that should be visible on GitHub belong here, in `data/`, in
-`assets/publications/`, in `releases/`, or in sanitized files under `workflow/`.
+Public materials that should be visible on GitHub belong here, in `data/`, in
+`assets/publications/` or in `releases/`.
 
 ## Sections
 
-- [Article series](series/)
+- [Skills as Expert Systems](series/skills-as-expert-systems/)
 - [Publication venues](venues/)
-- [Russian publications](russian/)
-- [International publications](international/)
 
 ## Current Focus
 
