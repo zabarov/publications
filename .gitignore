@@ -71,3 +71,8 @@ secrets.json
 *.codex-bak-*
 __pycache__/
 *.pyc
+
+# SIMAI local working artifacts
+build_*/
+source/assets/build/
+source/docs/.translate.php

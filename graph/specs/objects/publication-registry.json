@@ -66,6 +66,18 @@
       "source_refs": [
         "source/articles/habr/README.md"
       ]
+    },
+    {
+      "id": "source-medium-markdown-archive",
+      "kind": "local_archive",
+      "lifecycle": "active",
+      "readiness": "usable",
+      "path": "source/articles/medium/",
+      "visibility": "ignored_local",
+      "purpose": "Local Markdown copies of public Medium articles for editorial reuse and Docara assembly experiments.",
+      "source_refs": [
+        "source/articles/medium/README.md"
+      ]
     }
   ],
   "source_refs": [

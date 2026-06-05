@@ -20,6 +20,26 @@ publications:
     source_profile_url: "https://habr.com/ru/users/zabarov/articles/"
     notes: "English metadata for an original Habr article."
 
+  - id: "medium-9b909c8e1241"
+    status: "published"
+    type: "article"
+    venue: "medium"
+    original_language: "English"
+    metadata_language: "en"
+    title: "I Built a GPT That Thinks Like a Portrait Artist"
+    published_at: "2025-12-20"
+    year: 2025
+    public_url: "https://medium.com/@rim.zabarov/i-built-a-gpt-that-thinks-like-a-portrait-artist-9b909c8e1241"
+    source_profile_url: "https://medium.com/@rim.zabarov"
+    tags:
+      - "Artificial Intelligence"
+      - "Generative AI"
+      - "Creativity"
+      - "Art"
+      - "Design"
+    public_text_policy: "canonical_only"
+    notes: "English Medium article about a GPT assistant that works as a virtual portrait artist."
+
   - id: "habr-974268"
     status: "published"
     type: "article"
