@@ -1,0 +1,4 @@
+condition,total_possible,total_score,mean_per_task,interpretation
+C0_COMPACT,80,69,13.8,"Compact baseline; useful but less explicit on evidence and handoff."
+C1_SECTIONED,80,78,15.6,"Matched-section baseline; nearly closes the gap."
+C2_ROLE_SEPARATED,80,80,16.0,"Role-separated workflow; small non-independent advantage over matched-section baseline."

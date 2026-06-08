@@ -1,0 +1,6 @@
+task_id,family,title,task_file,known_risk_count,expected_evidence_count,public_safe_status,pilot_002_use
+RSK-001,code_review_hidden_risk,"Review a patch that changes authentication fallback behavior",tasks/RSK-001-auth-fallback-review.md,4,4,synthetic,include
+IMP-001,incomplete_requirements,"Plan implementation for notifications with missing delivery constraints",tasks/IMP-001-notification-planning.md,5,4,synthetic,include
+BUG-001,environment_uncertainty,"Triage a failing build with incomplete runtime information",tasks/BUG-001-failing-build-triage.md,4,4,synthetic,include
+HND-001,handoff_generation,"Create a continuation handoff after a partially completed repository task",tasks/HND-001-continuation-handoff.md,4,5,synthetic,include
+PUB-001,publication_qa,"Review a manuscript section for premature scientific claims",tasks/PUB-001-manuscript-claim-review.md,5,5,synthetic,include

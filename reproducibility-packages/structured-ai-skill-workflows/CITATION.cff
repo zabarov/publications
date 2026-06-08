@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this package, cite the associated working paper and this reproducibility package."
+title: "Structured AI Skill Workflows Reproducibility Package"
+type: dataset
+authors:
+  - family-names: "Zabarov"
+    given-names: "Rim"
+    orcid: "https://orcid.org/0009-0004-8605-5594"
+version: "v1.0.0"
+date-released: "2026-06-08"
+abstract: "Public-safe synthetic benchmark materials for method inspection of a design-science working paper on structured AI skill workflows."
+keywords:
+  - "AI-assisted software engineering"
+  - "design science"
+  - "AI skills"
+  - "workflow engineering"
+  - "prompt evaluation"
+license: "CC-BY-4.0"

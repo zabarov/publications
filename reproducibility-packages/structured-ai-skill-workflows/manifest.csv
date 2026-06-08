@@ -1,0 +1,24 @@
+package_path,description,release_status
+README.md,Package overview and claim boundary,local_candidate
+LICENSE,CC BY 4.0 license notice,local_candidate
+CITATION.cff,Citation metadata,local_candidate
+source-boundary.md,Public-safe source boundary,local_candidate
+data-dictionary.md,Data field definitions,local_candidate
+methodology/PILOT-002-controlled-protocol.md,Controlled pilot protocol,local_candidate
+methodology/PILOT-002-prompt-control-check.md,Prompt length control check,local_candidate
+methodology/evaluation-rubric-v0.md,Scoring rubric,local_candidate
+data/tasks.csv,Task registry with package-relative paths,local_candidate
+data/tasks/*.md,Synthetic task files,local_candidate
+data/prompts/*.md,Prompt conditions,local_candidate
+data/outputs/raw/*.md,Raw generated outputs,local_candidate
+data/blind-review/reviewer-instructions.md,Reviewer instructions,local_candidate
+data/blind-review/package-manifest.md,Blind package manifest,local_candidate
+data/blind-review/packages/*.md,Blind review packets,local_candidate
+data/scores/scoring-sheet-template.csv,Scoring template,local_candidate
+data/scores/PILOT-002-scoring.csv,Non-independent blind-label scoring,local_candidate
+data/scores/PILOT-002-decoded-scoring.csv,Decoded non-independent scoring,method_inspection_only
+analysis/PILOT-002-generation-log.md,Generation log,local_candidate
+analysis/PILOT-002-result.md,Result narrative with limitations,local_candidate
+analysis/PILOT-002-aggregate.csv,Aggregate scores,local_candidate
+manuscript/data-availability.md,Data availability draft,local_candidate
+manuscript/declarations.md,Declarations draft,author_confirmation_required

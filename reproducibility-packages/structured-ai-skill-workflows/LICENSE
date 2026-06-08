@@ -1,0 +1,22 @@
+# License
+
+This reproducibility package is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt the package materials if appropriate attribution is given to the author and the associated working paper/package are cited.
+
+Author: Rim Zabarov
+
+Scope:
+
+- benchmark task texts;
+- prompt condition texts;
+- scoring rubric text;
+- data dictionary;
+- methodology notes;
+- README and package metadata;
+- CSV result tables;
+- manuscript data-availability and declaration drafts.
+
+If executable scripts are added in a later package version, their license should be stated separately.
