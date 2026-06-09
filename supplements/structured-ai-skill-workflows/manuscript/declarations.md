@@ -22,7 +22,7 @@ Rim Zabarov conceived the project, developed the practical skill-workflow contex
 
 ### Use Of AI Assistance
 
-The author conceived the work, defined the research problem, developed the model, directed the experiments, interpreted the results and approved the final manuscript. AI tools were used as support instruments for organizing project materials, producing draft text, generating synthetic benchmark materials, assisting non-independent pilot scoring and preparing quality-review notes. All claims, evidence boundaries, data presentation and public materials were reviewed and approved by the author. AI tools are not listed as authors and are not responsible for the scholarly claims in this paper.
+The author conceived the work, defined the research problem, developed the model, directed the experiments, interpreted the results and approved the final manuscript. AI tools were used as support instruments for organizing project materials, producing draft text, generating synthetic benchmark materials, assisting non-independent pilot scoring and preparing quality-review notes. The author reviewed and approved all claims, evidence boundaries, data presentation and public materials.
 
 ## Gate
 
