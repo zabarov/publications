@@ -1,0 +1,7 @@
+[
+  {"task_id":"task.launch-context","graph_context_units":260,"selected_objects":["feature.guarded-apply","gate.launch-record","gate.allowed-files","risk.false-transition"],"required_relations":["rel.016","rel.017","rel.018","rel.022"]},
+  {"task_id":"task.transition-assessment","graph_context_units":310,"selected_objects":["gate.launch-record","feature.guarded-apply","risk.false-transition","ev.transition-fixtures"],"required_relations":["rel.016","rel.017","rel.022"]},
+  {"task_id":"task.evidence-summary","graph_context_units":330,"selected_objects":["gate.evidence","feature.expert-review","risk.unsupported-claim","ev.evidence-package"],"required_relations":["rel.020","rel.023"]},
+  {"task_id":"task.expert-review-loop","graph_context_units":420,"selected_objects":["feature.expert-review","feature.kaizen-loop","feature.context-pack","ev.expert-review"],"required_relations":["rel.025","rel.027","rel.029"]}
+]
+

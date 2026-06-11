@@ -1,0 +1,7 @@
+[
+  {"id":"finding.context-gap","severity":"medium","source":"expert_review","summary":"The assistant omitted an adjacent dependency while planning a change.","outcome":"add relation to standard context profile","prevention_mechanism":"context_neighborhood_check"},
+  {"id":"finding.permission-gap","severity":"high","source":"expert_review","summary":"A generated plan implied a write outside the approved artifact boundary.","outcome":"require allowed-files gate before execution","prevention_mechanism":"write_boundary_gate"},
+  {"id":"finding.test-evidence-gap","severity":"high","source":"expert_review","summary":"The summary treated a partial smoke event as sufficient implementation evidence.","outcome":"separate instrumentation evidence from release evidence","prevention_mechanism":"evidence_type_classifier"},
+  {"id":"finding.method-drift","severity":"medium","source":"expert_review","summary":"A repeated failure suggests that the technological cycle needs correction.","outcome":"open kaizen improvement proposal","prevention_mechanism":"kaizen_return_loop"}
+]
+

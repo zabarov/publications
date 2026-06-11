@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-06-11T18:12:11.876Z",
+  "passed": true,
+  "rows": [
+    {
+      "fixture_id": "fixture.valid.ready-to-coding-started",
+      "expected_allowed": true,
+      "actual_allowed": true,
+      "passed": true
+    },
+    {
+      "fixture_id": "fixture.valid.evidence-to-review-ready",
+      "expected_allowed": true,
+      "actual_allowed": true,
+      "passed": true
+    },
+    {
+      "fixture_id": "fixture.invalid.missing-launch",
+      "expected_allowed": false,
+      "actual_allowed": false,
+      "passed": true
+    },
+    {
+      "fixture_id": "fixture.invalid.ready-to-written",
+      "expected_allowed": false,
+      "actual_allowed": false,
+      "passed": true
+    },
+    {
+      "fixture_id": "fixture.invalid.tests-to-review",
+      "expected_allowed": false,
+      "actual_allowed": false,
+      "passed": true
+    },
+    {
+      "fixture_id": "fixture.invalid.graph-sync-to-canonical",
+      "expected_allowed": false,
+      "actual_allowed": false,
+      "passed": true
+    },
+    {
+      "fixture_id": "fixture.invalid.release-without-evidence",
+      "expected_allowed": false,
+      "actual_allowed": false,
+      "passed": true
+    }
+  ]
+}

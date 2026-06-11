@@ -1,0 +1,30 @@
+[
+  {
+    "id": "compact",
+    "max_hops": 1,
+    "include_gate_objects": true,
+    "include_risk_objects": true,
+    "include_evidence_refs": false,
+    "intended_use": "Planning a narrow next action.",
+    "not_sufficient_for": "Publication claims, release decisions or broad architecture review."
+  },
+  {
+    "id": "standard",
+    "max_hops": 2,
+    "include_gate_objects": true,
+    "include_risk_objects": true,
+    "include_evidence_refs": true,
+    "intended_use": "Executing a bounded implementation or review task.",
+    "not_sufficient_for": "Production release without runtime evidence."
+  },
+  {
+    "id": "broad",
+    "max_hops": 3,
+    "include_gate_objects": true,
+    "include_risk_objects": true,
+    "include_evidence_refs": true,
+    "intended_use": "Architecture review, method inspection and cross-package analysis.",
+    "not_sufficient_for": "Independent validation or claims beyond the inspected corpus."
+  }
+]
+

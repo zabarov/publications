@@ -1,0 +1,14 @@
+{
+  "event_id": "smoke-partial-001",
+  "aggregate_status": "failed",
+  "mutates_state": false,
+  "checks": [
+    {"id":"core-smoke","status":"passed"},
+    {"id":"install-guard","status":"passed"},
+    {"id":"unit-suite","status":"failed","reason":"resource limit in synthetic fixture"}
+  ],
+  "claim_support": ["partial failures can be captured as evidence instead of hidden"],
+  "claim_limits": ["the event supports instrumentation analysis, not implementation success"],
+  "recommended_action": "developer_review"
+}
+

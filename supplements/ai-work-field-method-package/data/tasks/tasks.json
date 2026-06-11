@@ -1,0 +1,7 @@
+[
+  {"id":"task.launch-context","name":"Prepare Launch Context","target":"feature.guarded-apply","profile":"compact","baseline_context_units":640},
+  {"id":"task.transition-assessment","name":"Assess State Transition","target":"gate.launch-record","profile":"standard","baseline_context_units":720},
+  {"id":"task.evidence-summary","name":"Summarize Evidence Boundary","target":"gate.evidence","profile":"standard","baseline_context_units":680},
+  {"id":"task.expert-review-loop","name":"Process Expert Review Finding","target":"feature.expert-review","profile":"broad","baseline_context_units":860}
+]
+

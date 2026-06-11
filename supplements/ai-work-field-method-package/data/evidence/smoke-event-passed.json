@@ -1,0 +1,14 @@
+{
+  "event_id": "smoke-pass-001",
+  "aggregate_status": "passed",
+  "mutates_state": false,
+  "checks": [
+    {"id":"route-load","status":"passed"},
+    {"id":"policy-load","status":"passed"},
+    {"id":"graph-read","status":"passed"},
+    {"id":"dry-run-execution","status":"passed"}
+  ],
+  "claim_support": ["method components can be loaded in the synthetic fixture"],
+  "claim_limits": ["does not prove production readiness"]
+}
+

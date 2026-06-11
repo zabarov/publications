@@ -1,0 +1,12 @@
+[
+  {"id":"canonical_spec","authority":"source_truth","can_change_state":true,"requires_review":true},
+  {"id":"human_specification","authority":"input_evidence","can_change_state":false,"requires_review":true},
+  {"id":"implementation_plan","authority":"derived_plan","can_change_state":false,"requires_review":true},
+  {"id":"launch_record","authority":"execution_permission","can_change_state":true,"requires_review":false},
+  {"id":"coding_evidence_package","authority":"execution_evidence","can_change_state":false,"requires_review":true},
+  {"id":"graph_sync_proposal","authority":"proposal","can_change_state":false,"requires_review":true},
+  {"id":"review_result","authority":"quality_decision","can_change_state":true,"requires_review":false},
+  {"id":"runtime_feedback_record","authority":"observed_signal","can_change_state":false,"requires_review":true},
+  {"id":"kaizen_review_report","authority":"method_improvement_proposal","can_change_state":false,"requires_review":true}
+]
+

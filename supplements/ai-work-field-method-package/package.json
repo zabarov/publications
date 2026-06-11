@@ -1,0 +1,12 @@
+{
+  "name": "ai-work-field-method-package",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public-safe synthetic method-inspection package for the AI Work Field Model.",
+  "license": "CC-BY-4.0",
+  "scripts": {
+    "test": "node scripts/run-all.js",
+    "summarize": "node scripts/run-all.js"
+  }
+}
+

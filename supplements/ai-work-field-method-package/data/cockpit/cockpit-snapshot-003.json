@@ -1,0 +1,13 @@
+{
+  "snapshot_id": "cockpit-003",
+  "status_cap": "review_return_required",
+  "package_count": 7,
+  "feature_count": 13,
+  "relation_count": 30,
+  "readiness_score": 0.69,
+  "evidence_completeness": 0.72,
+  "transition_validity": 0.78,
+  "production_release_allowed": false,
+  "notes": ["Synthetic partial failure reduces operational status while preserving evidence value."]
+}
+

@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-06-11T18:12:11.826Z",
+  "package": "ai-work-field-method-package",
+  "rows": [
+    {
+      "task_id": "task.launch-context",
+      "baseline_context_units": 640,
+      "graph_context_units": 260,
+      "reduction_percent": 59.38
+    },
+    {
+      "task_id": "task.transition-assessment",
+      "baseline_context_units": 720,
+      "graph_context_units": 310,
+      "reduction_percent": 56.94
+    },
+    {
+      "task_id": "task.evidence-summary",
+      "baseline_context_units": 680,
+      "graph_context_units": 330,
+      "reduction_percent": 51.47
+    },
+    {
+      "task_id": "task.expert-review-loop",
+      "baseline_context_units": 860,
+      "graph_context_units": 420,
+      "reduction_percent": 51.16
+    }
+  ],
+  "mean_reduction_percent": 54.74
+}

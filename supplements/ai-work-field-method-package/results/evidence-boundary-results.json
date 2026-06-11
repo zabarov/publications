@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-11T18:12:11.924Z",
+  "claim_count": 4,
+  "supported_claims": 3,
+  "unsupported_claims": 1,
+  "boundaries": [
+    "synthetic package",
+    "method inspection only",
+    "no independent validation",
+    "no production-quality claim"
+  ],
+  "partial_failure_status": "failed",
+  "boundary_passed": true
+}

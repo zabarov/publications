@@ -1,0 +1,13 @@
+{
+  "snapshot_id": "cockpit-002",
+  "status_cap": "developer_testable_foundation",
+  "package_count": 7,
+  "feature_count": 13,
+  "relation_count": 30,
+  "readiness_score": 0.74,
+  "evidence_completeness": 0.67,
+  "transition_validity": 0.86,
+  "production_release_allowed": false,
+  "notes": ["Synthetic implementation evidence exists, but release evidence is incomplete."]
+}
+

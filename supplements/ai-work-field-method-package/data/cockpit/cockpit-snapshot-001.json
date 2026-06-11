@@ -1,0 +1,13 @@
+{
+  "snapshot_id": "cockpit-001",
+  "status_cap": "specification_ready",
+  "package_count": 7,
+  "feature_count": 13,
+  "relation_count": 30,
+  "readiness_score": 0.62,
+  "evidence_completeness": 0.48,
+  "transition_validity": 0.71,
+  "production_release_allowed": false,
+  "notes": ["Synthetic baseline snapshot before implementation evidence."]
+}
+

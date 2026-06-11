@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-06-11T18:12:12.020Z",
+  "finding_count": 4,
+  "mechanism_count": 4,
+  "all_findings_have_mechanisms": true,
+  "rows": [
+    {
+      "finding_id": "finding.context-gap",
+      "severity": "medium",
+      "prevention_mechanism": "context_neighborhood_check",
+      "mechanism_defined": true
+    },
+    {
+      "finding_id": "finding.permission-gap",
+      "severity": "high",
+      "prevention_mechanism": "write_boundary_gate",
+      "mechanism_defined": true
+    },
+    {
+      "finding_id": "finding.test-evidence-gap",
+      "severity": "high",
+      "prevention_mechanism": "evidence_type_classifier",
+      "mechanism_defined": true
+    },
+    {
+      "finding_id": "finding.method-drift",
+      "severity": "medium",
+      "prevention_mechanism": "kaizen_return_loop",
+      "mechanism_defined": true
+    }
+  ]
+}

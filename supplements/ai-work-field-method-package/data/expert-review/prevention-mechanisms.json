@@ -1,0 +1,7 @@
+[
+  {"id":"context_neighborhood_check","purpose":"Ensure selected context includes required adjacent dependencies.","inputs":["task object","relations","profile"],"outputs":["missing-context warnings"]},
+  {"id":"write_boundary_gate","purpose":"Prevent generated plans from implying unauthorized writes.","inputs":["launch record","allowed files","artifact roles"],"outputs":["permit or block"]},
+  {"id":"evidence_type_classifier","purpose":"Separate instrumentation, test, release and claim evidence.","inputs":["evidence package","claim list"],"outputs":["evidence boundary report"]},
+  {"id":"kaizen_return_loop","purpose":"Convert repeated findings into method-improvement proposals.","inputs":["review findings","runtime feedback"],"outputs":["method proposal"]}
+]
+

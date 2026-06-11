@@ -1,0 +1,16 @@
+{
+  "package_id": "evidence-package-001",
+  "claims": [
+    {"id":"claim.context-projection","text":"A task-specific context pack can be derived from a graph fixture.","evidence_refs":["ev.context-reduction"],"status":"supported"},
+    {"id":"claim.transition-gating","text":"Invalid process transitions can be blocked by explicit fixture rules.","evidence_refs":["ev.transition-fixtures"],"status":"supported"},
+    {"id":"claim.quality-loop","text":"Expert findings can be converted into method-improvement proposals.","evidence_refs":["ev.expert-review"],"status":"supported"},
+    {"id":"claim.production-success","text":"The method proves production-quality AI-generated code.","evidence_refs":[],"status":"unsupported"}
+  ],
+  "boundaries": [
+    "synthetic package",
+    "method inspection only",
+    "no independent validation",
+    "no production-quality claim"
+  ]
+}
+

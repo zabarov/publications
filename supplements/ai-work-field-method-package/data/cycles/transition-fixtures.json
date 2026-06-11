@@ -1,0 +1,10 @@
+[
+  {"id":"fixture.valid.ready-to-coding-started","from":"ready_to_code","to":"coding_started","evidence":["launch_record","allowed_files"],"expected_allowed":true},
+  {"id":"fixture.valid.evidence-to-review-ready","from":"coding_evidence_collected","to":"review_ready","evidence":["test_summary","changed_files","risk_summary"],"expected_allowed":true},
+  {"id":"fixture.invalid.missing-launch","from":"ready_to_code","to":"coding_started","evidence":["allowed_files"],"expected_allowed":false,"expected_reason":"missing launch_record"},
+  {"id":"fixture.invalid.ready-to-written","from":"ready_to_code","to":"code_written","evidence":["summary_only"],"expected_allowed":false,"expected_reason":"skips execution state"},
+  {"id":"fixture.invalid.tests-to-review","from":"tests_failed","to":"review_approved","evidence":["failed_test_log"],"expected_allowed":false,"expected_reason":"failed tests require review return"},
+  {"id":"fixture.invalid.graph-sync-to-canonical","from":"graph_sync_proposed","to":"canonical_updated","evidence":["proposal_only"],"expected_allowed":false,"expected_reason":"proposal cannot update canonical graph"},
+  {"id":"fixture.invalid.release-without-evidence","from":"review_ready","to":"released","evidence":["summary_only"],"expected_allowed":false,"expected_reason":"missing release evidence"}
+]
+
