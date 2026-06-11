@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "execution_id": "awf-pilot-004-expert-review-loop-execution",
+  "fixture_id": "awf-pilot-004-expert-review-loop",
+  "execution_mode": "internal_non_independent_pilot",
+  "condition_outputs": {
+    "text_first_baseline": {
+      "summary": "The baseline condition captures the expert comment and suggests a correction, but it does not keep raw opinion, failure-mode classification, prevention mechanism and reviewed proposal boundary fully separate.",
+      "detected_state": "expert-review-processed-with-review-corrections",
+      "boundary_statement": "Review processing only."
+    },
+    "graph_field_guided": {
+      "summary": "The graph-field condition classifies the finding, maps it to a prevention mechanism and keeps the improvement as a reviewed proposal rather than a direct canonical change.",
+      "detected_state": "expert-review-classified-pending-prevention-proposal",
+      "boundary_statement": "Method-improvement proposal only; no independent validation claim."
+    }
+  },
+  "scoring": {
+    "text_first_baseline": {
+      "required_object_recall": 0.75,
+      "required_relation_recall": 0.67,
+      "critical_omission_count": 1,
+      "invalid_transition_detected": false,
+      "unsupported_claim_count": 1,
+      "handoff_state_match": false,
+      "review_correction_count": 2,
+      "score": "pilot-fail"
+    },
+    "graph_field_guided": {
+      "required_object_recall": 1,
+      "required_relation_recall": 1,
+      "critical_omission_count": 0,
+      "invalid_transition_detected": true,
+      "unsupported_claim_count": 0,
+      "handoff_state_match": true,
+      "review_correction_count": 0,
+      "score": "pilot-pass"
+    }
+  },
+  "reviewer": {
+    "mode": "author_non_independent_review",
+    "independent": false,
+    "notes": [
+      "Baseline condition needs reviewer correction to separate raw opinion from durable prevention mechanism.",
+      "Baseline condition risks treating expert review as stronger evidence than it supports.",
+      "Graph-field condition preserves classification, prevention mapping and reviewed proposal boundary.",
+      "Graph-field condition keeps canonical update outside the direct review-processing action."
+    ]
+  },
+  "verdict": "pilot-pass",
+  "claim_boundary": "This execution record supports only internal non-independent pilot evidence for one expert-review-loop fixture. It does not support general effectiveness, production quality or independent validation claims."
+}
+

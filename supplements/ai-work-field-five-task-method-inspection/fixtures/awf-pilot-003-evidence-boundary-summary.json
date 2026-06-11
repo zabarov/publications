@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "awf-pilot-003-evidence-boundary-summary",
+  "task_objective": "Summarize an AI-assisted evidence package while distinguishing supported claims, unsupported production-quality claims and explicit limitations.",
+  "conditions": {
+    "text_first_baseline": {
+      "context_units": 680,
+      "input_summary": "Broad text bundle from evidence notes, smoke outputs, review comments and implementation summaries.",
+      "source_classes": [
+        "evidence notes",
+        "smoke outputs",
+        "review comments",
+        "implementation summaries"
+      ],
+      "output_summary": "See execution record."
+    },
+    "graph_field_guided": {
+      "context_units": 330,
+      "selected_objects": [
+        "gate.evidence",
+        "feature.expert-review",
+        "risk.unsupported-claim",
+        "ev.evidence-package"
+      ],
+      "selected_relations": [
+        "rel.020",
+        "rel.023"
+      ],
+      "gates": [
+        "evidence type must support the claim",
+        "unsupported production-quality claims must be flagged",
+        "limitations must be preserved",
+        "review findings must remain distinct from independent validation"
+      ],
+      "output_summary": "See execution record."
+    }
+  },
+  "expected": {
+    "required_objects": [
+      "gate.evidence",
+      "feature.expert-review",
+      "risk.unsupported-claim",
+      "ev.evidence-package"
+    ],
+    "required_relations": [
+      "rel.020",
+      "rel.023"
+    ],
+    "transition_boundary": "evidence summary may classify claims but may not promote pilot evidence into production-quality validation",
+    "evidence_boundary": "summary may report supported pilot claims and unsupported claims; it may not claim independent validation or production readiness",
+    "next_state": "evidence-boundary-summarized-pending-review"
+  },
+  "scoring": {
+    "invalid_transition_detected": "see execution record",
+    "unsupported_claim_count": "see execution record",
+    "handoff_state_match": "see execution record",
+    "review_correction_count": "see execution record"
+  },
+  "limitations": [
+    "Fixture seed reuses public synthetic method-inspection data.",
+    "Execution scoring is stored separately in the execution record.",
+    "Reviewer scoring is non-independent until an external or separated reviewer is added."
+  ]
+}
+

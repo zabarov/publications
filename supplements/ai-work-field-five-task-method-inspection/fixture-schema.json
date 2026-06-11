@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "artifact": "ai_work_field_controlled_measurement_fixture",
+  "required_top_level_fields": [
+    "fixture_id",
+    "task_objective",
+    "conditions",
+    "expected",
+    "scoring",
+    "limitations"
+  ],
+  "fields": {
+    "fixture_id": "Stable public-safe task-pair identifier.",
+    "task_objective": "The same task objective used by both conditions.",
+    "conditions": {
+      "text_first_baseline": {
+        "context_units": "Normalized size of the broad text-first input.",
+        "input_summary": "Public-safe summary of baseline input.",
+        "source_classes": "Document or artifact classes used in baseline.",
+        "output_summary": "Result generated or expected under baseline condition."
+      },
+      "graph_field_guided": {
+        "context_units": "Normalized size of graph-field context pack.",
+        "selected_objects": "Graph objects selected for the task.",
+        "selected_relations": "Relations selected for the task.",
+        "gates": "Relevant transition, evidence or permission gates.",
+        "output_summary": "Result generated or expected under graph condition."
+      }
+    },
+    "expected": {
+      "required_objects": "Objects that should be present for a correct task decision.",
+      "required_relations": "Relations that should be present for a correct task decision.",
+      "transition_boundary": "Allowed or blocked transition state.",
+      "evidence_boundary": "What the task output may claim.",
+      "next_state": "Expected durable workflow or handoff state."
+    },
+    "scoring": {
+      "context_reduction_percent": "Calculated reduction between conditions.",
+      "required_object_recall": "Required object recall in graph condition.",
+      "required_relation_recall": "Required relation recall in graph condition.",
+      "critical_omission_count": "Missing decision-critical elements.",
+      "invalid_transition_detected": "Boolean or not_applicable.",
+      "unsupported_claim_count": "Claims exceeding evidence boundary.",
+      "handoff_state_match": "Boolean or scored match.",
+      "review_correction_count": "Corrections needed after review."
+    },
+    "limitations": "Fixture-specific limitations and non-independence notes."
+  }
+}
+

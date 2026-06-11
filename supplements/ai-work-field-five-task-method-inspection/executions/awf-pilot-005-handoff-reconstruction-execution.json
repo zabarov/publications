@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "execution_id": "awf-pilot-005-handoff-reconstruction-execution",
+  "fixture_id": "awf-pilot-005-handoff-reconstruction",
+  "execution_mode": "internal_non_independent_pilot",
+  "condition_outputs": {
+    "text_first_baseline": {
+      "summary": "The baseline condition reconstructs part of the project history but needs correction to distinguish completed workflow state from next-track recommendations. It risks following stale chat context instead of durable workflow state.",
+      "detected_state": "handoff-reconstructed-with-review-corrections",
+      "boundary_statement": "Handoff reconstruction only."
+    },
+    "graph_field_guided": {
+      "summary": "The graph-field condition identifies the current workflow state, last completed batch, claim boundary and next safe action. It keeps stale context risk visible and preserves the required gate sequence.",
+      "detected_state": "handoff-reconstructed-ready-for-next-batch",
+      "boundary_statement": "Durable state reconstruction only; no skipped gate or completion claim."
+    }
+  },
+  "scoring": {
+    "text_first_baseline": {
+      "required_object_recall": 0.75,
+      "required_relation_recall": 0.67,
+      "critical_omission_count": 1,
+      "invalid_transition_detected": false,
+      "unsupported_claim_count": 1,
+      "handoff_state_match": false,
+      "review_correction_count": 2,
+      "score": "pilot-fail"
+    },
+    "graph_field_guided": {
+      "required_object_recall": 1,
+      "required_relation_recall": 1,
+      "critical_omission_count": 0,
+      "invalid_transition_detected": true,
+      "unsupported_claim_count": 0,
+      "handoff_state_match": true,
+      "review_correction_count": 0,
+      "score": "pilot-pass"
+    }
+  },
+  "reviewer": {
+    "mode": "author_non_independent_review",
+    "independent": false,
+    "notes": [
+      "Baseline condition needs reviewer correction to separate durable workflow state from chat-derived continuation.",
+      "Baseline condition risks skipping a gate by following stale context.",
+      "Graph-field condition preserves workflow state, claim boundary and next safe action.",
+      "Graph-field condition keeps handoff reconstruction separate from execution."
+    ]
+  },
+  "verdict": "pilot-pass",
+  "claim_boundary": "This execution record supports only internal non-independent pilot evidence for one handoff-reconstruction fixture. It does not support general effectiveness, production quality or independent validation claims."
+}
+

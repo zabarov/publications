@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "execution_id": "awf-pilot-003-evidence-boundary-summary-execution",
+  "fixture_id": "awf-pilot-003-evidence-boundary-summary",
+  "execution_mode": "internal_non_independent_pilot",
+  "condition_outputs": {
+    "text_first_baseline": {
+      "summary": "The baseline condition summarizes evidence but mixes smoke evidence, review interpretation and broader quality language. It needs reviewer correction to separate supported pilot claims from an unsupported production-quality claim.",
+      "detected_state": "evidence-summary-prepared-with-review-corrections",
+      "boundary_statement": "Evidence summary only."
+    },
+    "graph_field_guided": {
+      "summary": "The graph-field condition centers the evidence gate, unsupported-claim risk and evidence package. It flags the unsupported production-quality claim and keeps limitations explicit.",
+      "detected_state": "evidence-boundary-summarized-pending-review",
+      "boundary_statement": "Supported pilot evidence only; no independent validation or production-readiness claim."
+    }
+  },
+  "scoring": {
+    "text_first_baseline": {
+      "required_object_recall": 0.75,
+      "required_relation_recall": 0.5,
+      "critical_omission_count": 1,
+      "invalid_transition_detected": "not_applicable",
+      "unsupported_claim_count": 1,
+      "handoff_state_match": false,
+      "review_correction_count": 2,
+      "score": "pilot-fail"
+    },
+    "graph_field_guided": {
+      "required_object_recall": 1,
+      "required_relation_recall": 1,
+      "critical_omission_count": 0,
+      "invalid_transition_detected": "not_applicable",
+      "unsupported_claim_count": 0,
+      "handoff_state_match": true,
+      "review_correction_count": 0,
+      "score": "pilot-pass"
+    }
+  },
+  "reviewer": {
+    "mode": "author_non_independent_review",
+    "independent": false,
+    "notes": [
+      "Baseline condition needs reviewer correction for unsupported production-quality wording.",
+      "Baseline condition does not keep evidence type and claim strength sufficiently separate.",
+      "Graph-field condition preserves unsupported-claim risk and evidence gate.",
+      "Graph-field condition keeps independent validation outside the claim boundary."
+    ]
+  },
+  "verdict": "pilot-pass",
+  "claim_boundary": "This execution record supports only internal non-independent pilot evidence for one evidence-boundary fixture. It does not support general effectiveness, production quality or independent validation claims."
+}
+

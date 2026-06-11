@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "artifact": "ai_work_field_pilot_execution_record",
+  "required_top_level_fields": [
+    "execution_id",
+    "fixture_id",
+    "execution_mode",
+    "condition_outputs",
+    "scoring",
+    "reviewer",
+    "verdict",
+    "claim_boundary"
+  ],
+  "fields": {
+    "execution_id": "Stable execution record identifier.",
+    "fixture_id": "Fixture identifier being executed.",
+    "execution_mode": "Mode such as internal_non_independent_pilot.",
+    "condition_outputs": {
+      "text_first_baseline": "Output summary for broad text-first condition.",
+      "graph_field_guided": "Output summary for graph-field-guided condition."
+    },
+    "scoring": {
+      "text_first_baseline": "Rubric score for baseline condition.",
+      "graph_field_guided": "Rubric score for graph condition."
+    },
+    "reviewer": "Reviewer mode, reviewer independence and review notes.",
+    "verdict": "Overall pilot verdict under the scoring rubric.",
+    "claim_boundary": "Public-safe statement of what this record can and cannot support."
+  }
+}
+

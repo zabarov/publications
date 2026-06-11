@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "awf-pilot-002-transition-assessment",
+  "task_objective": "Assess whether a guarded implementation workflow may move from launch preparation into coding start without accepting a false state transition.",
+  "conditions": {
+    "text_first_baseline": {
+      "context_units": 720,
+      "input_summary": "Broad text bundle from workflow notes, launch criteria, process-transition notes and implementation guidance.",
+      "source_classes": [
+        "workflow notes",
+        "launch criteria",
+        "process-transition notes",
+        "implementation guidance"
+      ],
+      "output_summary": "See execution record."
+    },
+    "graph_field_guided": {
+      "context_units": 310,
+      "selected_objects": [
+        "gate.launch-record",
+        "feature.guarded-apply",
+        "risk.false-transition",
+        "ev.transition-fixtures"
+      ],
+      "selected_relations": [
+        "rel.016",
+        "rel.017",
+        "rel.022"
+      ],
+      "gates": [
+        "launch record required",
+        "false transition must be rejected",
+        "transition fixture evidence required",
+        "coding start only after launch state is valid"
+      ],
+      "output_summary": "See execution record."
+    }
+  },
+  "expected": {
+    "required_objects": [
+      "gate.launch-record",
+      "feature.guarded-apply",
+      "risk.false-transition",
+      "ev.transition-fixtures"
+    ],
+    "required_relations": [
+      "rel.016",
+      "rel.017",
+      "rel.022"
+    ],
+    "transition_boundary": "ready-to-code or planning state must not be promoted to implementation-written without a valid launch record and transition evidence",
+    "evidence_boundary": "transition assessment may permit, block or request evidence; it may not claim that implementation has been completed",
+    "next_state": "transition-assessed-pending-valid-launch-or-coding-start"
+  },
+  "scoring": {
+    "invalid_transition_detected": "see execution record",
+    "unsupported_claim_count": "see execution record",
+    "handoff_state_match": "see execution record",
+    "review_correction_count": "see execution record"
+  },
+  "limitations": [
+    "Fixture seed reuses public synthetic method-inspection data.",
+    "Execution scoring is stored separately in the execution record.",
+    "Reviewer scoring is non-independent until an external or separated reviewer is added."
+  ]
+}
+

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "awf-pilot-005-handoff-reconstruction",
+  "task_objective": "Reconstruct current project state, blocker boundary and next safe action from durable workflow and evidence artifacts.",
+  "conditions": {
+    "text_first_baseline": {
+      "context_units": 760,
+      "input_summary": "Broad text bundle from chat summaries, workflow notes, status notes and task history.",
+      "source_classes": [
+        "chat summaries",
+        "workflow notes",
+        "status notes",
+        "task history"
+      ],
+      "output_summary": "See execution record."
+    },
+    "graph_field_guided": {
+      "context_units": 340,
+      "selected_objects": [
+        "workflow.current-state",
+        "handoff.next-safe-action",
+        "gate.claim-boundary",
+        "risk.stale-context"
+      ],
+      "selected_relations": [
+        "rel.handoff.001",
+        "rel.handoff.002",
+        "rel.handoff.003"
+      ],
+      "gates": [
+        "current workflow must be identified",
+        "last completed batch must be identified",
+        "next safe action must match durable state",
+        "stale or chat-only context must not override workflow state"
+      ],
+      "output_summary": "See execution record."
+    }
+  },
+  "expected": {
+    "required_objects": [
+      "workflow.current-state",
+      "handoff.next-safe-action",
+      "gate.claim-boundary",
+      "risk.stale-context"
+    ],
+    "required_relations": [
+      "rel.handoff.001",
+      "rel.handoff.002",
+      "rel.handoff.003"
+    ],
+    "transition_boundary": "handoff reconstruction may set next action but may not skip required gates or claim completed work without evidence",
+    "evidence_boundary": "handoff output may summarize durable state and next action; it may not treat chat memory as stronger than workflow evidence",
+    "next_state": "handoff-reconstructed-ready-for-next-batch"
+  },
+  "scoring": {
+    "invalid_transition_detected": "see execution record",
+    "unsupported_claim_count": "see execution record",
+    "handoff_state_match": "see execution record",
+    "review_correction_count": "see execution record"
+  },
+  "limitations": [
+    "Fixture is public-safe and abstracts the concrete project handoff.",
+    "Execution scoring is stored separately in the execution record.",
+    "Reviewer scoring is non-independent until an external or separated reviewer is added."
+  ]
+}
+

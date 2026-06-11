@@ -1,0 +1,10 @@
+{
+  "name": "ai-work-field-five-task-method-inspection",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public-safe method-inspection package for the AI Work Field five-task internal pilot case study.",
+  "scripts": {
+    "test": "node scripts/summarize-controlled-measurement.js"
+  },
+  "license": "CC-BY-4.0"
+}

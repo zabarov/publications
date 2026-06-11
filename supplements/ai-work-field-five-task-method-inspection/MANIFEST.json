@@ -1,0 +1,37 @@
+{
+  "package": "ai-work-field-five-task-method-inspection-package",
+  "version": "0.1.0",
+  "status": "local_package_candidate",
+  "created_at": "2026-06-12",
+  "purpose": "Public-safe method inspection and reproducibility package for the AI Work Field five-task internal pilot case study.",
+  "evidence_boundary": "Internal author-scored pilot data. The package enables method inspection and summary recalculation; it does not constitute independent validation.",
+  "included_paths": [
+    "README.md",
+    "MANIFEST.json",
+    "LICENSE",
+    "fixture-schema.json",
+    "execution-record-schema.json",
+    "protocol.md",
+    "scoring-rubric.md",
+    "fixtures/",
+    "executions/",
+    "results/controlled-measurement-summary.json",
+    "scripts/summarize-controlled-measurement.js"
+  ],
+  "expected_counts": {
+    "fixtures": 5,
+    "execution_records": 5
+  },
+  "expected_summary": {
+    "mean_context_reduction_percent": 54.84,
+    "graph_pilot_pass_count": 5,
+    "baseline_pilot_fail_count": 5,
+    "reviewer_modes": [
+      "author_non_independent_review"
+    ]
+  },
+  "reproduce": {
+    "command": "node scripts/summarize-controlled-measurement.js",
+    "expected_output": "results/controlled-measurement-summary.json"
+  }
+}

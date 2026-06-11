@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "execution_id": "awf-pilot-002-transition-assessment-execution",
+  "fixture_id": "awf-pilot-002-transition-assessment",
+  "execution_mode": "internal_non_independent_pilot",
+  "condition_outputs": {
+    "text_first_baseline": {
+      "summary": "The baseline condition identifies that launch information is relevant, but it does not preserve the transition-fixture evidence boundary clearly enough and risks allowing movement toward implementation-written from an insufficient state.",
+      "detected_state": "transition-assessed-with-review-corrections",
+      "boundary_statement": "Transition assessment only."
+    },
+    "graph_field_guided": {
+      "summary": "The graph-field condition centers the launch-record gate, guarded-apply feature, false-transition risk and transition fixtures. It rejects the invalid promotion and keeps the next state at pending valid launch or coding start.",
+      "detected_state": "transition-assessed-pending-valid-launch-or-coding-start",
+      "boundary_statement": "Transition assessment only; no implementation completion claim."
+    }
+  },
+  "scoring": {
+    "text_first_baseline": {
+      "required_object_recall": 0.75,
+      "required_relation_recall": 0.67,
+      "critical_omission_count": 1,
+      "invalid_transition_detected": false,
+      "unsupported_claim_count": 1,
+      "handoff_state_match": false,
+      "review_correction_count": 2,
+      "score": "pilot-fail"
+    },
+    "graph_field_guided": {
+      "required_object_recall": 1,
+      "required_relation_recall": 1,
+      "critical_omission_count": 0,
+      "invalid_transition_detected": true,
+      "unsupported_claim_count": 0,
+      "handoff_state_match": true,
+      "review_correction_count": 0,
+      "score": "pilot-pass"
+    }
+  },
+  "reviewer": {
+    "mode": "author_non_independent_review",
+    "independent": false,
+    "notes": [
+      "Baseline condition needs reviewer correction for transition-fixture evidence.",
+      "Baseline condition risks permitting a false state promotion.",
+      "Graph-field condition preserves required objects and relations for this pilot fixture.",
+      "Graph-field condition keeps implementation-completion claims outside the evidence boundary."
+    ]
+  },
+  "verdict": "pilot-pass",
+  "claim_boundary": "This execution record supports only internal non-independent pilot evidence for one transition-assessment fixture. It does not support general effectiveness, production quality or independent validation claims."
+}
+

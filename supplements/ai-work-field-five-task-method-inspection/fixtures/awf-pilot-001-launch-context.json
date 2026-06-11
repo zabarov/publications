@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "awf-pilot-001-launch-context",
+  "task_objective": "Prepare context for launching a guarded implementation batch while preserving the allowed action boundary, required launch evidence and false-transition risk.",
+  "conditions": {
+    "text_first_baseline": {
+      "context_units": 640,
+      "input_summary": "Broad text bundle from package notes, process notes and implementation guidance.",
+      "source_classes": [
+        "package notes",
+        "process notes",
+        "implementation guidance"
+      ],
+      "output_summary": "Pending execution."
+    },
+    "graph_field_guided": {
+      "context_units": 260,
+      "selected_objects": [
+        "feature.guarded-apply",
+        "gate.launch-record",
+        "gate.allowed-files",
+        "risk.false-transition"
+      ],
+      "selected_relations": [
+        "rel.016",
+        "rel.017",
+        "rel.018",
+        "rel.022"
+      ],
+      "gates": [
+        "launch record present",
+        "allowed files declared",
+        "transition state valid",
+        "evidence boundary declared before implementation"
+      ],
+      "output_summary": "Pending execution."
+    }
+  },
+  "expected": {
+    "required_objects": [
+      "feature.guarded-apply",
+      "gate.launch-record",
+      "gate.allowed-files",
+      "risk.false-transition"
+    ],
+    "required_relations": [
+      "rel.016",
+      "rel.017",
+      "rel.018",
+      "rel.022"
+    ],
+    "transition_boundary": "implementation must remain blocked until launch evidence is present",
+    "evidence_boundary": "context preparation may identify missing launch evidence but may not claim implementation completion, production readiness or release readiness",
+    "next_state": "launch-context-prepared-pending-execution"
+  },
+  "scoring": {
+    "invalid_transition_detected": "see execution record",
+    "unsupported_claim_count": "see execution record",
+    "handoff_state_match": "see execution record",
+    "review_correction_count": "see execution record"
+  },
+  "limitations": [
+    "Fixture seed reuses public synthetic method-inspection data.",
+    "Execution scoring is stored separately in the execution record.",
+    "Reviewer scoring is non-independent until an external reviewer is added."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "execution_id": "awf-pilot-001-launch-context-execution",
+  "fixture_id": "awf-pilot-001-launch-context",
+  "execution_mode": "internal_non_independent_pilot",
+  "condition_outputs": {
+    "text_first_baseline": {
+      "summary": "The baseline condition prepares launch context from a broad text bundle. It identifies implementation planning as the next activity but leaves the allowed-files boundary and false-transition risk less explicit.",
+      "detected_state": "launch-context-prepared-with-review-corrections",
+      "boundary_statement": "Context preparation only."
+    },
+    "graph_field_guided": {
+      "summary": "The graph-field condition prepares launch context around guarded apply, launch record, allowed-files gate and false-transition risk. It blocks implementation movement until launch evidence and allowed artifact boundaries are present.",
+      "detected_state": "launch-context-prepared-pending-execution",
+      "boundary_statement": "Context preparation only; no implementation, production or release claim."
+    }
+  },
+  "scoring": {
+    "text_first_baseline": {
+      "required_object_recall": 0.75,
+      "required_relation_recall": 0.5,
+      "critical_omission_count": 2,
+      "invalid_transition_detected": false,
+      "unsupported_claim_count": 1,
+      "handoff_state_match": false,
+      "review_correction_count": 3,
+      "score": "pilot-fail"
+    },
+    "graph_field_guided": {
+      "required_object_recall": 1,
+      "required_relation_recall": 1,
+      "critical_omission_count": 0,
+      "invalid_transition_detected": true,
+      "unsupported_claim_count": 0,
+      "handoff_state_match": true,
+      "review_correction_count": 0,
+      "score": "pilot-pass"
+    }
+  },
+  "reviewer": {
+    "mode": "author_non_independent_review",
+    "independent": false,
+    "notes": [
+      "Baseline condition needs reviewer correction for allowed-files boundary.",
+      "Baseline condition needs reviewer correction for false-transition risk.",
+      "Baseline condition risks treating launch context as implementation permission.",
+      "Graph-field condition preserves the required objects and relations in this pilot fixture."
+    ]
+  },
+  "verdict": "pilot-pass",
+  "claim_boundary": "This execution record supports only internal non-independent pilot evidence for one fixture. It does not support general effectiveness, production quality or independent validation claims."
+}
+

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "awf-pilot-004-expert-review-loop",
+  "task_objective": "Process an expert-review finding into a classified failure mode, prevention mechanism and reviewed improvement path.",
+  "conditions": {
+    "text_first_baseline": {
+      "context_units": 860,
+      "input_summary": "Broad text bundle from review comments, implementation notes, process notes and improvement ideas.",
+      "source_classes": [
+        "review comments",
+        "implementation notes",
+        "process notes",
+        "improvement ideas"
+      ],
+      "output_summary": "See execution record."
+    },
+    "graph_field_guided": {
+      "context_units": 420,
+      "selected_objects": [
+        "feature.expert-review",
+        "feature.kaizen-loop",
+        "feature.context-pack",
+        "ev.expert-review"
+      ],
+      "selected_relations": [
+        "rel.025",
+        "rel.027",
+        "rel.029"
+      ],
+      "gates": [
+        "raw opinion must be classified before canonical update",
+        "prevention mechanism must map to a failure mode",
+        "improvement must enter as reviewed proposal",
+        "expert review remains design evidence unless independently validated"
+      ],
+      "output_summary": "See execution record."
+    }
+  },
+  "expected": {
+    "required_objects": [
+      "feature.expert-review",
+      "feature.kaizen-loop",
+      "feature.context-pack",
+      "ev.expert-review"
+    ],
+    "required_relations": [
+      "rel.025",
+      "rel.027",
+      "rel.029"
+    ],
+    "transition_boundary": "review finding may create a prevention proposal but may not directly mutate canonical method or graph truth",
+    "evidence_boundary": "expert review may support method improvement proposals; it is not independent validation by itself",
+    "next_state": "expert-review-classified-pending-prevention-proposal"
+  },
+  "scoring": {
+    "invalid_transition_detected": "see execution record",
+    "unsupported_claim_count": "see execution record",
+    "handoff_state_match": "see execution record",
+    "review_correction_count": "see execution record"
+  },
+  "limitations": [
+    "Fixture seed reuses public synthetic method-inspection data.",
+    "Execution scoring is stored separately in the execution record.",
+    "Reviewer scoring is non-independent until an external or separated reviewer is added."
+  ]
+}
+
