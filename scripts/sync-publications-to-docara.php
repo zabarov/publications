@@ -80,6 +80,7 @@ function writeSettings(string $dir, string $title): void
     file_put_contents($dir . '/.settings.php', $php);
 }
 
+removeDir($docaraRoot);
 ensureDir($docaraRoot);
 
 file_put_contents($docaraRoot . '/index.md', "---\n"

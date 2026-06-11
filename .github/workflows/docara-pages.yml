@@ -1,8 +1,8 @@
 name: Publish Docara Site
 
 on:
-  # Manual-only after launch. Add a push trigger only when automatic
-  # publishing is intentionally desired.
+  push:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
