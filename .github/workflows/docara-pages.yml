@@ -1,8 +1,8 @@
 name: Publish Docara Site
 
 on:
-  # Manual-only after launch. Add a push trigger only when automatic
-  # publishing is intentionally desired.
+  push:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -115,6 +115,20 @@ jobs:
               if updated != text:
                   path.write_text(updated, encoding="utf-8")
           PY
+
+      - name: Rebuild Pages search index
+        env:
+          DOCARA_PAGES_PREFIX: "auto"
+        run: |
+          python3 - <<'PY'
+          import os
+          repository = os.environ.get("GITHUB_REPOSITORY", "")
+          repo_name = repository.split("/", 1)[1] if "/" in repository else ""
+          prefix = "" if repo_name.endswith(".github.io") else f"/{repo_name}"
+          os.execvp("python3", ["python3", "scripts/rebuild-pages-search-index.py", "--root", "build_production", "--locale", "en", "--prefix", prefix])
+          PY
+          grep -q "SitePack" build_production/search-index_en.json
+          grep -q "Mirai Graph" build_production/search-index_en.json
 
       - name: Disable Jekyll
         run: touch build_production/.nojekyll
