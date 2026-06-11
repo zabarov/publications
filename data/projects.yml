@@ -1,0 +1,74 @@
+schema_version: "1.0.0"
+updated: "2026-06-12"
+
+projects:
+  - id: "sitepack"
+    status: "publication-kit-ready-release-cleanup-needed"
+    type: "open-standard"
+    title: "SitePack"
+    repository_url: "https://github.com/simai/sitepack"
+    local_path: "/Users/rim/Documents/GitHub/sitepack"
+    primary_language: "English"
+    license: "MIT"
+    public_role: "Open standard for packaging website data for backup, migration, validation, preview and import."
+    current_result: "A platform-neutral website package format with a specification, examples, registries and reference validators for Node.js and PHP."
+    gives_value:
+      - "Makes website export/import discussable as a format, not as one-off migration code."
+      - "Separates the portable core from platform adapters such as Bitrix, Larena, WordPress or custom systems."
+      - "Creates a validation target for archives, previews, importers and exporters."
+    public_boundary: "Publish the standard, examples, schemas and reference tools. Do not publish private adapters, customer packages, internal migration data or applied Bitrix implementation details."
+    readiness_notes: "Release-readiness audit completed on 2026-06-12. Core validation passes, but local tracked and untracked changes must be reviewed before a formal release announcement. Node dependency audit reports vulnerabilities; PHP validation passes with ServBay PHP/Composer but emits deprecation noise on PHP 8.4."
+    next_public_goal: "Review and stabilize SitePack release changes, then publish the introductory article and release note."
+    readiness_audit:
+      date: "2026-06-12"
+      result: "not_ready_for_announcement"
+      public_page: "publications/projects/sitepack/release-readiness/"
+      evidence:
+        - "make validate-all passes when PATH starts with /Applications/ServBay/bin and bundled Codex Node"
+        - "schema sync passes"
+        - "Node examples validation passes"
+        - "PHP examples validation passes with ServBay PHP/Composer"
+      blockers:
+        - "local tracked and untracked release changes need review"
+        - "npm audit reports 4 vulnerabilities in Node validator dependencies"
+        - "Composer/PHP 8.4 emits deprecation notices"
+    publication_kit:
+      status: "draft_ready_for_review"
+      public_page: "publications/projects/sitepack/publication-kit/"
+      materials:
+        - "publications/projects/sitepack/publication-kit/introductory-article/"
+        - "publications/projects/sitepack/publication-kit/release-note-v0.4.0-draft/"
+
+  - id: "mirai-graph"
+    status: "publication-kit-ready-alpha"
+    type: "open-standard-and-method"
+    title: "Mirai Graph"
+    repository_url: "https://github.com/zabarov/mirai-graph"
+    local_path: "/Users/rim/Documents/GitHub/mirai-graph"
+    primary_language: "English"
+    license: "MIT for code; CC-BY-4.0 for documentation, standard text and research materials"
+    public_role: "Evolutionary graph operating model for governed AI work, project control, evidence, readiness and controlled system growth."
+    current_result: "A public alpha repository with standard sections, schemas, examples, profiles, pilots, release notes, CLI validation commands and citation metadata."
+    gives_value:
+      - "Turns complex work into explicit graph state: objects, relations, evidence, readiness and gates."
+      - "Provides a public vocabulary for governed AI systems and human-AI operating processes."
+      - "Connects practical tooling with a research track without exposing private operational data."
+    public_boundary: "Publish the model, standard, schemas, synthetic examples, profiles, pilots and reproducibility notes. Do not publish private SIMAI routes, raw skill sources, internal logs, customer data or unpublished scientific claims."
+    readiness_notes: "Release-readiness audit completed on 2026-06-12. Full npm test passes. The repository is suitable for public alpha explanation, but current local changes should be reviewed before final announcement or release tagging."
+    next_public_goal: "Review the Mirai Graph article draft, then prepare the portfolio site for final publication review."
+    readiness_audit:
+      date: "2026-06-12"
+      result: "ready_for_public_alpha_explanation_after_diff_review"
+      public_page: "publications/projects/mirai-graph/release-readiness/"
+      evidence:
+        - "npm test passes"
+        - "package version is 0.1.0-alpha.11"
+        - "README, roadmap, changelog, releases, examples, profiles, pilots, CLI commands and citation metadata exist"
+      blockers:
+        - "local tracked and untracked release documentation changes need review before announcement"
+    publication_kit:
+      status: "draft_ready_for_review"
+      public_page: "publications/projects/mirai-graph/publication-kit/"
+      selected_workflow: "implementation-control loop"
+      materials:
+        - "publications/projects/mirai-graph/publication-kit/introductory-article/"

@@ -30,7 +30,7 @@ venues:
     suitable_for:
       - "conceptual essays"
       - "AI workflow retrospectives"
-      - "public-safe GrowGraph summaries"
+      - "public-safe Mirai Graph summaries"
     public_url: "https://medium.com/"
     author_guidelines_url: "https://help.medium.com/"
     notes: "Medium supports canonical links and imported stories; keep AI-assisted authorship transparent when relevant."

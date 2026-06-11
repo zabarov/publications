@@ -52,6 +52,22 @@
       "source_refs": [
         "data/article-roadmap.yml"
       ]
+    },
+    {
+      "id": "data-projects",
+      "kind": "metadata_source",
+      "lifecycle": "active",
+      "readiness": "usable",
+      "path": "data/projects.yml",
+      "owns": [
+        "public project records",
+        "project repository links",
+        "project public boundaries",
+        "project next goals"
+      ],
+      "source_refs": [
+        "data/projects.yml"
+      ]
     }
   ],
   "local_working_data": [
@@ -83,6 +99,7 @@
   "source_refs": [
     "data/publications.yml",
     "data/publication-venues.yml",
-    "data/article-roadmap.yml"
+    "data/article-roadmap.yml",
+    "data/projects.yml"
   ]
 }

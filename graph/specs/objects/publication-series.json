@@ -20,11 +20,11 @@
       ]
     },
     {
-      "id": "series-skill-federation-growgraph",
+      "id": "series-skill-federation-mirai_graph",
       "kind": "publication_series",
       "lifecycle": "planned",
       "readiness": "draft",
-      "title": "Skill Federation and GrowGraph",
+      "title": "Skill Federation and Mirai Graph",
       "scope": "Federation routing, Hybrid SOT, owner skills, graph/runtime split, action gates and process control.",
       "public_path": "publications/series/",
       "source_refs": [

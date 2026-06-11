@@ -8,6 +8,7 @@ links.
 
 | Date | Original title | English metadata title |
 | --- | --- | --- |
+| 2026-06-08 | [Один промпт разросся в регламент: как я разделяю ответственность внутри AI-навыка](https://habr.com/ru/articles/1044978/) | One Prompt Grew Into a Playbook: How I Split Responsibility Inside an AI Skill |
 | 2025-12-20 | [GPT как портретист: ассистент, который рисует как художник](https://habr.com/ru/articles/978746/) | GPT as a Portrait Artist: An Assistant That Draws Like an Artist |
 | 2025-12-07 | [Как написать код в два счёта: впрягаем Codex с GPT](https://habr.com/ru/articles/974268/) | Writing Code in No Time: Putting Codex and GPT to Work |
 | 2025-12-06 | [Как я делаю «снимок» проекта в JSON для ИИ и разворачиваю его обратно](https://habr.com/ru/articles/973962/) | How I Create a JSON Snapshot of a Project for AI and Restore It Back |

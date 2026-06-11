@@ -1,5 +1,5 @@
 schema_version: "1.0.0"
-updated: "2026-06-02"
+updated: "2026-06-08"
 
 series:
   - id: "skill-federation"
@@ -11,13 +11,23 @@ series:
 articles:
   - id: "expert-skill-consilium"
     series_id: "skill-federation"
-    status: "planned"
+    status: "published"
     title: "Expert Skills as a Consilium: Building Multi-Specialist AI Workflows"
-    primary_venue: "medium"
+    primary_venue: "habr"
     secondary_venues:
+      - "dev-to"
+      - "hackernoon"
       - "hashnode"
     languages:
+      - "ru"
       - "en"
+    published_url: "https://habr.com/ru/articles/1044978/"
+    published_at: "2026-06-08T12:30:51.000Z"
+    english_publications:
+      - venue: "dev-to"
+        url: "https://dev.to/zabarov/when-one-prompt-becomes-a-process-how-i-split-responsibility-inside-an-ai-skill-1055"
+        published_at: "2026-06-09"
+    original_title: "Один промпт разросся в регламент: как я разделяю ответственность внутри AI-навыка"
     summary: "How a skill can coordinate several specialist roles, why this is different from a single prompt, and what value it gives in review, planning and execution."
     public_safety_notes: "Use generalized examples; do not expose private specialist prompts or internal safe-write rules."
 
@@ -45,18 +55,18 @@ articles:
     summary: "A decision framework for choosing between a multi-specialist skill, a federated skill system and a simpler workflow."
     public_safety_notes: "Keep examples fictional or sanitized."
 
-  - id: "growgraph-hybrid-sot"
+  - id: "mirai-graph-hybrid-sot"
     series_id: "skill-federation"
     status: "planned"
-    title: "GrowGraph Hybrid SOT: Why Skills Need Graphs While Raw Sources Stay Authoritative"
+    title: "Mirai Graph Hybrid SOT: Why Skills Need Graphs While Raw Sources Stay Authoritative"
     primary_venue: "medium"
     secondary_venues:
       - "hashnode"
     languages:
       - "en"
     summary: "A public-safe explanation of graph-managed routing, capabilities, contracts, readiness and evidence references."
-    dependency_gate: "Publish only after public-safe review of GrowGraph practical boundaries."
-    public_safety_notes: "Use GrowGraph as practical tooling; do not make unpublished scientific claims."
+    dependency_gate: "Publish only after public-safe review of Mirai Graph practical boundaries."
+    public_safety_notes: "Use Mirai Graph as practical tooling; do not make unpublished scientific claims."
 
   - id: "ai-skill-safety-gates"
     series_id: "skill-federation"
@@ -105,5 +115,5 @@ articles:
     languages:
       - "en"
     summary: "How graph exports provide runtime context for skills without replacing owner judgement."
-    dependency_gate: "Publish after the GrowGraph public boundary and related research claims are cleared."
+    dependency_gate: "Publish after the Mirai Graph public boundary and related research claims are cleared."
     public_safety_notes: "Keep the article practical and avoid private graph internals."

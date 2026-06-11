@@ -12,7 +12,12 @@ scientific claims.
 
 ## Core Articles
 
-1. **Expert skills as a consilium**  
+1. **Expert skills as a consilium**
+
+   Published on Habr: [Один промпт разросся в регламент: как я разделяю ответственность внутри AI-навыка](https://habr.com/ru/articles/1044978/).
+
+   Published on DEV Community: [When One Prompt Becomes a Process: How I Split Responsibility Inside an AI Skill](https://dev.to/zabarov/when-one-prompt-becomes-a-process-how-i-split-responsibility-inside-an-ai-skill-1055).
+
    How to build a skill that coordinates several specialist roles; why this is
    more useful than a single broad prompt; what it gives for planning, review,
    QA and decision-making.
@@ -25,7 +30,7 @@ scientific claims.
    A practical decision framework: when a multi-specialist skill is enough and
    when a federated owner-skill system is needed.
 
-4. **GrowGraph Hybrid SOT**  
+4. **Mirai Graph Hybrid SOT**
    Why a skill federation benefits from graph-managed routing and runtime
    context while raw owner skill sources remain authoritative for methodology
    and judgement.
@@ -43,7 +48,7 @@ These topics are intentionally delayed until the related research track is
 public enough to support them:
 
 - evolutionary graphs;
-- using graphs in skills beyond the practical GrowGraph boundary.
+- using graphs in skills beyond the practical Mirai Graph boundary.
 
 ## Machine-Readable Roadmap
 

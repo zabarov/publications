@@ -58,12 +58,14 @@ function wrapDocaraPage(string $markdown, string $title): string
     }
 
     $description = preg_replace('/\s+/', ' ', trim(strip_tags($title)));
+    $yamlTitle = json_encode($title, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    $yamlDescription = json_encode($description, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 
     return "---\n"
         . "extends: _core._layouts.documentation\n"
         . "section: content\n"
-        . "title: " . str_replace("\n", ' ', $title) . "\n"
-        . "description: " . $description . "\n"
+        . "title: " . $yamlTitle . "\n"
+        . "description: " . $yamlDescription . "\n"
         . "---\n\n"
         . $markdown;
 }

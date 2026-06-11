@@ -6,11 +6,11 @@ Date: 2026-06-08
 
 ### Ethics Statement
 
-This working paper uses synthetic software-engineering tasks and metadata-level workflow abstractions. It does not report a human-subject intervention, animal study, medical data, patient data or personal-data experiment. Any future independent reviewer study should define reviewer consent, privacy handling and data-retention boundaries before execution.
+This working paper uses synthetic software-engineering tasks and metadata-level workflow abstractions. The current study uses public-safe synthetic and metadata-level materials only. Any future independent reviewer study should define reviewer consent, privacy handling and data-retention boundaries before execution.
 
 ### Conflict Of Interest
 
-The author develops and uses AI skill workflows in practical software and research work. This relationship is disclosed as a potential practical interest in the artifact being studied. No external conflict has been declared.
+The author develops and uses AI skill workflows in practical software and research work. This relationship is disclosed as a potential practical interest in the artifact being studied. The author declares no conflicts of interest.
 
 ### Funding
 
