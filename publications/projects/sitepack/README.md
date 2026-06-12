@@ -7,14 +7,17 @@ Repository: <https://github.com/simai/sitepack>
 
 ## Current Result
 
-The project already has a public-oriented repository with:
+The project has a public-oriented repository with:
 
 - a platform-neutral specification;
 - JSON schemas and registries;
 - example packages;
 - conformance materials;
+- profile contracts and extension governance;
+- adapter-proof examples;
 - a Node.js reference validator;
-- a PHP reference validator.
+- a PHP reference validator;
+- release-candidate notes for `0.5.0-rc.1`.
 
 In simple terms, SitePack defines what a portable website package should look
 like. Instead of treating every migration as a custom script, it creates a
@@ -54,16 +57,16 @@ Private or out of scope:
 
 ## Next Goal
 
-The next goal is a release-ready SitePack package.
+The current public goal is a release-candidate announcement or article based on
+SitePack `0.5.0-rc.1`.
 
 Done means:
 
-- the current local changes in the SitePack repository are reviewed;
-- the specification and validators agree with each other;
-- examples pass validation;
-- the public README explains the standard in one clear path;
-- a release note is ready;
-- an introductory article can point to a stable public state.
+- the publication channel is selected;
+- the release-candidate material is adapted to that channel;
+- the text links to the public repository and release-candidate notes;
+- the article or release note does not claim a final tagged release before one
+  exists.
 
 This goal connects directly to the final result: SitePack should become a
 credible public standard, not just a repository with useful files.
@@ -76,6 +79,7 @@ See the current audit:
 
 ## Publication Kit
 
-The first public article draft and release-note draft are prepared here:
+The first public article draft and release-candidate release note are prepared
+here:
 
 - [SitePack publication kit](publication-kit/)

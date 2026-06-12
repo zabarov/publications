@@ -6,22 +6,25 @@ Repository: <https://github.com/simai/sitepack>
 
 ## Verdict
 
-SitePack is technically close to a public release package, but it should not be
-announced as release-ready yet.
+SitePack has passed the release-candidate preparation goal for `0.5.0-rc.1`.
 
-The core standard and validators are working. The remaining work is release
-cleanup: review local changes, decide what belongs in the release, handle
-dependency audit findings and reduce local environment noise.
+The core standard and validators are working, and the release-candidate material
+is ready for public review. A final tagged release, GitHub Release and package
+publication remain separate release actions.
 
 ## What Already Works
 
 - The repository has a clear public purpose.
 - The project is platform-neutral.
 - The repository includes a specification, schemas, registries, examples,
-  conformance material and reference validators.
+  conformance material, profile contracts, extension governance, adapter-proof
+  examples and reference validators.
 - Schema sync passes across the specification, Node validator and PHP validator.
 - Node example validation passes.
 - PHP example validation passes when the environment uses ServBay PHP/Composer.
+- Node audit reports zero vulnerabilities.
+- GitHub Actions Pages workflow passed after the release-candidate notes were
+  pushed.
 
 ## Validation Evidence
 
@@ -39,32 +42,13 @@ Observed result:
 
 ## Findings
 
-### Needs Review Before Announcement
+### Final Release Boundary
 
-The local SitePack repository contains tracked and untracked changes related to
-the next standard version:
+The current state is a release candidate, not a final tagged release.
 
-- specification updates;
-- conformance material;
-- profile and extension documentation;
-- `small-docs-site` example;
-- `site-map` schema;
-- Node validator updates;
-- PHP validator updates.
-
-These changes may be valid, but they need a focused review before any public
-release announcement.
-
-### Dependency Audit
-
-`npm install` reports four dependency vulnerabilities in the Node validator
-tooling:
-
-- 2 moderate;
-- 2 high.
-
-This does not mean the SitePack format is broken, but it should be handled
-before a polished release announcement.
+Before a final release announcement, the SitePack repository should decide the
+final version boundary, update versioned schemas/examples/tools if needed, and
+publish a tag or GitHub Release.
 
 ### PHP Environment Noise
 
@@ -95,16 +79,14 @@ Out of scope:
 
 ## Next Goal
 
-Prepare a release-ready SitePack package and introductory article.
+Publish or adapt the SitePack release-candidate material.
 
 Done means:
 
-- the current local diff is reviewed;
-- the release scope is fixed;
-- dependency audit findings are handled or documented;
-- PHP validation has a clean recommended command;
-- examples and validators pass;
-- the public README and release note explain one clear adoption path.
+- a publication channel is selected;
+- the release note or article is adapted to that channel;
+- the canonical URL and cross-posting rule are fixed;
+- the final release boundary is not overstated.
 
 This goal connects to the final result because SitePack should be introduced as
 a credible open standard with working validation, not as an unfinished internal

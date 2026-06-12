@@ -3,7 +3,7 @@ updated: "2026-06-12"
 
 projects:
   - id: "sitepack"
-    status: "publication-kit-ready-release-cleanup-needed"
+    status: "release-candidate-public-material-ready"
     type: "open-standard"
     title: "SitePack"
     repository_url: "https://github.com/simai/sitepack"
@@ -11,32 +11,33 @@ projects:
     primary_language: "English"
     license: "MIT"
     public_role: "Open standard for packaging website data for backup, migration, validation, preview and import."
-    current_result: "A platform-neutral website package format with a specification, examples, registries and reference validators for Node.js and PHP."
+    current_result: "A platform-neutral website package format with a specification, examples, registries, conformance levels, profile contracts, adapter-proof examples and reference validators for Node.js and PHP."
     gives_value:
       - "Makes website export/import discussable as a format, not as one-off migration code."
       - "Separates the portable core from platform adapters such as Bitrix, Larena, WordPress or custom systems."
       - "Creates a validation target for archives, previews, importers and exporters."
     public_boundary: "Publish the standard, examples, schemas and reference tools. Do not publish private adapters, customer packages, internal migration data or applied Bitrix implementation details."
-    readiness_notes: "Release-readiness audit completed on 2026-06-12. Core validation passes, but local tracked and untracked changes must be reviewed before a formal release announcement. Node dependency audit reports vulnerabilities; PHP validation passes with ServBay PHP/Composer but emits deprecation noise on PHP 8.4."
-    next_public_goal: "Review and stabilize SitePack release changes, then publish the introductory article and release note."
+    readiness_notes: "Release-candidate preparation completed on 2026-06-12. SitePack 0.5.0-rc.1 notes exist in the SitePack repository and Docara source. Validation passes, Node audit reports zero vulnerabilities, and GitHub Actions Pages workflow passed."
+    next_public_goal: "Publish or adapt the SitePack 0.5.0-rc.1 release-candidate material for the selected external channel."
     readiness_audit:
       date: "2026-06-12"
-      result: "not_ready_for_announcement"
+      result: "release_candidate_ready_for_public_review"
       public_page: "publications/projects/sitepack/release-readiness/"
       evidence:
         - "make validate-all passes when PATH starts with /Applications/ServBay/bin and bundled Codex Node"
         - "schema sync passes"
         - "Node examples validation passes"
         - "PHP examples validation passes with ServBay PHP/Composer"
+        - "Node audit reports zero vulnerabilities"
+        - "GitHub Actions Pages workflow passed for SitePack release-candidate notes"
       blockers:
-        - "local tracked and untracked release changes need review"
-        - "npm audit reports 4 vulnerabilities in Node validator dependencies"
-        - "Composer/PHP 8.4 emits deprecation notices"
+        - "final tag, GitHub Release and package publication are not part of the current release-candidate material"
     publication_kit:
-      status: "draft_ready_for_review"
+      status: "release_candidate_material_ready"
       public_page: "publications/projects/sitepack/publication-kit/"
       materials:
         - "publications/projects/sitepack/publication-kit/introductory-article/"
+        - "publications/projects/sitepack/publication-kit/release-note-0.5.0-rc.1/"
         - "publications/projects/sitepack/publication-kit/release-note-v0.4.0-draft/"
 
   - id: "mirai-graph"

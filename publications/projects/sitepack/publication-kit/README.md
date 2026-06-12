@@ -1,39 +1,41 @@
 # SitePack Publication Kit
 
-This package prepares the first public SitePack material.
+This package prepares public SitePack materials.
 
-The materials are public-safe drafts. They are ready for review, but they should
-not be published as final announcements until the SitePack release cleanup is
-complete.
+The current release-candidate material is public-safe and ready to use as a
+release note or short announcement. It should not be described as a final tagged
+release until the SitePack repository publishes a tag or GitHub Release.
 
 ## Materials
 
 - [Introductory article draft](introductory-article/)
-- [SitePack v0.4.0 release note draft](release-note-v0.4.0-draft/)
+- [SitePack 0.5.0-rc.1 release note](release-note-0.5.0-rc.1/)
+- [Archived SitePack v0.4.0 release note draft](release-note-v0.4.0-draft/)
 
 ## Intended Use
 
-The article draft is suitable for adaptation to a developer publication such as
-DEV Community, Hashnode, Medium or Habr after language/channel adaptation.
+The release note is suitable for the SitePack repository, GitHub Release text
+after final release confirmation, DEV Community, Hashnode, Medium or a short
+Habr news-style post after language/channel adaptation.
 
-The release note draft is suitable for the SitePack repository after the current
-local changes, dependency audit findings and PHP tooling notes are reviewed.
+The article draft is suitable for a longer developer publication after
+language/channel adaptation.
 
 ## Current Status
 
 - Article draft: ready for editorial review.
-- Release note draft: ready for release-scope review.
+- Release note `0.5.0-rc.1`: ready public material for release-candidate
+  announcement.
 - External publication: not started.
 - GitHub release: not started.
 
 ## Next Goal
 
-The next goal is to review and stabilize the SitePack release state.
+The next goal is external publication or final release packaging.
 
 Done means:
 
-- local SitePack changes are reviewed;
-- the release scope is fixed;
-- dependency audit findings are handled or documented;
-- the recommended validation command is clean enough for public use;
-- the article and release note can point to a stable repository state.
+- the publication channel is selected;
+- the text is adapted to that channel;
+- the canonical URL and cross-posting rule are fixed;
+- the final release boundary is not overstated.
