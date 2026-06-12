@@ -10,6 +10,7 @@ browser verification because automated access can be blocked by site protection.
 | --- | --- | --- |
 | 2026 | [The State Tone Index: A Multidimensional Framework for Measuring Macro-Social Affective Climate and Institutional-Emotional Conditions](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6823458) | 6823458 |
 | 2026 | [Gradient of Knowing (GoK-8): An Integrative Learning-Progression Model and Conceptual Assessment Framework](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6823819) | 6823819 |
+| 2026 | [SSRN preprint 6841618 - metadata pending](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6841618) | 6841618 |
 
 ## Notes
 
@@ -20,3 +21,5 @@ browser verification because automated access can be blocked by site protection.
 - The current registry records are based on local submission records and user
   confirmation; automated live verification was blocked by SSRN's Cloudflare
   challenge.
+- The record for abstract 6841618 was added from the canonical SSRN URL and
+  still needs manual browser verification of the public title and metadata.
