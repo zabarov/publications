@@ -22,24 +22,32 @@ scientific claims.
    more useful than a single broad prompt; what it gives for planning, review,
    QA and decision-making.
 
-2. **Skill federation**  
+2. **Task framing and false certainty**
+
+   Published on Habr: [Почему хороший ответ ИИ иногда ведёт к плохому результату](https://habr.com/ru/articles/1047368/).
+
+   How AI-assisted work can look precise too early; why a technically good
+   answer may still solve the wrong problem; how to start from a broader frame
+   before changing code, documentation or process.
+
+3. **Skill federation**
    How a federation joins owner skills into a larger governed system through
    routing, capabilities, contracts, readiness, gates and evidence.
 
-3. **Consilium versus federation**  
+4. **Consilium versus federation**
    A practical decision framework: when a multi-specialist skill is enough and
    when a federated owner-skill system is needed.
 
-4. **Mirai Graph Hybrid SOT**
+5. **Mirai Graph Hybrid SOT**
    Why a skill federation benefits from graph-managed routing and runtime
    context while raw owner skill sources remain authoritative for methodology
    and judgement.
 
-5. **Safety gates for AI skills**  
+6. **Safety gates for AI skills**
    Why strong AI workflows need blockers, approval boundaries, rollback planning
    and evidence trails.
 
-6. **Publication registry as a knowledge system**  
+7. **Publication registry as a knowledge system**
    How to build an open publication repository without leaking private context.
 
 ## Research-Gated Articles
