@@ -74,6 +74,14 @@ rendered/
 qa-output/
 ```
 
+When a new external article is published, save a local recovery copy under
+`source/articles/<venue>/<id>/` before treating the public canonical URL as the
+only source of truth. For Habr articles, use:
+
+```bash
+php scripts/archive-habr-source.php https://habr.com/ru/articles/<id>/
+```
+
 ## Draft Moderation Workflow
 
 Use ignored local workspace files for exact drafts that are currently waiting
