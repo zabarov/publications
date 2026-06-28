@@ -8,7 +8,7 @@ links.
 
 | Date | Original title | English metadata title |
 | --- | --- | --- |
-| 2026-06-15 | [Почему хороший ответ ИИ иногда ведёт к плохому результату](https://habr.com/ru/articles/1047368/) | Why a Good AI Answer Sometimes Leads to a Bad Result |
+| 2026-06-15 | [Ты всё не так понял! Почему иногда ИИ делает всё не так?](https://habr.com/ru/articles/1047368/) | You Got It All Wrong: Why AI Sometimes Does Everything Wrong |
 | 2026-06-08 | [Один промпт разросся в регламент: как я разделяю ответственность внутри AI-навыка](https://habr.com/ru/articles/1044978/) | One Prompt Grew Into a Playbook: How I Split Responsibility Inside an AI Skill |
 | 2025-12-20 | [GPT как портретист: ассистент, который рисует как художник](https://habr.com/ru/articles/978746/) | GPT as a Portrait Artist: An Assistant That Draws Like an Artist |
 | 2025-12-07 | [Как написать код в два счёта: впрягаем Codex с GPT](https://habr.com/ru/articles/974268/) | Writing Code in No Time: Putting Codex and GPT to Work |

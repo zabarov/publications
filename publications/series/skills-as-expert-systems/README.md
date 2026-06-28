@@ -24,7 +24,7 @@ scientific claims.
 
 2. **Task framing and false certainty**
 
-   Published on Habr: [Почему хороший ответ ИИ иногда ведёт к плохому результату](https://habr.com/ru/articles/1047368/).
+   Published on Habr: [Ты всё не так понял! Почему иногда ИИ делает всё не так?](https://habr.com/ru/articles/1047368/).
 
    How AI-assisted work can look precise too early; why a technically good
    answer may still solve the wrong problem; how to start from a broader frame

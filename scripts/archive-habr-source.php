@@ -68,7 +68,9 @@ function habrUrl(string $id): string
 
 function extractPiniaState(string $html): array
 {
-    if (!preg_match('/window\.__PINIA_STATE__=(\{.*?\})<\/script>/s', $html, $matches)) {
+    if (!preg_match('/window\.__PINIA_STATE__=(\{.*?\});\s*\(function\(\)/s', $html, $matches)
+        && !preg_match('/window\.__PINIA_STATE__=(\{.*?\})<\/script>/s', $html, $matches)
+    ) {
         throw new RuntimeException('Cannot find Habr __PINIA_STATE__ payload.');
     }
 

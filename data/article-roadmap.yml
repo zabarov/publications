@@ -46,7 +46,7 @@ articles:
   - id: "ai-task-framing-false-certainty"
     series_id: "skill-federation"
     status: "published"
-    title: "Why a Good AI Answer Sometimes Leads to a Bad Result"
+    title: "You Got It All Wrong: Why AI Sometimes Does Everything Wrong"
     primary_venue: "habr"
     secondary_venues:
       - "dev-to"
@@ -56,8 +56,9 @@ articles:
       - "en"
     published_url: "https://habr.com/ru/articles/1047368/"
     published_at: "2026-06-15T06:01:52.000Z"
-    original_title: "Почему хороший ответ ИИ иногда ведёт к плохому результату"
-    summary: "How false certainty appears in AI-assisted work when a prompt chooses the object of action too early; how to start from a broader task frame and choose the right mode before making changes."
+    modified_at: "2026-06-27T20:21:11.000Z"
+    original_title: "Ты всё не так понял! Почему иногда ИИ делает всё не так?"
+    summary: "How false certainty appears in AI-assisted work when a prompt lacks enough context or a clear target result; how to create a task frame, stay on the right path and stop uncontrolled continuation."
     public_safety_notes: "Use generalized development examples; do not expose private repository details, client incidents or internal safe-write rules."
 
   - id: "skill-federation-vs-consilium"

@@ -65,10 +65,11 @@ publications:
     venue: "habr"
     original_language: "Russian"
     metadata_language: "en"
-    original_title: "Почему хороший ответ ИИ иногда ведёт к плохому результату"
-    title: "Why a Good AI Answer Sometimes Leads to a Bad Result"
+    original_title: "Ты всё не так понял! Почему иногда ИИ делает всё не так?"
+    title: "You Got It All Wrong: Why AI Sometimes Does Everything Wrong"
     title_translation_status: "metadata-translation"
     published_at: "2026-06-15T06:01:52.000Z"
+    modified_at: "2026-06-27T20:21:11.000Z"
     year: 2026
     public_url: "https://habr.com/ru/articles/1047368/"
     source_profile_url: "https://habr.com/ru/users/zabarov/articles/"
@@ -90,7 +91,7 @@ publications:
       - "качество"
     public_text_policy: "canonical_only"
     publication_record_source: "live_habr_page"
-    notes: "English metadata for an original Habr article about task framing, false certainty and choosing the right AI-assisted work mode."
+    notes: "English metadata for an original Habr article about false certainty, task framing and keeping AI-assisted work on the right path."
 
   - id: "dev-to-1055"
     status: "published"
