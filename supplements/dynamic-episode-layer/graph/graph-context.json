@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "dynamic_episode_auth_fixture",
+  "profile": "dynamic_episode_layer",
+  "public_safety": "public_safe_synthetic",
+  "objects": [
+    {
+      "id": "pkg.auth_fixture",
+      "kind": "package",
+      "name": "Authentication Token Fixture Package",
+      "readiness": "fixture_ready"
+    },
+    {
+      "id": "feature.issue_token",
+      "kind": "feature",
+      "name": "Issue Scoped API Token",
+      "readiness": "planned"
+    },
+    {
+      "id": "feature.revoke_token",
+      "kind": "feature",
+      "name": "Revoke API Token",
+      "readiness": "planned"
+    },
+    {
+      "id": "feature.audit_token_events",
+      "kind": "feature",
+      "name": "Audit Token Lifecycle Events",
+      "readiness": "planned"
+    },
+    {
+      "id": "constraint.secret_once",
+      "kind": "constraint",
+      "name": "Token Secret Displayed Once",
+      "readiness": "required"
+    },
+    {
+      "id": "constraint.digest_storage",
+      "kind": "constraint",
+      "name": "Non-Reversible Token Digest Storage",
+      "readiness": "required"
+    },
+    {
+      "id": "gate.audit_before_dispatch",
+      "kind": "gate",
+      "name": "Audit Persisted Before Dispatch",
+      "readiness": "required"
+    },
+    {
+      "id": "boundary.package_scope",
+      "kind": "boundary",
+      "name": "Stay Within Auth Fixture Package",
+      "readiness": "required"
+    },
+    {
+      "id": "risk.unsupported_scope_model",
+      "kind": "risk",
+      "name": "Unsupported Token Scope Model",
+      "readiness": "review_required"
+    }
+  ],
+  "relations": [
+    {
+      "source": "pkg.auth_fixture",
+      "type": "contains",
+      "target": "feature.issue_token"
+    },
+    {
+      "source": "pkg.auth_fixture",
+      "type": "contains",
+      "target": "feature.revoke_token"
+    },
+    {
+      "source": "feature.issue_token",
+      "type": "requires",
+      "target": "constraint.secret_once"
+    },
+    {
+      "source": "feature.issue_token",
+      "type": "requires",
+      "target": "constraint.digest_storage"
+    },
+    {
+      "source": "feature.revoke_token",
+      "type": "triggers",
+      "target": "feature.audit_token_events"
+    },
+    {
+      "source": "feature.audit_token_events",
+      "type": "guarded_by",
+      "target": "gate.audit_before_dispatch"
+    },
+    {
+      "source": "pkg.auth_fixture",
+      "type": "bounded_by",
+      "target": "boundary.package_scope"
+    },
+    {
+      "source": "feature.issue_token",
+      "type": "has_risk",
+      "target": "risk.unsupported_scope_model"
+    }
+  ],
+  "expected_blocked_paths": [
+    "implement_password_reset",
+    "store_plaintext_token",
+    "dispatch_notification_before_audit",
+    "write_outside_package_scope",
+    "treat_generated_context_as_canonical_update"
+  ]
+}
+

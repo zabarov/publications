@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0.0",
+  "id": "episode.dynamic_episode_auth_fixture_001",
+  "profile": "dynamic_episode_layer",
+  "public_safety": "public_safe_synthetic",
+  "event": {
+    "id": "event.auth_fixture_planning_001",
+    "type": "implementation_planning",
+    "summary": "Plan a modular authentication token package from the same request used by the baseline run."
+  },
+  "source_refs": {
+    "request": "03-data/fixtures/dynamic-episode-auth-fixture/request.md",
+    "requirements": "03-data/fixtures/dynamic-episode-auth-fixture/requirements.md",
+    "graph_context": "03-data/fixtures/dynamic-episode-auth-fixture/graph-context.json",
+    "technology_chain": "03-data/fixtures/dynamic-episode-auth-fixture/technology-chain.md",
+    "expected_gates": "03-data/fixtures/dynamic-episode-auth-fixture/expected-gates.md"
+  },
+  "activated": {
+    "objects": [
+      "pkg.auth_fixture",
+      "feature.issue_token",
+      "feature.revoke_token",
+      "feature.audit_token_events",
+      "constraint.secret_once",
+      "constraint.digest_storage",
+      "gate.audit_before_dispatch",
+      "boundary.package_scope",
+      "risk.unsupported_scope_model"
+    ],
+    "relations": [
+      "pkg.auth_fixture contains feature.issue_token",
+      "pkg.auth_fixture contains feature.revoke_token",
+      "feature.issue_token requires constraint.secret_once",
+      "feature.issue_token requires constraint.digest_storage",
+      "feature.revoke_token triggers feature.audit_token_events",
+      "feature.audit_token_events guarded_by gate.audit_before_dispatch",
+      "pkg.auth_fixture bounded_by boundary.package_scope",
+      "feature.issue_token has_risk risk.unsupported_scope_model"
+    ],
+    "gates": [
+      "gate.package_boundary",
+      "gate.secret_handling",
+      "gate.audit_before_dispatch",
+      "gate.scope_model_review",
+      "gate.canonical_update_boundary"
+    ]
+  },
+  "selected_path": [
+    "confirm_package_boundary",
+    "extract_features_and_constraints",
+    "activate_graph_context",
+    "select_order_digest_before_token_return",
+    "select_order_audit_before_dispatch",
+    "define_tests_and_evidence",
+    "classify_findings",
+    "record_episode_trace"
+  ],
+  "blocked_paths": [
+    {
+      "id": "blocked.implement_password_reset",
+      "reason": "outside_package_scope",
+      "blocked_by": "gate.package_boundary"
+    },
+    {
+      "id": "blocked.store_plaintext_token",
+      "reason": "violates_digest_storage_constraint",
+      "blocked_by": "gate.secret_handling"
+    },
+    {
+      "id": "blocked.dispatch_notification_before_audit",
+      "reason": "audit_event_must_persist_first",
+      "blocked_by": "gate.audit_before_dispatch"
+    },
+    {
+      "id": "blocked.write_outside_package_scope",
+      "reason": "fixture_scope_is_auth_package_only",
+      "blocked_by": "gate.package_boundary"
+    },
+    {
+      "id": "blocked.canonical_update_from_trace",
+      "reason": "episode_trace_is_evidence_not_authorization",
+      "blocked_by": "gate.canonical_update_boundary"
+    }
+  ],
+  "gates": [
+    {
+      "id": "gate.package_boundary",
+      "status": "pass"
+    },
+    {
+      "id": "gate.secret_handling",
+      "status": "pass"
+    },
+    {
+      "id": "gate.audit_before_dispatch",
+      "status": "pass"
+    },
+    {
+      "id": "gate.scope_model_review",
+      "status": "review_required"
+    },
+    {
+      "id": "gate.canonical_update_boundary",
+      "status": "blocked_not_requested"
+    }
+  ],
+  "results": [
+    {
+      "id": "result.graph_controlled_plan",
+      "status": "review_ready",
+      "summary": "The graph-controlled plan records activated context, selected path, blocked alternatives, gates and routed findings."
+    }
+  ],
+  "findings": [
+    {
+      "id": "finding.digest_storage_missing_in_baseline",
+      "classification": "work_fix",
+      "severity": "high",
+      "summary": "Baseline output stores token value directly; graph-controlled output routes it to digest-only storage."
+    },
+    {
+      "id": "finding.audit_ordering_test_gap",
+      "classification": "test_gap",
+      "severity": "medium",
+      "summary": "Audit persistence before notification requires explicit test coverage."
+    },
+    {
+      "id": "finding.scope_model_review_required",
+      "classification": "spec_gap",
+      "severity": "medium",
+      "summary": "Allowed token scopes are not defined in the fixture and require review."
+    },
+    {
+      "id": "finding.blocked_alternatives_recorded",
+      "classification": "process_improvement",
+      "severity": "medium",
+      "summary": "Graph-controlled run records blocked alternatives that are absent from the baseline output."
+    }
+  ],
+  "feedback_classification": [
+    "work_fix",
+    "test_gap",
+    "spec_gap",
+    "process_improvement"
+  ],
+  "kaizen_candidates": [
+    "kaizen.require_blocked_alternatives_in_graph_controlled_planning",
+    "kaizen.add_standard_token_secret_pattern_to_auth_fixtures"
+  ],
+  "canonical_write_allowed": false,
+  "limitations": [
+    "Synthetic planning fixture, not real code generation.",
+    "No runtime execution or tests were run.",
+    "Metrics compare plan/trace quality, not production correctness.",
+    "Generalization requires additional fixtures or real pilot evidence."
+  ]
+}
+

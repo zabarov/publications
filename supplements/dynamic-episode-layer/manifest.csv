@@ -1,0 +1,20 @@
+package_path,description,release_status
+README.md,Package overview and claim boundary,local_candidate
+LICENSE,CC BY 4.0 license notice,local_candidate
+CITATION.cff,Citation metadata,local_candidate
+MANIFEST.md,File map and provenance,local_candidate
+manifest.csv,Machine-readable package manifest,local_candidate
+package.json,Node verification package metadata,local_candidate
+source-corpus/request.md,Synthetic input request,local_candidate
+source-corpus/requirements.md,Synthetic requirements context,local_candidate
+source-corpus/expected-gates.md,Expected governance gates,local_candidate
+source-corpus/technology-chain.md,Technology-chain constraints,local_candidate
+graph/graph-context.json,Public-safe synthetic graph context,local_candidate
+outputs/baseline-output.md,Baseline planning output,local_candidate
+outputs/graph-controlled-output.md,Graph-controlled planning output,local_candidate
+outputs/comparison-report.md,Comparison report and boundary notes,local_candidate
+trace/episode-trace.json,Dynamic Episode trace,local_candidate
+trace/metrics.json,Reviewability metrics,local_candidate
+scripts/verify-package.js,Package verifier,local_candidate
+checks/link-check-2026-06-29.md,Manuscript link-check evidence,local_candidate
+checks/claim-public-safety-check-2026-06-29.md,Claim and public-safety check,local_candidate

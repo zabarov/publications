@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_id": "dynamic_episode_auth_fixture",
+  "run_date": "2026-06-16",
+  "comparison_type": "synthetic_planning_baseline_vs_graph",
+  "metrics": {
+    "activated_context_recorded": {
+      "baseline": 0,
+      "graph_controlled": 9
+    },
+    "selected_path_steps_recorded": {
+      "baseline": 5,
+      "graph_controlled": 8
+    },
+    "blocked_alternatives_recorded": {
+      "baseline": 0,
+      "graph_controlled": 5
+    },
+    "gate_outcomes_recorded": {
+      "baseline": 0,
+      "graph_controlled": 5
+    },
+    "unsupported_assumptions": {
+      "baseline": 5,
+      "graph_controlled": 1
+    },
+    "boundary_violations": {
+      "baseline": 2,
+      "graph_controlled": 0
+    },
+    "test_gaps_identified": {
+      "baseline": 1,
+      "graph_controlled": 1
+    },
+    "feedback_routes_recorded": {
+      "baseline": 0,
+      "graph_controlled": 4
+    },
+    "canonical_update_boundary_recorded": {
+      "baseline": 0,
+      "graph_controlled": 1
+    }
+  },
+  "interpretation": {
+    "supported": [
+      "Graph-controlled planning produced a more reviewable trace for this synthetic fixture.",
+      "Dynamic Episode trace recorded activated context, blocked alternatives, gate outcomes and feedback routes."
+    ],
+    "not_supported": [
+      "Real code-generation drift reduction.",
+      "Statistical effect.",
+      "Generalization beyond the synthetic fixture."
+    ]
+  }
+}
+

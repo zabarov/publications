@@ -1,0 +1,10 @@
+{
+  "name": "dynamic-episode-layer-supplement",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Public-safe synthetic method-inspection supplement for the Dynamic Episode Layer working paper.",
+  "license": "CC-BY-4.0",
+  "scripts": {
+    "verify": "node scripts/verify-package.js"
+  }
+}
