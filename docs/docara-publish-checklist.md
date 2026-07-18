@@ -22,13 +22,13 @@ Run from the repository root:
 
 ```bash
 php scripts/sync-publications-to-docara.php
-npm run dev
+YARN_IGNORE_PATH=1 npx --yes yarn@1.22.22 --no-default-rc install --frozen-lockfile --production=false --non-interactive
+YARN_IGNORE_PATH=1 npx --yes yarn@1.22.22 --no-default-rc dev
 php vendor/bin/docara build
-npm run validate:graph
+YARN_IGNORE_PATH=1 npx --yes yarn@1.22.22 --no-default-rc validate:graph
 ```
 
-Use an LTS-compatible Node runtime. If the default local Node is too new for
-Laravel Mix, switch to a compatible Node before running `npm run dev`.
+Use the committed Yarn lockfile; Vite is the only asset build path.
 
 Verify generated content:
 
