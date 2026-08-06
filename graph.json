@@ -1,0 +1,55 @@
+{
+  "$schema": "https://mirai-graph.dev/schemas/graph-manifest.schema.json",
+  "aliases": [],
+  "description": "Machine-readable operating graph for the public publications repository.",
+  "evolution": {
+    "current_iteration": 1,
+    "migration_status": "current"
+  },
+  "extensions": {
+    "simai.legacy.operational": {
+      "entrypoints": {
+        "dna": "graph/dna/graph-dna.json",
+        "operating_guide": "graph/docs/guides/operating-mode.md",
+        "spec_index": "graph/specs/index.json",
+        "validator": "scripts/validate-publication-graph.js"
+      }
+    }
+  },
+  "federation": {
+    "can_export": true,
+    "can_import": false,
+    "child_graphs": [],
+    "parent_graph": null
+  },
+  "format": "mirai-graph",
+  "graph": {
+    "generated": [],
+    "objects": [],
+    "raw_sources": [
+      "README.md"
+    ],
+    "relations": [],
+    "root": "graph",
+    "schemas": [],
+    "source_of_truth": [
+      "graph/specs"
+    ]
+  },
+  "id": "rim-zabarov.publications",
+  "imports": [],
+  "kind": "project",
+  "owner": "graph",
+  "profiles": [
+    "project"
+  ],
+  "public_safety": {
+    "full_text_mirror_default": "canonical_only",
+    "ignored_raw_workspace": "source/",
+    "public_repo": true,
+    "secrets_allowed": false
+  },
+  "schema_version": "2.0.0",
+  "scope": "repository",
+  "title": "Rim Zabarov Publications Graph"
+}

@@ -21,7 +21,7 @@ Public archive intake is documented in
 Public publication materials live under `publications/`, `data/`,
 `assets/publications/`, `releases/` and `supplements/`.
 
-The machine-readable operating contract lives in [graph/graph.json](graph/graph.json).
+The machine-readable operating contract lives in [graph.json](graph.json).
 It records the public/local boundary, publication lifecycle, full-text
 mirroring policy and Docara assembly rules.
 

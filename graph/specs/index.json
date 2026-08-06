@@ -25,6 +25,6 @@
     "graph/specs/evidence/repository-evidence.json"
   ],
   "source_refs": [
-    "graph/graph.json"
+    "graph.json"
   ]
 }

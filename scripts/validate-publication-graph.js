@@ -5,7 +5,7 @@ const { execFileSync } = require('child_process');
 const root = path.resolve(__dirname, '..');
 
 const requiredFiles = [
-  'graph/graph.json',
+  'graph.json',
   'graph/dna/graph-dna.json',
   'graph/specs/index.json',
   'graph/specs/objects/repository-zones.json',
@@ -52,12 +52,13 @@ for (const file of requiredFiles) {
   }
 }
 
-const manifest = readJson('graph/graph.json');
-assert(manifest.graph_id === 'rim-zabarov.publications', 'Unexpected graph_id');
+const manifest = readJson('graph.json');
+assert(manifest.format === 'mirai-graph' && manifest.schema_version === '2.0.0', 'Root manifest must use Mirai Graph v2');
+assert(manifest.id === 'rim-zabarov.publications', 'Unexpected manifest id');
 assert(manifest.public_safety.public_repo === true, 'Graph must mark repository as public');
 assert(manifest.public_safety.ignored_raw_workspace === 'source/', 'Graph must keep source/ as ignored raw workspace');
 
-const ignoreResult = git(['check-ignore', '-v', 'source']);
+const ignoreResult = git(['check-ignore', '-v', 'source/.mirai-graph-ignore-probe']);
 assert(ignoreResult.includes('source/'), 'source/ must be ignored by Git');
 
 const trackedSource = git(['ls-files', 'source']);
