@@ -53,10 +53,13 @@ workshop project
 -> public-safety pass
 -> channel/canonical decision
 -> final public text or metadata-only record
+-> preserve local capture and author-approved full text/assets
 -> update data/publications.yml
 -> update data/publication-venues.yml when needed
 -> update public page or series page
 -> run publication graph validation
+-> run php scripts/validate-publication-archive.php
+-> commit and verify remote backup when push is authorized
 ```
 
 ## Metadata-Only Mode

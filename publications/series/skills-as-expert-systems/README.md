@@ -14,7 +14,7 @@ scientific claims.
 
 1. **Expert skills as a consilium**
 
-   Published on Habr: [Один промпт разросся в регламент: как я разделяю ответственность внутри AI-навыка](https://habr.com/ru/articles/1044978/).
+   Published on Habr: [Как превратить ИИ-навык в отдел со специалистами](https://habr.com/ru/articles/1044978/). [Archived text](../../articles/habr/1044978/article.ru.md).
 
    Published on DEV Community: [When One Prompt Becomes a Process: How I Split Responsibility Inside an AI Skill](https://dev.to/zabarov/when-one-prompt-becomes-a-process-how-i-split-responsibility-inside-an-ai-skill-1055).
 
@@ -31,6 +31,9 @@ scientific claims.
    before changing code, documentation or process.
 
 3. **Skill federation**
+
+   Published on Habr: [От отдела к компании: как объединить ИИ-навыки](https://habr.com/ru/articles/1098774/). [Archived text](../../articles/habr/1098774/article.ru.md).
+
    How a federation joins owner skills into a larger governed system through
    routing, capabilities, contracts, readiness, gates and evidence.
 
@@ -61,6 +64,11 @@ public enough to support them:
 ## Machine-Readable Roadmap
 
 The current article plan is maintained in `data/article-roadmap.yml`.
+
+The task-framing article is a related standalone publication. The department
+and federation articles are parts one and two of the core sequence.
+
+[Placement matrix and next articles](../../placement/README.md)
 
 ## Publication Pages
 

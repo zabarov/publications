@@ -256,6 +256,21 @@ function writeArticle(string $archiveRoot, string $id, array $article, array $js
         throw new RuntimeException("Article {$id} does not contain textHtml.");
     }
 
+    // Preserve earlier captures before refreshing the working copy.
+    foreach (['README.md', 'body.html', 'source.html'] as $name) {
+        $previous = "{$dir}/{$name}";
+        if (!is_file($previous)) {
+            continue;
+        }
+        $versionDir = "{$dir}/versions/" . hash_file('sha256', $previous);
+        if (!is_dir($versionDir) && !mkdir($versionDir, 0775, true) && !is_dir($versionDir)) {
+            throw new RuntimeException("Cannot create version directory: {$versionDir}");
+        }
+        if (!is_file("{$versionDir}/{$name}") && !copy($previous, "{$versionDir}/{$name}")) {
+            throw new RuntimeException("Cannot preserve previous archive: {$previous}");
+        }
+    }
+
     $hubs = array_map(static fn (array $hub): string => cleanHtmlTitle($hub['titleHtml'] ?? $hub['title'] ?? ''), $article['hubs'] ?? []);
     $tags = array_map(static fn (array $tag): string => cleanHtmlTitle($tag['titleHtml'] ?? $tag['title'] ?? ''), $article['tags'] ?? []);
 

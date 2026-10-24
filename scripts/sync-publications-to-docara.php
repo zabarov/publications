@@ -103,7 +103,7 @@ $iterator = new RecursiveIteratorIterator(
 );
 
 foreach ($iterator as $file) {
-    if (!$file->isFile() || $file->getFilename() !== 'README.md') {
+    if (!$file->isFile() || $file->getExtension() !== 'md') {
         continue;
     }
 
@@ -116,11 +116,34 @@ foreach ($iterator as $file) {
     ensureDir($targetDir);
 
     $markdown = file_get_contents($sourcePath);
+    $markdown = preg_replace('~\]\((?:\.\./)+assets/publications/~', '](/assets/publications/', $markdown);
+    $markdown = preg_replace('~\]\(([^)\s]*)README\.md\)~', ']($1)', $markdown);
+    $markdown = preg_replace('~\]\(([^)\s]*article\.[a-z-]+)\.md\)~', ']($1/)', $markdown);
     $fallbackTitle = $relativeDir === '' ? 'Publications' : humanTitleFromPath($relativeDir);
     $title = titleFromMarkdown($markdown, $fallbackTitle);
 
-    file_put_contents($targetDir . '/index.md', wrapDocaraPage($markdown, $title));
-    writeSettings($targetDir, $title);
+    $isIndex = $file->getFilename() === 'README.md';
+    $targetName = $isIndex ? 'index.md' : $file->getFilename();
+    file_put_contents($targetDir . '/' . $targetName, wrapDocaraPage($markdown, $title));
+    if ($isIndex) {
+        writeSettings($targetDir, $title);
+    }
+}
+
+$assetRoot = $root . '/assets/publications';
+if (is_dir($assetRoot)) {
+    $assets = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($assetRoot, FilesystemIterator::SKIP_DOTS));
+    foreach ($assets as $asset) {
+        if (!$asset->isFile() || !in_array(strtolower($asset->getExtension()), ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'], true)) {
+            continue;
+        }
+        $relative = substr($asset->getPathname(), strlen($assetRoot) + 1);
+        $target = $root . '/source/assets/publications/' . $relative;
+        ensureDir(dirname($target));
+        if (!copy($asset->getPathname(), $target)) {
+            throw new RuntimeException("Cannot copy publication asset: {$relative}");
+        }
+    }
 }
 
 echo "Synced publications to Docara source.\n";

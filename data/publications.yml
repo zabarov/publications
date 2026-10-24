@@ -5,6 +5,43 @@ author:
   orcid_url: "https://orcid.org/0009-0004-8605-5594"
 
 publications:
+  - id: "habr-1098774"
+    status: "published"
+    type: "article"
+    venue: "habr"
+    original_language: "Russian"
+    metadata_language: "en"
+    original_title: "От отдела к компании: как объединить ИИ-навыки"
+    title: "From a Department to a Company: Connecting AI Skills"
+    title_translation_status: "metadata-translation"
+    published_at: "2026-10-24T07:39:51.000Z"
+    verified_at: "2026-10-24"
+    year: 2026
+    public_url: "https://habr.com/ru/articles/1098774/"
+    canonical_url: "https://habr.com/ru/articles/1098774/"
+    source_profile_url: "https://habr.com/ru/users/zabarov/articles/"
+    habr_article_id: "1098774"
+    series_id: "skill-federation"
+    project: "skill-federation"
+    series_position: 2
+    related_publications:
+      - "habr-1044978"
+    public_text_policy: "full_mirror"
+    archive_path: "publications/articles/habr/1098774/article.ru.md"
+    cover_path: "assets/publications/habr-1098774/cover.jpg"
+    publication_record_source: "live_habr_page"
+    hubs:
+      - "Искусственный интеллект"
+    tags:
+      - "искусственный интеллект"
+      - "AI"
+      - "skills"
+      - "федерация навыков"
+      - "автоматизация"
+      - "промпт-инжиниринг"
+      - "workflow"
+    notes: "Second article in the skills series. Published text and approved cover archived at the author's request; Habr remains canonical."
+
   - id: "repro-structured-ai-skill-workflows-v1"
     status: "local_path_migration_ready_push_blocked"
     type: "reproducibility-package"
@@ -41,8 +78,11 @@ publications:
     series_id: "skill-federation"
     project: "expert-skill-consilium"
     habr_article_id: "1044978"
-    revision_date: "2026-09-07"
-    verified_at: "2026-09-07"
+    revision_date: "2026-10-24"
+    verified_at: "2026-10-24"
+    series_position: 1
+    related_publications:
+      - "habr-1098774"
     canonical_url: "https://habr.com/ru/articles/1044978/"
     public_text_policy: "full_mirror"
     archive_path: "publications/articles/habr/1044978/article.ru.md"

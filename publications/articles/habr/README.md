@@ -4,10 +4,12 @@ This page lists Rim Zabarov's public Habr articles as portfolio records.
 
 The original articles are in Russian and remain on Habr. This repository keeps
 the original titles, English metadata titles, publication dates and canonical
-links.
+links. Approved full-text archives include locally stored covers and remain
+readable independently of Habr.
 
 | Date | Original title | English metadata title |
 | --- | --- | --- |
+| 2026-10-24 | [От отдела к компании: как объединить ИИ-навыки](1098774/README.md) | From a Department to a Company: Connecting AI Skills |
 | 2026-06-15 | [Ты всё не так понял! Почему иногда ИИ делает всё не так?](https://habr.com/ru/articles/1047368/) | You Got It All Wrong: Why AI Sometimes Does Everything Wrong |
 | 2026-06-08, updated 2026-09-07 | [Как превратить ИИ-навык в отдел со специалистами](1044978/README.md) | How to Turn an AI Skill Into a Department of Specialists |
 | 2025-12-20 | [GPT как портретист: ассистент, который рисует как художник](https://habr.com/ru/articles/978746/) | GPT as a Portrait Artist: An Assistant That Draws Like an Artist |

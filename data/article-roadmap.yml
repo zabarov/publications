@@ -1,18 +1,18 @@
 schema_version: "1.0.0"
-updated: "2026-06-15"
+updated: "2026-10-24"
 
 series:
   - id: "skill-federation"
     title: "Skills as Expert Systems"
     public_boundary: "Experience-based, public-safe description of skill architecture and federation patterns."
     primary_language: "en"
-    status: "planning"
+    status: "in-progress"
 
 articles:
   - id: "expert-skill-consilium"
     series_id: "skill-federation"
     status: "published"
-    title: "Expert Skills as a Consilium: Building Multi-Specialist AI Workflows"
+    title: "How to Turn an AI Skill Into a Department of Specialists"
     primary_venue: "habr"
     secondary_venues:
       - "dev-to"
@@ -27,19 +27,26 @@ articles:
       - venue: "dev-to"
         url: "https://dev.to/zabarov/when-one-prompt-becomes-a-process-how-i-split-responsibility-inside-an-ai-skill-1055"
         published_at: "2026-06-09"
-    original_title: "Один промпт разросся в регламент: как я разделяю ответственность внутри AI-навыка"
+    original_title: "Как превратить ИИ-навык в отдел со специалистами"
     summary: "How a skill can coordinate several specialist roles, why this is different from a single prompt, and what value it gives in review, planning and execution."
     public_safety_notes: "Use generalized examples; do not expose private specialist prompts or internal safe-write rules."
 
   - id: "skill-federation"
     series_id: "skill-federation"
-    status: "planned"
-    title: "Skill Federation: Combining Expert Skills into a Governed System"
-    primary_venue: "medium"
+    status: "published"
+    title: "From a Department to a Company: Connecting AI Skills"
+    original_title: "От отдела к компании: как объединить ИИ-навыки"
+    published_url: "https://habr.com/ru/articles/1098774/"
+    published_at: "2026-10-24T07:39:51.000Z"
+    archive_path: "publications/articles/habr/1098774/article.ru.md"
+    primary_venue: "habr"
     secondary_venues:
-      - "infoq"
+      - "hackernoon"
+      - "dev-to"
     languages:
+      - "ru"
       - "en"
+    english_adaptation_status: "deferred-until-russian-series-complete"
     summary: "A practical explanation of routing, owner skills, companion skills, gates, evidence and why federation is different from a consilium."
     public_safety_notes: "Describe architecture and benefits without publishing private route tables or sensitive operational policies."
 

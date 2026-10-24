@@ -5,6 +5,7 @@
 
 # Raw/local workspace. Public publication materials must live outside source/.
 source/
+work/
 
 # Dependency and build outputs
 .cache/

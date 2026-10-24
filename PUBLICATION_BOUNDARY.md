@@ -82,6 +82,14 @@ only source of truth. For Habr articles, use:
 php scripts/archive-habr-source.php https://habr.com/ru/articles/<id>/
 ```
 
+An ignored local copy is not a remote backup. When the author requests a full
+archive of an already published article, also commit the reviewed published
+text as `publications/articles/<venue>/<id>/article.<language>.md` and its
+approved assets under `assets/publications/<publication-id>/`. Keep the venue
+canonical URL, capture date and asset provenance. Preserve previous versions
+in Git history; raw HTML and moderation material remain ignored. A local
+commit protects version history; a verified push provides a remote copy.
+
 ## Draft Moderation Workflow
 
 Use ignored local workspace files for exact drafts that are currently waiting

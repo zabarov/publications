@@ -11,6 +11,7 @@ Public materials that should be visible on GitHub belong here, in `data/`, in
 - [Public projects](projects/)
 - [Skills as Expert Systems](series/skills-as-expert-systems/)
 - [Publication venues](venues/)
+- [Placement matrix and article queue](placement/)
 
 ## Local Release Copies
 

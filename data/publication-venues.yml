@@ -1,8 +1,8 @@
 schema_version: "1.0.0"
-updated: "2026-06-02"
+updated: "2026-10-24"
 
 canonical_policy:
-  primary_source: "This repository and the generated publications site are the canonical archive."
+  primary_source: "Canonical URL is recorded per publication; this repository preserves author-approved copies independently of the venue."
   cross_posting: "Cross-post only public-safe versions and preserve canonical/source links where the platform supports it."
   privacy: "Do not publish private SIMAI logs, customer data, credentials, raw prompts, private graph evidence or unpublished scientific claims."
 
@@ -12,14 +12,23 @@ venues:
     language: "Russian"
     track: "technical-community"
     role: "Technical community venue for Russian-language engineering articles."
-    canonical_use: "Mirror public metadata here in English; keep article text and original-language content on Habr."
+    canonical_use: "Habr remains canonical for Habr-first articles; archive author-approved published text and assets in this repository."
     suitable_for:
       - "AI-assisted engineering practice"
       - "developer workflow articles"
       - "technical retrospectives"
     public_url: "https://habr.com/"
     author_guidelines_url: "https://habr.com/ru/docs/authors/"
-    notes: "This repository stores English metadata only."
+    notes: "Metadata uses English; archived article texts retain their published language."
+
+  - id: "hackernoon"
+    name: "HackerNoon"
+    language: "en"
+    track: "international"
+    role: "Candidate editorial channel for adapted English technology articles."
+    canonical_use: "Record the published URL and edition relationship after acceptance."
+    public_url: "https://hackernoon.com/"
+    notes: "A planned placement is not an accepted submission. Earlier English editions must be distinguished from current Russian revisions."
 
   - id: "medium"
     name: "Medium"

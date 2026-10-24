@@ -107,6 +107,11 @@ graph/
   and cross-posting policy.
 - `data/article-roadmap.yml` stores planned article cycles, target venues,
   language tracks and public-safety gates.
+- [Placement matrix and article queue](publications/placement/README.md) is the
+  readable, dated view of published editions and planned distribution.
+- Approved full texts live beside article pages as `article.<language>.md`;
+  covers and original image assets live in `assets/publications/<id>/`.
+  These tracked copies are preserved in Git history after commit and push.
 - `graph/` stores the machine-readable publication operating mode:
   repository zones, lifecycle, relations, evidence and publication policies.
 

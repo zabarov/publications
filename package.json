@@ -29,6 +29,7 @@
         "watch": "vite build --watch --mode development",
         "prod": "vite build --mode production",
         "validate:graph": "node scripts/validate-publication-graph.js",
+        "validate:archive": "php scripts/validate-publication-archive.php",
         "translate": "php vendor/bin/docara translate",
         "transpatetest": "php vendor/bin/docara translate --test",
         "init": "php vendor/bin/docara init"
