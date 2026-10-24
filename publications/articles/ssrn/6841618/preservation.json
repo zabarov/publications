@@ -6,7 +6,7 @@
     "source_url": "https://papers.ssrn.com/sol3/Delivery.cfm/6841618.pdf?abstractid=6841618&mirid=1",
     "page_count": 12,
     "pdf_sha256": "5d7daa50cbb79a94d27af29e0f187ed18d292566ac1f5ee7353ff2018e498327",
-    "text_sha256": "267cd101ed5ac24fa0ca6c9733c646d3ecef0c032113c049369126453a87b21d",
+    "text_sha256": "ea9d332fd334229697d83b2a6af2d3294dcb9024a93b5344dc97e4605dadb8bf",
     "extraction": "Poppler pdftotext -layout; page boundaries preserved; trailing whitespace normalized.",
     "assets": [
         {

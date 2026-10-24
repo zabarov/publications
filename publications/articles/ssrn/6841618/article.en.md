@@ -626,4 +626,3 @@ Z., Xiang, Z., Chen, S., Zhou, H., Zhang, Q., Liu, N., Su, J., Wang, X., Chang, 
 Huang, X. (2026). Graph-based agent memory: Taxonomy, techniques, and applications.
 arXiv. https://arxiv.org/abs/2602.05665
 ```
-

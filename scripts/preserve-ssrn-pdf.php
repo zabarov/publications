@@ -65,6 +65,7 @@ foreach ($pages as $index => $page) {
     }
     $markdown .= '## Page ' . ($index + 1) . "\n\n{$fence}text\n" . trim($page, "\r\n") . "\n{$fence}\n\n";
 }
+$markdown = rtrim($markdown) . "\n";
 $archivePath = "{$root}/{$package}/article.en.md";
 if (is_file($archivePath) && file_get_contents($archivePath) !== $markdown) {
     throw new RuntimeException('Refusing to replace existing different Markdown.');

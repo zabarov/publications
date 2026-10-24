@@ -501,4 +501,3 @@ https://www.worldbank.org/en/publication/worldwide-governance-indicators
 World Happiness Report. (2025). World Happiness Report 2025.
 https://files.worldhappiness.report/WHR25.pdf
 ```
-
