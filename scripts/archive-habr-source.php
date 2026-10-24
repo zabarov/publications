@@ -135,6 +135,7 @@ function inlineMarkdown(DOMNode $node): string
         'em', 'i' => $children === '' ? '' : "*{$children}*",
         'code' => $children === '' ? '' : '`' . str_replace('`', '\\`', $children) . '`',
         'a' => $children === '' ? '' : '[' . $children . '](' . $node->getAttribute('href') . ')',
+        'img' => $node->getAttribute('src') === '' ? '' : '![' . $node->getAttribute('alt') . '](' . $node->getAttribute('src') . ')',
         'br' => "\n",
         default => $children,
     };

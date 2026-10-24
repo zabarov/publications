@@ -44,24 +44,49 @@ but provides no backup by itself.
 
 ## Remaining Preservation Backlog
 
-There are 20 published registry records: 2 declare public full-text archives;
-18 do not. Thirteen remaining Habr records and the portrait Medium article
-have local Markdown at their standard archive paths. Existence is confirmed;
-completeness and media recovery still need review. DEV and three SSRN records
-have no copy at the standard local path checked in this review. Other possible
-copies have not been exhaustively searched.
+Follow-up recovery completed on the same date: 22 published registry records
+now include 2 verified text/cover archives and 16 recovered text snapshots.
+Thirteen older Habr copies and the portrait Medium copy were promoted from
+local storage. DEV Markdown was retrieved through its public article API;
+HackerNoon text was converted from the published article HTML with Pandoc.
+Nine referenced images were downloaded, checked as images and assigned hashes.
+The earlier HackerNoon and Medium placements are now in the registry.
+
+Recovered snapshots preserve the available published prose without editorial
+rewriting. Their correspondence with the latest online revision and original
+media completeness remain unverified. A snapshot containing zero image links
+does not prove the original article contained no images. The original local
+sources were retained, including article blockquotes and code examples.
+
+Four records still lack public archived text: three SSRN preprints and the
+Medium edition of the process article. HTTP 403 blocked the Medium edition
+and SSRN 6841618 in this follow-up; the other SSRN records retain their earlier
+access-blocked status. Drafts were not substituted for published research PDFs.
+Other possible research copies have not been exhaustively searched.
 
 Priorities:
 
-1. Review the older local Habr copies and promote approved published text and
-   assets into tracked article packages.
-2. Preserve published DEV/Medium editions and research PDFs where access and
-   author-approved release versions are confirmed.
-3. Reverify the earlier HackerNoon and Medium editions recorded in the workshop,
-   then add their records to the public registry. Their recorded URLs appear
-   in the placement snapshot; this review does not confirm current availability.
-4. Define a private backup destination for ignored drafts and raw captures.
+1. Obtain the exact published SSRN PDFs and the unavailable Medium edition
+   through an accessible public page or an author-provided export.
+2. Review original-page image completeness for the recovered historical copies.
+3. Define a private backup destination for ignored drafts and raw captures.
    No backup service or private remote was configured by this update.
+
+The readable [preservation inventory](../publications/articles/preservation.md)
+is generated from the registry. Per-article `preservation.json` files record
+source kind, capture date when known, text hash and each inspected image URL.
+The archive validator checks those text/image hashes. It deliberately keeps
+recovered snapshots separate from fully verified mirrors.
+
+## Recovery Tools
+
+`php scripts/recover-publication-archives.php` promotes missing public packages
+from locally retained, previously published Markdown and refreshes the readable
+inventory and venue indexes. Run it only on reviewed author-approved sources.
+It does not fetch missing article bodies or prove media completeness.
+`--refresh-generated` explicitly rebuilds recovered packages; it refuses to
+overwrite article text changed since the last recorded hash. Raw sources remain
+untouched. Review and commit the resulting diff after validation.
 
 ## Queue and Placement
 

@@ -18,6 +18,9 @@ Raw research work, private notes, source chats, exploratory handoff files and un
 The commit boundary is documented in [PUBLICATION_BOUNDARY.md](PUBLICATION_BOUNDARY.md).
 Public archive intake is documented in
 [PUBLICATION_HANDOFF.md](PUBLICATION_HANDOFF.md).
+Read the [article archive](publications/articles/README.md) or inspect the
+[preservation inventory](publications/articles/preservation.md) for missing texts
+and recovery status.
 Public publication materials live under `publications/`, `data/`,
 `assets/publications/`, `releases/` and `supplements/`.
 

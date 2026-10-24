@@ -1,26 +1,23 @@
 # Habr Articles
 
-This page lists Rim Zabarov's public Habr articles as portfolio records.
+Publications by Rim Zabarov. English titles are metadata; archived article text retains its original language. Original links and recovery details appear on each article page.
 
-The original articles are in Russian and remain on Habr. This repository keeps
-the original titles, English metadata titles, publication dates and canonical
-links. Approved full-text archives include locally stored covers and remain
-readable independently of Habr.
-
-| Date | Original title | English metadata title |
+| Published | Article | Archive |
 | --- | --- | --- |
-| 2026-10-24 | [От отдела к компании: как объединить ИИ-навыки](1098774/README.md) | From a Department to a Company: Connecting AI Skills |
-| 2026-06-15 | [Ты всё не так понял! Почему иногда ИИ делает всё не так?](https://habr.com/ru/articles/1047368/) | You Got It All Wrong: Why AI Sometimes Does Everything Wrong |
-| 2026-06-08, updated 2026-09-07 | [Как превратить ИИ-навык в отдел со специалистами](1044978/README.md) | How to Turn an AI Skill Into a Department of Specialists |
-| 2025-12-20 | [GPT как портретист: ассистент, который рисует как художник](https://habr.com/ru/articles/978746/) | GPT as a Portrait Artist: An Assistant That Draws Like an Artist |
-| 2025-12-07 | [Как написать код в два счёта: впрягаем Codex с GPT](https://habr.com/ru/articles/974268/) | Writing Code in No Time: Putting Codex and GPT to Work |
-| 2025-12-06 | [Как я делаю «снимок» проекта в JSON для ИИ и разворачиваю его обратно](https://habr.com/ru/articles/973962/) | How I Create a JSON Snapshot of a Project for AI and Restore It Back |
-| 2025-12-02 | [Laravel Copilot Workspace: как я собрал полный цикл разработки вокруг Copilot-агентов](https://habr.com/ru/articles/972648/) | Laravel Copilot Workspace: How I Built a Full Development Cycle Around Copilot Agents |
-| 2025-10-16 | [Как включить ИИ-поиск Google по умолчанию в браузере Chrome](https://habr.com/ru/articles/957118/) | How to Make Google AI Search the Default Search in Chrome |
-| 2025-10-01 | [Забудьте про промт-инженеров: этот ИИ всё сделает сам](https://habr.com/ru/articles/952284/) | Forget Prompt Engineers: This AI Will Do It Itself |
-| 2025-01-12 | [Подключение чата DeepSeek к Алисе](https://habr.com/ru/articles/873130/) | Connecting DeepSeek Chat to Alice |
-| 2024-12-20 | [Сравнение трёх алгоритмов транскрибации: Whisper, встроенный в macOS и автоматическая расшифровка YouTube](https://habr.com/ru/articles/867814/) | Comparing Three Transcription Algorithms: Whisper, macOS Built-In Transcription, and YouTube Automatic Captions |
-| 2024-12-18 | [Автоматизация обработки видео на YouTube с ChatGPT: пошаговое руководство](https://habr.com/ru/articles/867796/) | Automating YouTube Video Processing with ChatGPT: A Step-by-Step Guide |
-| 2024-12-11 | [Программирование в GPT для чайников. Часть 2](https://habr.com/ru/articles/865206/) | Programming in GPT for Beginners, Part 2 |
-| 2024-12-09 | [Программирование в GPT для чайников. Часть 1](https://habr.com/ru/articles/865004/) | Programming in GPT for Beginners, Part 1 |
-| 2024-12-03 | [Чат GPT в колонке Алиса](https://habr.com/ru/articles/863346/) | ChatGPT in an Alice Smart Speaker |
+| 2026-10-24 | [From a Department to a Company: Connecting AI Skills](1098774/article.ru.md) | Text preserved; see article page for completeness |
+| 2026-06-08 | [How to Turn an AI Skill Into a Department of Specialists](1044978/article.ru.md) | Text preserved; see article page for completeness |
+| 2026-06-15 | [You Got It All Wrong: Why AI Sometimes Does Everything Wrong](1047368/article.ru.md) | Text preserved; see article page for completeness |
+| 2025-12-20 | [GPT as a Portrait Artist: An Assistant That Draws Like an Artist](978746/article.ru.md) | Text preserved; see article page for completeness |
+| 2025-12-07 | [Writing Code in No Time: Putting Codex and GPT to Work](974268/article.ru.md) | Text preserved; see article page for completeness |
+| 2025-12-06 | [How I Create a JSON Snapshot of a Project for AI and Restore It Back](973962/article.ru.md) | Text preserved; see article page for completeness |
+| 2025-12-02 | [Laravel Copilot Workspace: How I Built a Full Development Cycle Around Copilot Agents](972648/article.ru.md) | Text preserved; see article page for completeness |
+| 2025-10-16 | [How to Make Google AI Search the Default Search in Chrome](957118/article.ru.md) | Text preserved; see article page for completeness |
+| 2025-10-01 | [Forget Prompt Engineers: This AI Will Do It Itself](952284/article.ru.md) | Text preserved; see article page for completeness |
+| 2025-01-12 | [Connecting DeepSeek Chat to Alice](873130/article.ru.md) | Text preserved; see article page for completeness |
+| 2024-12-20 | [Comparing Three Transcription Algorithms: Whisper, macOS Built-In Transcription, and YouTube Automatic Captions](867814/article.ru.md) | Text preserved; see article page for completeness |
+| 2024-12-18 | [Automating YouTube Video Processing with ChatGPT: A Step-by-Step Guide](867796/article.ru.md) | Text preserved; see article page for completeness |
+| 2024-12-11 | [Programming in GPT for Beginners, Part 2](865206/article.ru.md) | Text preserved; see article page for completeness |
+| 2024-12-09 | [Programming in GPT for Beginners, Part 1](865004/article.ru.md) | Text preserved; see article page for completeness |
+| 2024-12-03 | [ChatGPT in an Alice Smart Speaker](863346/article.ru.md) | Text preserved; see article page for completeness |
+
+[Preservation inventory](../preservation.md)

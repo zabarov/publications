@@ -118,11 +118,19 @@ foreach ($iterator as $file) {
     $markdown = file_get_contents($sourcePath);
     $markdown = preg_replace('~\]\((?:\.\./)+assets/publications/~', '](/assets/publications/', $markdown);
     $markdown = preg_replace('~\]\(([^)\s]*)README\.md\)~', ']($1)', $markdown);
-    $markdown = preg_replace('~\]\(([^)\s]*article\.[a-z-]+)\.md\)~', ']($1/)', $markdown);
+    $markdown = preg_replace('~\]\((?!https?://)([^)\s]+)\.md\)~', ']($1/)', $markdown);
+    $manifestUrl = 'https://github.com/zabarov/publications/blob/main/publications/'
+        . ($relativeDir === '' ? '' : str_replace(DIRECTORY_SEPARATOR, '/', $relativeDir) . '/')
+        . 'preservation.json';
+    $markdown = str_replace('](preservation.json)', '](' . $manifestUrl . ')', $markdown);
+    $isIndex = $file->getFilename() === 'README.md';
+    if (!$isIndex) {
+        // Docara gives non-index Markdown its own directory URL.
+        $markdown = preg_replace('~\]\((?![a-z][a-z0-9+.-]*:|/|\#)([^)\s]+)\)~i', '](../$1)', $markdown);
+    }
     $fallbackTitle = $relativeDir === '' ? 'Publications' : humanTitleFromPath($relativeDir);
     $title = titleFromMarkdown($markdown, $fallbackTitle);
 
-    $isIndex = $file->getFilename() === 'README.md';
     $targetName = $isIndex ? 'index.md' : $file->getFilename();
     file_put_contents($targetDir . '/' . $targetName, wrapDocaraPage($markdown, $title));
     if ($isIndex) {

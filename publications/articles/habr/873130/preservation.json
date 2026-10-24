@@ -1,0 +1,12 @@
+{
+    "publication_id": "habr-873130",
+    "canonical_url": "https://habr.com/ru/articles/873130/",
+    "preserved_at": "2026-10-24",
+    "source_kind": "previous_local_published_copy",
+    "source_captured_at": "2026-06-02T19:56:55Z",
+    "source_sha256": "89ef799718f072dc80aa81a92bcd24f473c7b5dc01c145e13aed6394b4816081",
+    "text_sha256": "e02f477e5f1f6c353e79e2503e84fe34d2097304a93788d3523d8b79952ec1d9",
+    "format_normalization": "Trailing whitespace removed; Markdown hard breaks represented with backslashes.",
+    "completeness": "Recovered text; original-page and media completeness require review.",
+    "assets": []
+}

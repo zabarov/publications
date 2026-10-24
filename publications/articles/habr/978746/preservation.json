@@ -1,0 +1,19 @@
+{
+    "publication_id": "habr-978746",
+    "canonical_url": "https://habr.com/ru/articles/978746/",
+    "preserved_at": "2026-10-24",
+    "source_kind": "previous_local_published_copy",
+    "source_captured_at": "2026-06-02T19:56:50Z",
+    "source_sha256": "d0a71c8a538f735c6b6f158749afccb2e007621119ff29e0f8e2b2ecc09c531c",
+    "text_sha256": "171a85d71a59afcab6ade9d7215b79c8c094f062c24c3c0126219e86e6d9d75e",
+    "format_normalization": "Trailing whitespace removed; Markdown hard breaks represented with backslashes.",
+    "completeness": "Recovered text; original-page and media completeness require review.",
+    "assets": [
+        {
+            "url": "https://habrastorage.org/r/w1560/webt/a5/27/e3/a527e38kiyfj0zz7ytj3hyphfny.png",
+            "status": "saved",
+            "path": "assets/publications/habr-978746/0dff33874843bad4.png",
+            "sha256": "0dff33874843bad41b93df546314c6933fa29b95f78a6388a3d39bc7d95f1130"
+        }
+    ]
+}

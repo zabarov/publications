@@ -1,10 +1,10 @@
 # Medium Articles
 
-This page lists Rim Zabarov's public Medium articles as portfolio records.
+Publications by Rim Zabarov. English titles are metadata; archived article text retains its original language. Original links and recovery details appear on each article page.
 
-The original articles are in English and remain on Medium. This repository keeps
-publication metadata, tags and canonical links.
-
-| Date | Title | Topics |
+| Published | Article | Archive |
 | --- | --- | --- |
-| 2025-12-20 | [I Built a GPT That Thinks Like a Portrait Artist](https://medium.com/@rim.zabarov/i-built-a-gpt-that-thinks-like-a-portrait-artist-9b909c8e1241) | Artificial Intelligence, Generative AI, Creativity, Art, Design |
+| Date unverified | [When One Prompt Becomes a Process: How I Split Responsibility Inside an AI Skill](https://medium.com/@rim.zabarov/when-one-prompt-becomes-a-process-how-i-split-responsibility-inside-an-ai-skill-b8b59d2f2124) | Text recovery pending |
+| 2025-12-20 | [I Built a GPT That Thinks Like a Portrait Artist](9b909c8e1241/article.en.md) | Text preserved; see article page for completeness |
+
+[Preservation inventory](../preservation.md)

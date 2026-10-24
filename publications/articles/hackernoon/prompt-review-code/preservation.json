@@ -1,0 +1,19 @@
+{
+    "publication_id": "hackernoon-prompt-review-code",
+    "canonical_url": "https://hackernoon.com/the-prompt-was-fine-until-it-had-to-review-code",
+    "preserved_at": "2026-10-24",
+    "source_kind": "published_hackernoon_article_html",
+    "source_captured_at": "2026-10-24T08:07:49+00:00",
+    "source_sha256": "e92831ad748563c5e41bb106c447dcdca0116b770cdbfeaba1ab4dce070a59a2",
+    "text_sha256": "c6adc2177d00bdf0b07cce9efd4ea0157d6d812d30ffa81c90e1283b8e4cd811",
+    "format_normalization": "Trailing whitespace removed; Markdown hard breaks represented with backslashes.",
+    "completeness": "Recovered text; original-page and media completeness require review.",
+    "assets": [
+        {
+            "url": "https://hackernoon.imgix.net/images/S5sd7JaMRRTLiRSDhsDwNJPWYhA2-0p93b0a.png",
+            "status": "saved",
+            "path": "assets/publications/hackernoon-prompt-review-code/0c1f10e88f426aeb.jpeg",
+            "sha256": "0c1f10e88f426aebbf980c82f9f1fc16cab2dafe7b6f61457eeed35a1899e41c"
+        }
+    ]
+}
