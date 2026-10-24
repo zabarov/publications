@@ -142,7 +142,7 @@ $assetRoot = $root . '/assets/publications';
 if (is_dir($assetRoot)) {
     $assets = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($assetRoot, FilesystemIterator::SKIP_DOTS));
     foreach ($assets as $asset) {
-        if (!$asset->isFile() || !in_array(strtolower($asset->getExtension()), ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'], true)) {
+        if (!$asset->isFile() || !in_array(strtolower($asset->getExtension()), ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg', 'pdf'], true)) {
             continue;
         }
         $relative = substr($asset->getPathname(), strlen($assetRoot) + 1);

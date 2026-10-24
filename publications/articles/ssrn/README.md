@@ -1,25 +1,13 @@
 # SSRN Preprints
 
-This page lists Rim Zabarov's public SSRN preprints as portfolio records.
+Publications by Rim Zabarov. English titles are metadata; archived article text retains its original language. Original links and recovery details appear on each article page.
 
-The canonical preprint pages remain on SSRN. This repository keeps public-safe
-metadata, abstract identifiers and canonical links. SSRN pages may require
-browser verification because automated access can be blocked by site protection.
-
-| Year | Title | SSRN abstract |
+| Published | Article | Archive |
 | --- | --- | --- |
-| 2026 | [The State Tone Index: A Multidimensional Framework for Measuring Macro-Social Affective Climate and Institutional-Emotional Conditions](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6823458) | 6823458 |
-| 2026 | [Gradient of Knowing (GoK-8): An Integrative Learning-Progression Model and Conceptual Assessment Framework](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6823819) | 6823819 |
-| 2026 | [SSRN preprint 6841618 - metadata pending](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6841618) | 6841618 |
+| 2026-06-06 | [The State Tone Index: A Multidimensional Framework for Measuring Macro-Social Affective Climate and Institutional-Emotional Conditions](6823458/README.md) | Text preserved; see article page for completeness |
+| 2026-06-05 | [Gradient of Knowing (GoK-8): An Integrative Learning-Progression Model and Conceptual Assessment Framework](6823819/README.md) | Text preserved; see article page for completeness |
+| 2026-06-12 | [Evolutionary Object Graph: A Seed-driven, Evidence-bounded Graph Operating Model for AI-assisted Specification Work](6841618/README.md) | Text preserved; see article page for completeness |
 
-## Notes
+Preprints are not peer-reviewed journal publications. Each paper page links to the unchanged published PDF, extracted Markdown and original SSRN record.
 
-- SSRN preprints are public research records, not peer-reviewed journal
-  publications by themselves.
-- Full text should be read from the canonical SSRN pages unless a separate
-  public mirror is intentionally prepared.
-- The current registry records are based on local submission records and user
-  confirmation; automated live verification was blocked by SSRN's Cloudflare
-  challenge.
-- The record for abstract 6841618 was added from the canonical SSRN URL and
-  still needs manual browser verification of the public title and metadata.
+[Preservation inventory](../preservation.md)

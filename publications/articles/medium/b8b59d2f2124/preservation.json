@@ -1,0 +1,19 @@
+{
+    "publication_id": "medium-b8b59d2f2124",
+    "canonical_url": "https://dev.to/zabarov/when-one-prompt-becomes-a-process-how-i-split-responsibility-inside-an-ai-skill-1055",
+    "preserved_at": "2026-10-24",
+    "source_kind": "live_medium_browser_author_blocks",
+    "source_captured_at": "2026-10-24T08:27:55.235Z",
+    "source_sha256": "ae7c0507d1959a07c8f5a5ce52d3f967c25bc2328f0101d074cc42d39b5e07af",
+    "text_sha256": "c03c6ee24e0fc747e633b8eec1b5fed44abab0ddb748bc127794b0b78be646b1",
+    "format_normalization": "Trailing whitespace removed; Markdown hard breaks represented with backslashes.",
+    "completeness": "All 91 observed author-content blocks and the article's one body image preserved from the live Medium page. Platform controls, subscription forms and author-avatar imagery excluded.",
+    "assets": [
+        {
+            "url": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*p_OkBzDnzj3ZMVXieancBQ.png",
+            "status": "saved",
+            "path": "assets/publications/medium-b8b59d2f2124/bed223c495fc1c03.webp",
+            "sha256": "bed223c495fc1c03c81d44500ebe1cc83882e8f71bb7e593fdcf5f5014011495"
+        }
+    ]
+}

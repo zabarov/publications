@@ -1,0 +1,18 @@
+{
+    "publication_id": "ssrn-6841618",
+    "canonical_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6841618",
+    "source_kind": "published_ssrn_pdf_browser_download",
+    "source_captured_at": "2026-10-24T08:30:33.985Z",
+    "source_url": "https://papers.ssrn.com/sol3/Delivery.cfm/6841618.pdf?abstractid=6841618&mirid=1",
+    "page_count": 12,
+    "pdf_sha256": "5d7daa50cbb79a94d27af29e0f187ed18d292566ac1f5ee7353ff2018e498327",
+    "text_sha256": "267cd101ed5ac24fa0ca6c9733c646d3ecef0c032113c049369126453a87b21d",
+    "extraction": "Poppler pdftotext -layout; page boundaries preserved; trailing whitespace normalized.",
+    "assets": [
+        {
+            "status": "saved",
+            "path": "assets/publications/ssrn-6841618/paper.pdf",
+            "sha256": "5d7daa50cbb79a94d27af29e0f187ed18d292566ac1f5ee7353ff2018e498327"
+        }
+    ]
+}

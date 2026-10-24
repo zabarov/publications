@@ -58,18 +58,34 @@ media completeness remain unverified. A snapshot containing zero image links
 does not prove the original article contained no images. The original local
 sources were retained, including article blockquotes and code examples.
 
-Four records still lack public archived text: three SSRN preprints and the
-Medium edition of the process article. HTTP 403 blocked the Medium edition
-and SSRN 6841618 in this follow-up; the other SSRN records retain their earlier
-access-blocked status. Drafts were not substituted for published research PDFs.
-Other possible research copies have not been exhaustively searched.
+That batch left four records without archived text. A subsequent browser
+recovery on October 24 resolved all four: published SSRN PDFs were downloaded
+directly from their paper pages, and the Medium article's author-content blocks
+and cover were captured from the live page. No local draft was substituted for
+a downloaded published paper.
+
+The current inventory is **22 published records, all with archived text**:
+6 verified text/media or PDF packages and 16 recovered historical snapshots.
+The SSRN PDFs contain 10, 7 and 12 pages respectively. Their extracted text is
+identical to the previously submitted local PDF versions, although PDF binary
+hashes differ. The actual SSRN downloads are retained unchanged.
+
+SSRN titles, posted dates, page counts and DOI links were checked in the browser.
+The placeholder title for EOG 6841618 is resolved. The GoK-8 published PDF still
+contains the author's original draft-status line on its title page; archiving
+retains it unchanged. This note records a source artifact, not a change to the
+paper's verified public availability.
+
+Medium displays June 9 for the imported process article, while the prior author
+workflow records publication on June 15. Both facts are distinguished. Its
+canonical URL still points to DEV. All 91 observed author-content blocks and
+one body image are preserved; platform subscription controls and avatars are
+excluded.
 
 Priorities:
 
-1. Obtain the exact published SSRN PDFs and the unavailable Medium edition
-   through an accessible public page or an author-provided export.
-2. Review original-page image completeness for the recovered historical copies.
-3. Define a private backup destination for ignored drafts and raw captures.
+1. Review original-page image completeness for the 16 recovered historical copies.
+2. Define a private backup destination for ignored drafts and raw captures.
    No backup service or private remote was configured by this update.
 
 The readable [preservation inventory](../publications/articles/preservation.md)
@@ -87,6 +103,18 @@ It does not fetch missing article bodies or prove media completeness.
 `--refresh-generated` explicitly rebuilds recovered packages; it refuses to
 overwrite article text changed since the last recorded hash. Raw sources remain
 untouched. Review and commit the resulting diff after validation.
+
+`--only=<publication-id>` scopes an explicit recovered-package refresh to one
+record while still regenerating the complete inventory. Existing canonical URLs
+are preserved, including imported mirrors whose canonical source is elsewhere.
+
+`php scripts/preserve-ssrn-pdf.php <abstract-id> <downloaded-pdf>` preserves a
+browser-downloaded published PDF after checking the registry, captured public
+page title, PDF title/author and page count. It also extracts every page into
+Markdown using Poppler. Page boundaries and preformatted tables are retained;
+the PDF is authoritative for typography. An existing different PDF or Markdown
+is protected from replacement. Public manifests contain URLs and hashes rather
+than private workspace paths or submission correspondence.
 
 ## Queue and Placement
 

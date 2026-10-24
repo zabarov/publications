@@ -33,7 +33,9 @@ foreach ($records as $record) {
         continue;
     }
     $policy === 'full_mirror' ? $mirrors++ : $recovered++;
-    $requiredPaths = $policy === 'full_mirror' ? ['archive_path', 'cover_path'] : ['archive_path'];
+    $requiredPaths = $policy === 'full_mirror'
+        ? ['archive_path', ($record['type'] ?? '') === 'preprint' ? 'document_path' : 'cover_path']
+        : ['archive_path'];
     foreach ($requiredPaths as $field) {
         $relative = $record[$field] ?? '';
         $resolved = $relative === '' ? false : realpath($root . '/' . $relative);
@@ -50,8 +52,8 @@ foreach ($records as $record) {
         if (!str_contains($text, '# ') || mb_strlen($text) < 500) {
             $errors[] = "Article body appears empty or incomplete for {$id}";
         }
-        if ($policy === 'recovered_snapshot') {
-            $manifestPath = dirname($root . '/' . $archive) . '/preservation.json';
+        $manifestPath = dirname($root . '/' . $archive) . '/preservation.json';
+        if ($policy === 'recovered_snapshot' || ($record['type'] ?? '') === 'preprint' || is_file($manifestPath)) {
             $manifest = is_file($manifestPath) ? json_decode(file_get_contents($manifestPath), true) : null;
             if (!$manifest || ($manifest['publication_id'] ?? '') !== $id || ($manifest['text_sha256'] ?? '') !== hash('sha256', $text)) {
                 $errors[] = "Missing or mismatched preservation manifest for {$id}";
@@ -64,6 +66,14 @@ foreach ($records as $record) {
                 if (!$path || !str_starts_with($path, $root . '/assets/publications/') || hash_file('sha256', $path) !== $asset['sha256']) {
                     $errors[] = "Missing or changed preserved image for {$id}";
                 }
+            }
+            if (($record['type'] ?? '') === 'preprint' && (
+                ($manifest['page_count'] ?? null) !== ($record['page_count'] ?? null)
+                || !isset($record['document_path'])
+                || !is_file($root . '/' . $record['document_path'])
+                || ($manifest['pdf_sha256'] ?? '') !== hash_file('sha256', $root . '/' . $record['document_path'])
+            )) {
+                $errors[] = "PDF provenance mismatch for {$id}";
             }
         }
     }

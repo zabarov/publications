@@ -12,6 +12,12 @@ $registry = Yaml::parseFile($registryPath);
 $originalRecords = array_column($registry['publications'], null, 'id');
 $today = gmdate('Y-m-d');
 $rows = [];
+$only = null;
+foreach ($argv as $argument) {
+    if (str_starts_with($argument, '--only=')) {
+        $only = substr($argument, 7);
+    }
+}
 
 foreach ($registry['publications'] as &$record) {
     if (($record['status'] ?? '') !== 'published') {
@@ -21,7 +27,9 @@ foreach ($registry['publications'] as &$record) {
     $venue = $record['venue'];
     $shortId = substr($id, strlen($venue) + 1);
     $source = "{$root}/source/articles/{$venue}/{$shortId}/README.md";
-    $refresh = in_array('--refresh-generated', $argv, true) && ($record['public_text_policy'] ?? '') === 'recovered_snapshot';
+    $refresh = in_array('--refresh-generated', $argv, true)
+        && ($record['public_text_policy'] ?? '') === 'recovered_snapshot'
+        && ($only === null || $id === $only);
     if ((!isset($record['archive_path']) || $refresh) && is_file($source)) {
         if ($refresh) {
             $manifestPath = dirname("{$root}/{$record['archive_path']}") . '/preservation.json';
@@ -89,7 +97,7 @@ foreach ($registry['publications'] as &$record) {
         file_put_contents("{$root}/{$archive}", $body);
         $provenance = [
             'publication_id' => $id,
-            'canonical_url' => $record['public_url'],
+            'canonical_url' => $record['canonical_url'] ?? $record['public_url'],
             'preserved_at' => $today,
             'source_kind' => $meta['source_kind'] ?? 'previous_local_published_copy',
             'source_captured_at' => $meta['generated_at'] ?? null,
@@ -104,7 +112,7 @@ foreach ($registry['publications'] as &$record) {
         $record['archive_path'] = $archive;
         $record['preserved_at'] = $today;
         $record['preservation_status'] = 'text_recovered_completeness_unverified';
-        $record['canonical_url'] = $record['public_url'];
+        $record['canonical_url'] ??= $record['public_url'];
         $title = $record['title'];
         $url = $record['public_url'];
         file_put_contents("{$dir}/README.md", "# {$title}\n\n[Original publication]({$url}) | [Read the archived text](article.{$lang}.md)\n\nLanguage: {$record['original_language']}. Author: Rim Zabarov.\n\nRecovered published-text snapshot, preserved {$today}. The prose is retained in its original language. This is a recovery copy; correspondence with the latest online revision and original media completeness remain unverified.\n\nAvailable referenced images are stored locally. Failed or unavailable assets are recorded in [preservation details](preservation.json). Media attribution and rights remain with their original owners; no separate reuse license is granted.\n");
@@ -142,13 +150,16 @@ foreach ($registry['publications'] as $record) {
 }
 file_put_contents($registryPath, $registryText);
 file_put_contents("{$root}/publications/articles/preservation.md", "# Preservation Inventory\n\nUpdated {$today}. Every published registry record is listed. A recovered snapshot preserves the available text; its label does not certify correspondence with the latest publication or a complete set of images. Original publication links are available on each article page.\n\n| Publication | Venue | Preservation state |\n| --- | --- | --- |\n" . implode("\n", $rows) . "\n\nRaw captures and private drafts remain ignored and require a separate private backup. A local commit alone does not provide a remote backup.\n");
-foreach (['habr' => 'Habr', 'medium' => 'Medium', 'dev-to' => 'DEV Community', 'hackernoon' => 'HackerNoon'] as $venue => $label) {
+foreach (['habr' => 'Habr', 'medium' => 'Medium', 'dev-to' => 'DEV Community', 'hackernoon' => 'HackerNoon', 'ssrn' => 'SSRN'] as $venue => $label) {
     $table = [];
     foreach ($registry['publications'] as $record) {
         if (($record['status'] ?? '') !== 'published' || $record['venue'] !== $venue) {
             continue;
         }
         $link = isset($record['archive_path']) ? substr($record['archive_path'], strlen("publications/articles/{$venue}/")) : $record['public_url'];
+        if ($venue === 'ssrn' && isset($record['archive_path'])) {
+            $link = dirname($link) . '/README.md';
+        }
         $state = isset($record['archive_path']) ? 'Text preserved; see article page for completeness' : 'Text recovery pending';
         $date = isset($record['published_at']) ? substr($record['published_at'], 0, 10) : 'Date unverified';
         $table[] = "| {$date} | [{$record['title']}]({$link}) | {$state} |";
@@ -157,5 +168,7 @@ foreach (['habr' => 'Habr', 'medium' => 'Medium', 'dev-to' => 'DEV Community', '
     if (!is_dir($dir)) {
         mkdir($dir, 0755, true);
     }
-    file_put_contents("{$dir}/README.md", "# {$label} Articles\n\nPublications by Rim Zabarov. English titles are metadata; archived article text retains its original language. Original links and recovery details appear on each article page.\n\n| Published | Article | Archive |\n| --- | --- | --- |\n" . implode("\n", $table) . "\n\n[Preservation inventory](../preservation.md)\n");
+    $heading = $venue === 'ssrn' ? 'SSRN Preprints' : "{$label} Articles";
+    $note = $venue === 'ssrn' ? "\nPreprints are not peer-reviewed journal publications. Each paper page links to the unchanged published PDF, extracted Markdown and original SSRN record.\n" : '';
+    file_put_contents("{$dir}/README.md", "# {$heading}\n\nPublications by Rim Zabarov. English titles are metadata; archived article text retains its original language. Original links and recovery details appear on each article page.\n\n| Published | Article | Archive |\n| --- | --- | --- |\n" . implode("\n", $table) . "\n" . $note . "\n[Preservation inventory](../preservation.md)\n");
 }
