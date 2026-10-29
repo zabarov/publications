@@ -1,5 +1,5 @@
 schema_version: "1.0.0"
-updated: "2026-10-24"
+updated: "2026-10-29"
 
 series:
   - id: "skill-federation"
@@ -8,7 +8,58 @@ series:
     primary_language: "en"
     status: "in-progress"
 
+  - id: "ai-workflow-control"
+    title: "AI Workflows: Throughput, Control and Feedback"
+    public_boundary: "Public-safe planning metadata only; unpublished manuscripts remain private."
+    primary_language: "ru"
+    primary_venue: "habr"
+    status: "drafts-received"
+    article_count: 3
+    queue_policy: "Separate parallel track; the existing skills/graph queue is unchanged."
+    english_adaptation_status: "deferred-until-this-russian-cycle-is-complete"
+
 articles:
+  - id: "ai-workflow-throughput"
+    series_id: "ai-workflow-control"
+    series_position: 1
+    status: "draft-received"
+    editorial_readiness: "review-required"
+    title: "AI Speeds Up Work. Why Does the Task Queue Keep Growing?"
+    original_title: "ИИ ускоряет работу. Почему задач от этого становится только больше?"
+    primary_venue: "habr"
+    languages: ["ru"]
+    summary: "How faster generation shifts work into review queues; assess accepted outcomes and total human effort across a workflow."
+    next_action: "Review audience fit, reduce overlap with parts two and three, and apply the author's direct-phrasing style requirements."
+    public_safety_notes: "Keep teaching examples explicitly synthetic; obtain author-approved public examples before adding claims about actual teams."
+
+  - id: "ai-agent-built-in-control"
+    series_id: "ai-workflow-control"
+    series_position: 2
+    depends_on: ["ai-workflow-throughput"]
+    status: "draft-received"
+    editorial_readiness: "review-required"
+    title: "Developers and AI Agents: Lessons from Toyota's Looms"
+    original_title: "Разработчик и ИИ-агенты: чему нас учат ткацкие станки Toyota"
+    primary_venue: "habr"
+    languages: ["ru"]
+    summary: "Use the Jidoka analogy to explain checks, limited permissions, evidence and stopping unsafe transitions in a developer workflow."
+    next_action: "Verify historical and technical source attributions, distinguish analogy from evidence, review wording and prepare a public-safe worked example."
+    public_safety_notes: "Retain the synthetic catalog example and avoid claims of autonomous release readiness."
+
+  - id: "ai-agent-outcomes-and-feedback"
+    series_id: "ai-workflow-control"
+    series_position: 3
+    depends_on: ["ai-agent-built-in-control"]
+    status: "draft-received"
+    editorial_readiness: "review-required"
+    title: "Agents Are Running and Metrics Are Green. Is the System Actually Useful?"
+    original_title: "Агенты работают, метрики зелёные. Как понять, что система действительно приносит пользу?"
+    primary_venue: "habr"
+    languages: ["ru"]
+    summary: "Define accepted outcomes, comparable task cohorts, retries, human effort and feedback loops for evaluating and improving an agent workflow."
+    next_action: "Check metric definitions and references, preserve cohort consistency, reduce repeated warnings and complete the language review."
+    public_safety_notes: "The 100-request example is synthetic. Keep logging examples free of sensitive data and avoid unsupported performance claims."
+
   - id: "expert-skill-consilium"
     series_id: "skill-federation"
     status: "published"

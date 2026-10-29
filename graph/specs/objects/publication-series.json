@@ -7,6 +7,19 @@
   "title": "Publication Series",
   "series": [
     {
+      "id": "series-ai-workflow-control",
+      "kind": "publication_series",
+      "lifecycle": "planned",
+      "readiness": "draft",
+      "title": "AI Workflows: Throughput, Control and Feedback",
+      "scope": "Three Russian drafts: workflow throughput, built-in agent control, outcome measurement and feedback.",
+      "public_path": "publications/series/ai-workflow-control/README.md",
+      "source_refs": [
+        "data/article-roadmap.yml",
+        "publications/series/ai-workflow-control/README.md"
+      ]
+    },
+    {
       "id": "series-skills-as-expert-systems",
       "kind": "publication_series",
       "lifecycle": "active",

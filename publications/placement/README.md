@@ -1,6 +1,6 @@
 # Publication Placement and Queue
 
-Snapshot: October 24, 2026. Confirmed publications and plans are kept separate.
+Snapshot: October 29, 2026. Confirmed publications and plans are kept separate.
 This page is a public-safe view of the author's working placement matrix;
 private drafts, schedules and correspondence stay in the workshop.
 
@@ -21,7 +21,25 @@ Earlier English editions of part one, recorded in the workshop on September 7,
 
 ## Working Queue
 
-The following is the current working order, not a promised publication calendar.
+### New Parallel Cycle
+
+[AI Workflows: Throughput, Control and Feedback](../series/ai-workflow-control/README.md)
+contains three supplied manuscripts. Their internal reading order is fixed below;
+their position relative to the existing skills/graph releases is not scheduled.
+
+| Order | Topic | Readiness | Placement | Next Action |
+| --- | --- | --- | --- | --- |
+| 1 | Workflow capacity and growing review queues | Russian draft received | Habr planned | Audience and overlap review; direct-phrasing pass |
+| 2 | Built-in control for developer agents, using the Toyota analogy | Russian draft received | Habr planned | Source verification, bounded worked example and wording review |
+| 3 | Accepted outcomes, metrics and feedback | Russian draft received | Habr planned | Metric/source review, overlap reduction and wording review |
+
+English adaptation is deferred until this Russian cycle is complete. No English
+venue, submission, announcement or publication date is confirmed. Covers and
+cross-links are preparation tasks. Manuscripts stay private until released.
+
+### Existing Skills and Graph Queue
+
+The following working order is unchanged, not a promised publication calendar.
 The private workshop contains briefs and evidence for these topics.
 
 | Order | Topic | Recorded readiness | Dependency |
