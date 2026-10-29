@@ -7,6 +7,19 @@
     "source_sha256": "89dfaad7c985eefe4a2155df4ef4a1551207a0c3fc93c0407683ddee69f94d51",
     "text_sha256": "a15eae4dcf595e68a9d8119f968b802f9b2b346926f5342bee490b08518537a6",
     "format_normalization": "Trailing whitespace removed; Markdown hard breaks represented with backslashes.",
-    "completeness": "Recovered text; original-page and media completeness require review.",
-    "assets": []
+    "completeness": "Text and media checked on 2026-10-29. See completeness.json for the source, scope and external-reference boundary.",
+    "assets": [
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/8ea/d70/8ad/8ead708ad0ffcb0ef58f61649e2fa867.jpeg",
+            "status": "saved",
+            "path": "assets/publications/habr-867814/f2491d98423d8a92.jpeg",
+            "sha256": "f2491d98423d8a929c4c54313cf2f14ee54eefdab6f7ac51139723d2c4abd80c",
+            "width": 1344,
+            "height": 768,
+            "mime": "image/jpeg",
+            "alt": "Publication cover"
+        }
+    ],
+    "completeness_path": "completeness.json",
+    "preview_sha256": "9a3f7a4272504b97cd8fa40751c3b8c16ae360e7194981bb114a4e0a2f00e49e"
 }

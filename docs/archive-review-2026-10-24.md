@@ -44,6 +44,14 @@ but provides no backup by itself.
 
 ## Remaining Preservation Backlog
 
+Update, October 29: the [historical-copy completeness review](../publications/articles/completeness.md)
+has now checked all 16 snapshots. Fourteen missing images and 12 separate Habr
+previews were preserved. All observed body/cover image references resolve to
+local files. Original text was retained; the Medium portrait copy gained its
+missing image. External services, a linked video and linked code repositories
+remain explicitly listed references rather than mirrored resources. The private
+backup destination is still a separate decision.
+
 Follow-up recovery completed on the same date: 22 published registry records
 now include 2 verified text/cover archives and 16 recovered text snapshots.
 Thirteen older Habr copies and the portrait Medium copy were promoted from
@@ -53,10 +61,11 @@ Nine referenced images were downloaded, checked as images and assigned hashes.
 The earlier HackerNoon and Medium placements are now in the registry.
 
 Recovered snapshots preserve the available published prose without editorial
-rewriting. Their correspondence with the latest online revision and original
-media completeness remain unverified. A snapshot containing zero image links
-does not prove the original article contained no images. The original local
-sources were retained, including article blockquotes and code examples.
+rewriting. At that stage, source correspondence and original media completeness
+were unverified; the October 29 receipts now document the text/body-image/cover
+checks and their limits. A snapshot containing zero image links alone never
+proves the original article contained no images. The original local sources
+were retained, including article blockquotes and code examples.
 
 That batch left four records without archived text. A subsequent browser
 recovery on October 24 resolved all four: published SSRN PDFs were downloaded
@@ -84,7 +93,8 @@ excluded.
 
 Priorities:
 
-1. Review original-page image completeness for the 16 recovered historical copies.
+1. Completed October 29: original-page text and body/cover image completeness
+   for the 16 historical copies, with the scope limits in the linked report.
 2. Define a private backup destination for ignored drafts and raw captures.
    No backup service or private remote was configured by this update.
 

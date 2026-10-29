@@ -122,7 +122,10 @@ foreach ($iterator as $file) {
     $manifestUrl = 'https://github.com/zabarov/publications/blob/main/publications/'
         . ($relativeDir === '' ? '' : str_replace(DIRECTORY_SEPARATOR, '/', $relativeDir) . '/')
         . 'preservation.json';
-    $markdown = str_replace('](preservation.json)', '](' . $manifestUrl . ')', $markdown);
+    foreach (['preservation.json', 'completeness.json'] as $manifestName) {
+        $url = substr($manifestUrl, 0, -strlen('preservation.json')) . $manifestName;
+        $markdown = str_replace('](' . $manifestName . ')', '](' . $url . ')', $markdown);
+    }
     $isIndex = $file->getFilename() === 'README.md';
     if (!$isIndex) {
         // Docara gives non-index Markdown its own directory URL.

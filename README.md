@@ -21,6 +21,8 @@ Public archive intake is documented in
 Read the [article archive](publications/articles/README.md) or inspect the
 [preservation inventory](publications/articles/preservation.md) for missing texts
 and recovery status.
+The [historical-copy review](publications/articles/completeness.md) documents
+text comparisons, recovered images and platform previews, and external links.
 Public publication materials live under `publications/`, `data/`,
 `assets/publications/`, `releases/` and `supplements/`.
 

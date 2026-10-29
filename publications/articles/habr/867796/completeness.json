@@ -1,0 +1,80 @@
+{
+    "publication_id": "habr-867796",
+    "checked_at": "2026-10-29T09:08:23+00:00",
+    "source_url": "https://habr.com/ru/articles/867796/",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "published",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "3a12b4bb8f2f9c64f6ce9136a65686d5f8fb8a165d7bed4b6f31b3ee4e37e608",
+    "state": "text_and_media_checked",
+    "body_image_count": 7,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://habrastorage.org/r/w1560/getpro/habr//post_images/dd4/9a8/94d/dd49a894d6a73030fb06d487757ca11b.png",
+            "status": "saved",
+            "path": "assets/publications/habr-867796/f274272f1c8e9087.png",
+            "sha256": "f274272f1c8e90876664a6a31b2d542fdaeb0cc1bb34d0e8594414ac954dc22c",
+            "alt": "Настройка расширения Glasp"
+        },
+        {
+            "url": "https://habrastorage.org/r/w1560/getpro/habr//post_images/343/4ec/01e/3434ec01e8d7246d6186645b607df080.png",
+            "status": "saved",
+            "path": "assets/publications/habr-867796/2b5f17dd74090424.png",
+            "sha256": "2b5f17dd7409042400cfcbfa4fa843404877da35a782d32cdfa77c99f6dfa2ff",
+            "alt": "Общие параметры настройки"
+        },
+        {
+            "url": "https://habrastorage.org/r/w1560/getpro/habr//post_images/773/cb7/8ea/773cb78ea430e4f38fe6d8ef27b6b681.png",
+            "status": "saved",
+            "path": "assets/publications/habr-867796/135bc94b9fb3bfa3.png",
+            "sha256": "135bc94b9fb3bfa32c8bc5e5963b662ff0f274dfdb20c2d4a48b0b47de3f7c2d",
+            "alt": "Пример заполнения главного промта"
+        },
+        {
+            "url": "https://habrastorage.org/r/w1560/getpro/habr//post_images/d7f/f0e/1a5/d7ff0e1a50cd1f0c076718b2cd748a99.png",
+            "status": "saved",
+            "path": "assets/publications/habr-867796/f8b272ff4d7a3a2b.png",
+            "sha256": "f8b272ff4d7a3a2ba098da27fad99d99fad480a07ea37e9f6c493f9b01f683cf",
+            "alt": "Пример заполнения полей промтов"
+        },
+        {
+            "url": "https://habrastorage.org/r/w1560/getpro/habr//post_images/094/494/8a2/0944948a29ba927e960609d54f1276db.png",
+            "status": "saved",
+            "path": "assets/publications/habr-867796/c002a8765b743792.png",
+            "sha256": "c002a8765b7437925b9fe43aea9f46cb5fcd1349dba2e5bc7444027e0e6d0479",
+            "alt": "Выбор действий над видео"
+        },
+        {
+            "url": "https://habrastorage.org/r/w1560/getpro/habr//post_images/010/ecd/3aa/010ecd3aafa7b0c064371a6bb09ba322.png",
+            "status": "saved",
+            "path": "assets/publications/habr-867796/ff83da584b4a6bac.png",
+            "sha256": "ff83da584b4a6bacfdd612191b183c3b64413e7c6cebb57cc9f61b45f41bbbc4",
+            "alt": "Выбор промтов для дальнейшей работы"
+        },
+        {
+            "url": "https://habrastorage.org/r/w1560/getpro/habr//post_images/ecc/597/ea6/ecc597ea65567560b96e49a543bf5a89.png",
+            "status": "saved",
+            "path": "assets/publications/habr-867796/9cc18a1bdf58a5b5.png",
+            "sha256": "9cc18a1bdf58a5b583fa20ca62a789d88bf75a4ed1d6a30901632f03f6d8aead",
+            "alt": "Редактирование описания видео"
+        },
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/1b4/8ae/ffc/1b48aeffc185ae418397cc289256664e.jpeg",
+            "status": "saved",
+            "path": "assets/publications/habr-867796/35c9f2af662a9b54.jpeg",
+            "sha256": "35c9f2af662a9b54d348043367e067da799d8ea5fad3f2766a38c225d3dd3cee",
+            "width": 1344,
+            "height": 768,
+            "mime": "image/jpeg",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://glasp.co/": "Glasp"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

@@ -5,8 +5,20 @@
     "source_kind": "previous_local_published_copy",
     "source_captured_at": "2026-06-05",
     "source_sha256": "b44fa673ef9cd7584974d32ce3ce667e870985e63ee1da8bd8a3909c0c465871",
-    "text_sha256": "353b99ff2c442edf68d721c8988250129e81c1399f2cf1da8cd9d60c49c06674",
+    "text_sha256": "66c77afcafd2ad24b67c4e85f02dc46095802767cd4237b139a36199e5fa6925",
     "format_normalization": "Trailing whitespace removed; Markdown hard breaks represented with backslashes.",
-    "completeness": "Recovered text; original-page and media completeness require review.",
-    "assets": []
+    "completeness": "Text and media checked on 2026-10-29. See completeness.json for the source, scope and external-reference boundary.",
+    "assets": [
+        {
+            "url": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*w_z56xAQu5-3D0lDsUesUw.png",
+            "status": "saved",
+            "path": "assets/publications/medium-9b909c8e1241/1528d50b48d00031.webp",
+            "sha256": "1528d50b48d00031ef966461c4f34533b357d50837affcc885c5ff364c68abe4",
+            "width": 1400,
+            "height": 716,
+            "mime": "image/webp",
+            "alt": ""
+        }
+    ],
+    "completeness_path": "completeness.json"
 }

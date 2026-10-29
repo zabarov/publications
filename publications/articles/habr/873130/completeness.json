@@ -1,0 +1,37 @@
+{
+    "publication_id": "habr-873130",
+    "checked_at": "2026-10-29T09:08:21+00:00",
+    "source_url": "https://habr.com/ru/articles/873130/",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "published",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "6e3198a8c36ad9a1d7cda70c95003545be61d0e0db073a8434d716e02114e3d0",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/a2d/b33/72b/a2db3372b2daa4597e7fc47f6a13439e.jpeg",
+            "status": "saved",
+            "path": "assets/publications/habr-873130/c4ccba351fd60abb.jpeg",
+            "sha256": "c4ccba351fd60abb2bd3be1851661a52fe51d7cbd4c9a5d4fa38fd58ddf500b4",
+            "width": 1216,
+            "height": 832,
+            "mime": "image/jpeg",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://habr.com/ru/articles/863346/": "предыдущей статье",
+        "https://github.com/zabarov/alice-deepseek": "Репозиторий на GitHub",
+        "https://vkvideo.ru/video12063675_456239019?list=ln-AQUFOWfzgoz0RZStV0": "Видео демонстрация",
+        "https://dialogs.yandex.ru/developer": "Яндекс.Диалогах",
+        "https://yandex.ru/dev/dialogs/alice/doc/": "https://yandex.ru/dev/dialogs/alice/doc/",
+        "https://api-docs.deepseek.com/": "https://api-docs.deepseek.com/",
+        "https://getcomposer.org/": "https://getcomposer.org/"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

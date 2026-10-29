@@ -1,0 +1,28 @@
+{
+    "publication_id": "habr-978746",
+    "checked_at": "2026-10-29T09:09:23.450Z",
+    "source_url": "https://habr.com/ru/articles/978746/",
+    "source_kind": "author_visible_historical_article_body",
+    "current_visibility": "draft_visible_to_author",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "e2c50868c7a7c42dd01911b53a4e678e0e18efd06aa31f0ba829b9426c94fe59",
+    "state": "historical_text_media_checked_author_view",
+    "body_image_count": 1,
+    "platform_cover_count": 0,
+    "media": [
+        {
+            "url": "https://habrastorage.org/r/w1560/webt/a5/27/e3/a527e38kiyfj0zz7ytj3hyphfny.png",
+            "status": "saved",
+            "path": "assets/publications/habr-978746/0dff33874843bad4.png",
+            "sha256": "0dff33874843bad41b93df546314c6933fa29b95f78a6388a3d39bc7d95f1130",
+            "alt": "Исходное фото и художественная интерпретация. Ассистент не просто меняет стиль, а переосмысливает ракурс, фон и подачу образа."
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://chatgpt.com/g/g-69439618d08881918b976d38a9cae750-portraitist": "https://chatgpt.com/g/g-69439618d08881918b976d38a9cae750-portraitist"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

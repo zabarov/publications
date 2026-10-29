@@ -13,6 +13,7 @@ $ids = [];
 $mirrors = 0;
 $externalOnly = 0;
 $recovered = 0;
+$completenessChecked = 0;
 $errors = [];
 
 foreach ($records as $record) {
@@ -33,6 +34,9 @@ foreach ($records as $record) {
         continue;
     }
     $policy === 'full_mirror' ? $mirrors++ : $recovered++;
+    if ($policy === 'recovered_snapshot' && in_array('--require-completeness', $argv, true) && empty($record['completeness_checked_at'])) {
+        $errors[] = "Completeness check required for {$id}";
+    }
     $requiredPaths = $policy === 'full_mirror'
         ? ['archive_path', ($record['type'] ?? '') === 'preprint' ? 'document_path' : 'cover_path']
         : ['archive_path'];
@@ -57,6 +61,30 @@ foreach ($records as $record) {
             $manifest = is_file($manifestPath) ? json_decode(file_get_contents($manifestPath), true) : null;
             if (!$manifest || ($manifest['publication_id'] ?? '') !== $id || ($manifest['text_sha256'] ?? '') !== hash('sha256', $text)) {
                 $errors[] = "Missing or mismatched preservation manifest for {$id}";
+            }
+            if (isset($record['completeness_checked_at'])) {
+                $completenessChecked++;
+                $completenessPath = dirname($root . '/' . $archive) . '/completeness.json';
+                $completeness = is_file($completenessPath) ? json_decode(file_get_contents($completenessPath), true) : null;
+                if (!$completeness || ($completeness['publication_id'] ?? '') !== $id
+                    || substr($completeness['checked_at'] ?? '', 0, 10) !== $record['completeness_checked_at']
+                    || ($completeness['state'] ?? '') !== $record['preservation_status']) {
+                    $errors[] = "Missing or mismatched completeness receipt for {$id}";
+                }
+                foreach ($completeness['media'] ?? [] as $media) {
+                    $mediaPath = realpath($root . '/' . ($media['path'] ?? ''));
+                    if (($media['status'] ?? '') !== 'saved' || !$mediaPath
+                        || !str_starts_with($mediaPath, $root . '/assets/publications/')
+                        || !is_file($mediaPath) || hash_file('sha256', $mediaPath) !== ($media['sha256'] ?? '')) {
+                        $errors[] = "Completeness media gap or changed file for {$id}";
+                    }
+                }
+                if (isset($manifest['preview_sha256'])) {
+                    $preview = dirname($root . '/' . $archive) . '/preview.md';
+                    if (!is_file($preview) || hash_file('sha256', $preview) !== $manifest['preview_sha256']) {
+                        $errors[] = "Missing or changed platform preview for {$id}";
+                    }
+                }
             }
             foreach ($manifest['assets'] ?? [] as $asset) {
                 if (($asset['status'] ?? '') !== 'saved') {
@@ -83,6 +111,7 @@ foreach ($errors as $error) {
     fwrite(STDERR, $error . PHP_EOL);
 }
 echo "Full public archives: {$mirrors}; recovered text snapshots: {$recovered}; published records without public text: {$externalOnly}.\n";
+echo "Records with dated completeness receipts: {$completenessChecked}.\n";
 if ($externalOnly > 0) {
     echo "External-only records remain a preservation backlog; this check does not claim they are backed up.\n";
 }

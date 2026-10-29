@@ -1,0 +1,29 @@
+{
+    "publication_id": "dev-to-1055",
+    "checked_at": "2026-10-29T09:08:16+00:00",
+    "source_url": "https://dev.to/zabarov/when-one-prompt-becomes-a-process-how-i-split-responsibility-inside-an-ai-skill-1055",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "public_page",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "75c64d92b7eb33af92eab25de28acb9898e84e459f3af9d6424f04214c58ec46",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F0vppdrs7hv74sz98nzym.png",
+            "status": "saved",
+            "path": "assets/publications/dev-to-1055/3a6bac9a68bebcf5.webp",
+            "sha256": "3a6bac9a68bebcf5818c59898cbb78990abe1cf98c94773692fc0b79ce8d77d7",
+            "width": 1000,
+            "height": 420,
+            "mime": "image/webp",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": [],
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

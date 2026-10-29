@@ -1,0 +1,31 @@
+{
+    "publication_id": "habr-972648",
+    "checked_at": "2026-10-29T09:08:19+00:00",
+    "source_url": "https://habr.com/ru/articles/972648/",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "published",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "d20e5f29bb2dc9d9dda5dc0885e482747d2624b9f3e59c7c69a0b799096cab26",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/e64/af6/499/e64af64999a9677e5cc5bb78049d63b9.webp",
+            "status": "saved",
+            "path": "assets/publications/habr-972648/d53b1d7425438a33.webp",
+            "sha256": "d53b1d7425438a33820c10cab39ac01b7777813d01c0df5f49479343e39dcb4e",
+            "width": 1536,
+            "height": 1024,
+            "mime": "image/webp",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://github.com/zabarov/copilot-workspace-laravel": "https://github.com/zabarov/copilot-workspace-laravel"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

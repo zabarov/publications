@@ -1,0 +1,26 @@
+{
+    "publication_id": "hackernoon-prompt-review-code",
+    "checked_at": "2026-10-29T09:08:14+00:00",
+    "source_url": "https://hackernoon.com/the-prompt-was-fine-until-it-had-to-review-code",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "public_page",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "b61b698d908e3f21f45cb9b56e01eea1b91d4d4cc09327eae0c96ca3af2b61c7",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://hackernoon.imgix.net/images/S5sd7JaMRRTLiRSDhsDwNJPWYhA2-0p93b0a.png",
+            "status": "saved",
+            "path": "assets/publications/hackernoon-prompt-review-code/0c1f10e88f426aeb.jpeg",
+            "sha256": "0c1f10e88f426aebbf980c82f9f1fc16cab2dafe7b6f61457eeed35a1899e41c",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": [],
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

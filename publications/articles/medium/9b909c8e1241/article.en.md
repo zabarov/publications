@@ -1,5 +1,7 @@
 # I Built a GPT That Thinks Like a Portrait Artist
 
+![Original photo and artistic interpretation](../../../../assets/publications/medium-9b909c8e1241/1528d50b48d00031.webp)
+
 
 Original photo and artistic interpretation. The assistant goes beyond style transfer, rethinking the angle, background, and visual approach.
 

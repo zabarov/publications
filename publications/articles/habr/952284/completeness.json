@@ -1,0 +1,33 @@
+{
+    "publication_id": "habr-952284",
+    "checked_at": "2026-10-29T09:08:20+00:00",
+    "source_url": "https://habr.com/ru/articles/952284/",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "published",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "253ad7325010b81696254434cbb7c2ddb10757b3748b67028af0513d734dbe0e",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/dc8/18d/7a2/dc818d7a20a76d41a478056fda723ac8.jpg",
+            "status": "saved",
+            "path": "assets/publications/habr-952284/a7921ebbd3167e99.jpeg",
+            "sha256": "a7921ebbd3167e996dca7e313e12ad6734c9fc4267e574444dba64bcbd2f26f8",
+            "width": 780,
+            "height": 520,
+            "mime": "image/jpeg",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://academy.openai.com/public/clubs/work-users-ynjqu/tags/prompt-packs-6849a0f98c613939acef841c": "коллекция промтов",
+        "https://chatgpt.com/g/g-68dbc44ab5908191b740bcc06e08be18-transformer": "Ассистента-трансформера",
+        "https://github.com/zabarov/gpt-transformer/": "репозитории"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

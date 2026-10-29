@@ -1,0 +1,34 @@
+{
+    "publication_id": "habr-863346",
+    "checked_at": "2026-10-29T09:08:25+00:00",
+    "source_url": "https://habr.com/ru/articles/863346/",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "published",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "fdf1d2dae3e6dc5ac051f74f4eeb1a8a3ba8db1ddc04ffc937221929298ae3e6",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/7e3/b39/819/7e3b39819241675bf20c5fa340561842.jpeg",
+            "status": "saved",
+            "path": "assets/publications/habr-863346/4ccff9b5b43ef438.jpeg",
+            "sha256": "4ccff9b5b43ef438c01ba431d667bffa4847d93dfafc59f89ed952dafc337704",
+            "width": 1024,
+            "height": 1024,
+            "mime": "image/jpeg",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://habr.com/ru/articles/725704/": "статью",
+        "https://timeweb.cloud/docs/cloud-servers/manage-servers/create-server": "Создание сервера",
+        "https://dialogs.yandex.ru/developer": "Яндекс.Диалоги",
+        "https://github.com/zabarov/alice-gpt": "Ссылка на репозиторий"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

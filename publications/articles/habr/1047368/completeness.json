@@ -1,0 +1,29 @@
+{
+    "publication_id": "habr-1047368",
+    "checked_at": "2026-10-29T09:08:15+00:00",
+    "source_url": "https://habr.com/ru/articles/1047368/",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "published",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "26ec4aee34c7089ad20b6b4b74e36ae5bfc3789c435b60c52e3c344afc0672f3",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/713/4ab/2ed/7134ab2edfcb1dd276d3fa4af2d6bf86.jpg",
+            "status": "saved",
+            "path": "assets/publications/habr-1047368/f88446a50dd67bbe.jpeg",
+            "sha256": "f88446a50dd67bbe91145ff2c0d5741e9ab0850c2aaf7c5c62e5eb7b752c15a3",
+            "width": 780,
+            "height": 440,
+            "mime": "image/jpeg",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": [],
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

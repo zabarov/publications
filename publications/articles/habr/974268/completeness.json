@@ -1,0 +1,33 @@
+{
+    "publication_id": "habr-974268",
+    "checked_at": "2026-10-29T09:08:17+00:00",
+    "source_url": "https://habr.com/ru/articles/974268/",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "published",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "c26443a19469964c7bfbdc54131cabe4e6a3c4f99125d664d91411ce432419cb",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/df5/c07/115/df5c0711553d66250504efad5e2b45cc.png",
+            "status": "saved",
+            "path": "assets/publications/habr-974268/1c273f310a2315ed.png",
+            "sha256": "1c273f310a2315ed1a59bf618237e410b7fd3601a3e16b84152c157ec52c83da",
+            "width": 720,
+            "height": 403,
+            "mime": "image/png",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://habr.com/ru/articles/972648/": "В первой части — «Laravel Copilot Workspace: как я собрал полный цикл разработки вокруг Copilot-агентов»",
+        "https://habr.com/ru/articles/973962/": "Во второй части — «Как я делаю “снимок” проекта в JSON для ИИ и разворачиваю его обратно»",
+        "https://github.com/zabarov/codex-tz-template": "https://github.com/zabarov/codex-tz-template"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

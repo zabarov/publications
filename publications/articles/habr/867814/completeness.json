@@ -1,0 +1,31 @@
+{
+    "publication_id": "habr-867814",
+    "checked_at": "2026-10-29T09:08:22+00:00",
+    "source_url": "https://habr.com/ru/articles/867814/",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "published",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "fa09eae0f380a55798e280f7d2b0a33fafd4ef4544bdd7cb0cda1e13e0e6a340",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/8ea/d70/8ad/8ead708ad0ffcb0ef58f61649e2fa867.jpeg",
+            "status": "saved",
+            "path": "assets/publications/habr-867814/f2491d98423d8a92.jpeg",
+            "sha256": "f2491d98423d8a929c4c54313cf2f14ee54eefdab6f7ac51139723d2c4abd80c",
+            "width": 1344,
+            "height": 768,
+            "mime": "image/jpeg",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://github.com/openai/whisper": "Whisper"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

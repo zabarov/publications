@@ -1,0 +1,32 @@
+{
+    "publication_id": "habr-865206",
+    "checked_at": "2026-10-29T09:08:24+00:00",
+    "source_url": "https://habr.com/ru/articles/865206/",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "published",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "b7eb0060f00782306414bb353910936cf5068b0598117be4b28b3115e952fe5d",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/a84/b4e/cf2/a84b4ecf27daf27efdefc32232e477c9.jpg",
+            "status": "saved",
+            "path": "assets/publications/habr-865206/f8d9faaae31c3208.jpeg",
+            "sha256": "f8d9faaae31c3208779e857c31e307c107d4f788a9108fdc37f4373bf7d8aa5d",
+            "width": 1792,
+            "height": 1024,
+            "mime": "image/jpeg",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://habr.com/ru/articles/865004/": "Программирование в GPT для чайников. Часть 1",
+        "https://github.com/zabarov/gpt-promt": "репозитории к этой статье"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

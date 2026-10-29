@@ -7,6 +7,18 @@
     "source_sha256": "b97df331e248d65b001e5671700903c8f0d5ba50a9963a0c305237f2a168bdbd",
     "text_sha256": "34c8a674be69d67fc23c470ce5f2d3a4443c297ae31717adb275e4642685a79b",
     "format_normalization": "Trailing whitespace removed; Markdown hard breaks represented with backslashes.",
-    "completeness": "Recovered text; original-page and media completeness require review.",
-    "assets": []
+    "completeness": "Text and media checked on 2026-10-29. See completeness.json for the source, scope and external-reference boundary.",
+    "assets": [
+        {
+            "url": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F0vppdrs7hv74sz98nzym.png",
+            "status": "saved",
+            "path": "assets/publications/dev-to-1055/3a6bac9a68bebcf5.webp",
+            "sha256": "3a6bac9a68bebcf5818c59898cbb78990abe1cf98c94773692fc0b79ce8d77d7",
+            "width": 1000,
+            "height": 420,
+            "mime": "image/webp",
+            "alt": "Publication cover"
+        }
+    ],
+    "completeness_path": "completeness.json"
 }

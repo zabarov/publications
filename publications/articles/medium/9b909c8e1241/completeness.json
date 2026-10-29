@@ -1,0 +1,31 @@
+{
+    "publication_id": "medium-9b909c8e1241",
+    "checked_at": "2026-10-29T09:09:15.797Z",
+    "source_url": "https://medium.com/@rim.zabarov/i-built-a-gpt-that-thinks-like-a-portrait-artist-9b909c8e1241",
+    "source_kind": "live_browser_author_blocks",
+    "current_visibility": "public_page",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "2b86e4dfdf03685c71f6c7369212e9fc7dd2eb374532b9df451473f250b6215e",
+    "state": "text_and_media_checked",
+    "body_image_count": 1,
+    "platform_cover_count": 0,
+    "media": [
+        {
+            "url": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*w_z56xAQu5-3D0lDsUesUw.png",
+            "status": "saved",
+            "path": "assets/publications/medium-9b909c8e1241/1528d50b48d00031.webp",
+            "sha256": "1528d50b48d00031ef966461c4f34533b357d50837affcc885c5ff364c68abe4",
+            "width": 1400,
+            "height": 716,
+            "mime": "image/webp",
+            "alt": ""
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://chatgpt.com/g/g-69439618d08881918b976d38a9cae750-portraitist": "https://chatgpt.com/g/g-69439618d08881918b976d38a9cae750-portraitist"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

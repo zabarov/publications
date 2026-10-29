@@ -1,0 +1,31 @@
+{
+    "publication_id": "habr-973962",
+    "checked_at": "2026-10-29T09:08:18+00:00",
+    "source_url": "https://habr.com/ru/articles/973962/",
+    "source_kind": "public_article_body_and_platform_preview",
+    "current_visibility": "published",
+    "text_comparison": "Author body matches after ignoring whitespace, Markdown presentation and letter case; platform tags excluded from body comparison.",
+    "compared_text_sha256": "aac39ed2466675d1b79e600967a7b2257f539a980fda2d5465a3643ee24ba468",
+    "state": "text_and_media_checked",
+    "body_image_count": 0,
+    "platform_cover_count": 1,
+    "media": [
+        {
+            "url": "https://habrastorage.org/getpro/habr/upload_files/c3e/139/1be/c3e1391bee66aaf1189492def4c8b48c.png",
+            "status": "saved",
+            "path": "assets/publications/habr-973962/6f3516ad30620afa.png",
+            "sha256": "6f3516ad30620afa370ed8155c33e0aaa5f4c1b10b0ab12541cba18971041e49",
+            "width": 780,
+            "height": 426,
+            "mime": "image/png",
+            "alt": "Publication cover"
+        }
+    ],
+    "direct_attachments": [],
+    "embedded_media": [],
+    "external_links": {
+        "https://github.com/simai/scan2json": "https://github.com/simai/scan2json"
+    },
+    "links_not_literal_in_previous_markdown": [],
+    "boundary": "Body media and platform cover/preview inspected. Linked services, videos and source-code repositories are references, not mirrored third-party sites or repository snapshots. No direct downloadable attachment was found by extension-based link inventory; extensionless download endpoints require separate review."
+}

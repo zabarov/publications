@@ -120,7 +120,13 @@ foreach ($registry['publications'] as &$record) {
     }
     if (isset($record['archive_path'])) {
         $link = '../' . substr($record['archive_path'], strlen('publications/'));
-        $state = $record['preservation_status'] ?? 'published_text_and_cover_archived';
+        $state = match ($record['preservation_status'] ?? 'published_text_and_cover_archived') {
+            'text_and_media_checked' => 'Text and images checked against source',
+            'historical_text_media_checked_author_view' => 'Historical text and images checked; original now an author-visible draft',
+            'published_pdf_and_extracted_text_archived' => 'Published PDF and extracted text preserved',
+            'published_text_and_cover_archived' => 'Published text and cover preserved',
+            default => 'Recovered text; completeness review pending',
+        };
         $rows[] = "| [{$record['title']}]({$link}) | {$venue} | {$state} |";
     } else {
         $record['preservation_status'] = 'published_text_missing';
